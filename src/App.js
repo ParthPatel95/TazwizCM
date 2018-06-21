@@ -18,16 +18,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* Always shows a header, even in smaller screens. */}
-        <div style={{ height: "300px", position: "relative" }}>
-          <Layout fixedHeader>
-            <Header
-              title={
-                <span>
-                  <strong>iHired</strong>
-                </span>
-              }
-            >
+        <div className="demo-big-content">
+          <Layout>
+            <Header title="iHired" scroll>
               <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/aboutus">About Us</Link>
@@ -36,13 +29,11 @@ class App extends Component {
               </Navigation>
             </Header>
             <Content>
-              <div className="page-content">
-                <Main />
-              </div>
+              <div className="page-content" />
+              <Main />
             </Content>
           </Layout>
         </div>
-        <div>{/* <LandingPage /> */}</div>
       </div>
     );
   }

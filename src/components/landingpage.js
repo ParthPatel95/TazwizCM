@@ -7,8 +7,11 @@ import {
   Navigation,
   Drawer,
   Content,
-  Button
+  Button,
+  Grid,
+  Cell
 } from "react-mdl";
+import "../App.css";
 
 class LandingPage extends Component {
   componentDidMount() {
@@ -22,47 +25,44 @@ class LandingPage extends Component {
 
   render() {
     return (
-      <div>
-        <div
-          style={{
-            height: "95vh",
-            position: "relative",
-            background:
-              "url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover"
-          }}
-        />
-
-        <div>
-          <Button
-            style={{ height: "5vh", width: "100vw" }}
-            onClick={() =>
-              scrollToComponent(this.Violet, {
-                offset: 0,
-                align: "top",
-                duration: 1500
-              })
-            }
-            raised
-            colored
-          >
-            Learn More
-          </Button>
-        </div>
-
-        <div
-          style={{}}
-          className="violet"
-          ref={section => {
-            this.Violet = section;
-          }}
-        >
-          <Button raised colored>
-            Test
-          </Button>
-        </div>
+      <div style={{ width: "100%", margin: "auto" }}>
+        {/* <img
+          src="http://www.getmdl.io/assets/demos/transparent.jpg"
+          className="bg-img"
+        /> */}
       </div>
     );
   }
 }
 
 export default LandingPage;
+{
+  /* <div>
+<Button
+  style={{ height: "5vh", width: "100vw", position: "relative" }}
+  onClick={() =>
+    scrollToComponent(this.Violet, {
+      offset: 0,
+      align: "top",
+      duration: 1500
+    })
+  }
+  raised
+  colored
+>
+  Learn More
+</Button>
+</div>
+
+<div
+style={{}}
+className="violet"
+ref={section => {
+  this.Violet = section;
+}}
+>
+<Button raised colored>
+  Test
+</Button>
+</div> */
+}
