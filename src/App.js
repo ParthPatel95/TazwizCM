@@ -24,14 +24,33 @@ class App extends Component {
       <div>
         <div className="App">
           <Layout>
-            <Header title="iHired" scroll>
-              <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/aboutus">About Us</Link>
-                <Link to="/careers">Careers</Link>
-                <Link to="/contactus">Contact Us</Link>
-              </Navigation>
-            </Header>
+            <header>
+              <Navbar inverse collapseOnSelect>
+              <Navbar.Header>
+                <Navbar.Brand>
+                  <a href="#brand"><div className="NavItem"><Link to="/">iHired</Link></div></a>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+              </Navbar.Header>
+              <Navbar.Collapse>
+                <Nav pullRight>
+                  <NavItem eventKey={1} href="#">
+                    <div className="NavItem"><Link to="/aboutus">About Us</Link></div>
+                  </NavItem>
+                  <NavItem eventKey={2} href="#">
+                    <div className="JoinFree">Join for Free</div>
+                  </NavItem>
+                  <NavItem eventKey={3} href="#">
+                    <div className="NavItem"><Link to="/careers">Careers</Link></div>
+                  </NavItem>
+                  <NavItem eventKey={4} href="#">
+                    <div className="NavItem"><Link to="/contactus">Contact Us</Link></div>
+                  </NavItem>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+          </header>
+
             <Content>
               <div className="page-content" />
               <Main />
