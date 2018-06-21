@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Well, Jumbotron, FormGroup, FormControl, ControlLabel, Col, Thumbnail, Row, Image, InputGroup } from 'react-bootstrap';
 import "./App.css";
 import "./scroll";
 import {
@@ -14,11 +15,14 @@ import scrollToComponent from "react-scroll-to-component";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+
 class App extends Component {
   render() {
     return (
       <div>
-        <div className="demo-big-content">
+        <div className="App">
           <Layout>
             <Header title="iHired" scroll>
               <Navigation>
@@ -35,6 +39,8 @@ class App extends Component {
           </Layout>
         </div>
       </div>
+
+
     );
   }
 }
