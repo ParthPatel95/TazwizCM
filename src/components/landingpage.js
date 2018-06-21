@@ -156,7 +156,7 @@ class LandingPage extends Component {
       <footer className="App-footer">
         <Row>
         <Col md={2} mdOffset={2}>
-        <h3>Lorem ipsum</h3>
+        <h6>Lorem ipsum</h6>
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Join for Free</a></li>
@@ -165,7 +165,7 @@ class LandingPage extends Component {
           </ul>
         </Col>
         <Col md={2} >
-        <h3>Lorem ipsum</h3>
+        <h6>Lorem ipsum</h6>
           <ul>
             <li><a href="#">Lorem ipsum</a></li>
             <li><a href="#">Lorem ipsum</a></li>
