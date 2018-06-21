@@ -11,6 +11,7 @@ import {
   Button
 } from "react-mdl";
 import scrollToComponent from "react-scroll-to-component";
+import History from "./components/History";
 
 class App extends Component {
   componentDidMount() {
@@ -67,6 +68,7 @@ class App extends Component {
             Learn More
           </Button>
         </div>
+
         <div
           style={{}}
           className="violet"
@@ -74,7 +76,7 @@ class App extends Component {
             this.Violet = section;
           }}
         >
-          <h1>Test</h1>
+          <History />
         </div>
       </div>
     );
