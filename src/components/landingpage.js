@@ -56,7 +56,9 @@ class LandingPage extends Component {
             this.Violet = section;
           }}
         >
-          <h1>Test</h1>
+          <Button raised colored>
+            Test
+          </Button>
         </div>
       </div>
     );

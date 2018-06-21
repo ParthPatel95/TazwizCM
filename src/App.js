@@ -11,14 +11,15 @@ import {
   Button
 } from "react-mdl";
 import scrollToComponent from "react-scroll-to-component";
-import LandingPage from "./components/landingpage";
+import Main from "./components/main";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div>
         {/* Always shows a header, even in smaller screens. */}
-        <div style={{}}>
+        <div style={{ height: "300px", position: "relative" }}>
           <Layout fixedHeader>
             <Header
               title={
@@ -28,18 +29,20 @@ class App extends Component {
               }
             >
               <Navigation>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact Us</a>
+                <Link to="/">Home</Link>
+                <Link to="/aboutus">About Us</Link>
+                <Link to="/careers">Careers</Link>
+                <Link to="/contactus">Contact Us</Link>
               </Navigation>
             </Header>
-
-            <Content />
+            <Content>
+              <div className="page-content">
+                <Main />
+              </div>
+            </Content>
           </Layout>
         </div>
-        <div>
-          <LandingPage />
-        </div>
+        <div>{/* <LandingPage /> */}</div>
       </div>
     );
   }
