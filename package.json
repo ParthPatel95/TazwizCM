@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^3.3.7",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "react-scroll-to": "^1.2.2",
     "react-scroll-to-component": "^1.0.2"
   },
   "scripts": {

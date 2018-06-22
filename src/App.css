@@ -41,21 +41,39 @@
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
-  padding: 50px;
+  padding: 75px;
+   /* Full height */
+  height: 93vh;
+  width: 100%;
 }
 
 .App-footer{
   border: 2px solid black;
   border-radius: 5px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .App-footer ul{
+  padding: 0;
   list-style: none;
 }
 
 .App-footer ul li{
  text-align: left;
+ padding-left: 0px;
+}
+
+.App-footer h6{
+ text-align: left;
+}
+
+p{
+ text-align: left;
+}
+
+.Signup{
+	display: flex;
+	display: inline-block;
 }
 
 .Placeholder-image{
@@ -63,8 +81,12 @@
   height: 120px;
 }
 
-.App-countdown{
-  font-size: 50px;
+.Nav-logo{
+	height: 100%;
+    width: auto;
+    padding: 0px;
+    max-height: 40px;
+    max-width: 130px;
 }
 
 .NavItem{
@@ -73,13 +95,7 @@
 
 .LearnMore{/*For learn more button*/
   width: 100%;
-}
-
-.JoinFree{
-  padding: 10px;
-  border: 2px;
-  border-radius: 5px;
-  background-color: orange;
+  height: 7vh;
 }
 
 @keyframes App-logo-spin {

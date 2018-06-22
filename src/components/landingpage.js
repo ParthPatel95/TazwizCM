@@ -13,7 +13,7 @@ import {
 } from "react-mdl";
 import "../App.css";
 import thumb from '../images/test.png';
-import thumblogo from '../images/logoplaceholder.jpg';
+import thumblogo from '../images/iHireLogo.png';
 import placeholdermap from '../images/placeholdermap.PNG';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -32,10 +32,9 @@ class LandingPage extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      email: ""
-    };
+
     this.handleSignup = this.handleSignup.bind(this);
+    this.aboutRef = React.createRef();
   }
 
   handleSignup(){
@@ -45,49 +44,59 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="App">
-        
+      
 
       <section className="App-headsection">
-        <Row>
-      <Col md={2} mdOffset={3} xs={12}>
-              <h1 className="App-countdown">00:00:00</h1>
-            </Col>
-            <Col md={2} xs={12}>
-              <h1 className="App-countdown">Till</h1>
-            </Col>
-      <Col md={2}  xs={12}>
-              <Image href="#" alt="logo" src={thumblogo}className="Placeholder-image"/>
-            </Col>
-        </Row>
+        {/*<Row>
+        <Col md={8}>
+          <h1>When Life Happens</h1>
+        </Col>
+        <Col md={4}>
+          <Image href="#" alt="logo" src={thumblogo} className="Placeholder-image"/>
+        </Col>
+
+        </Row>*/}
       </section>
 
       <section >
-        <Button  bsSize="large" className="LearnMore">Learn more</Button>
+        <Button  bsSize="large" className="LearnMore" onClick={() => scrollToComponent(this.aboutRef)}>Learn more
+        </Button>
       </section>
 
-      <section className="App-body">
+      <section className="App-body" ref={this.aboutRef}>
         <Row>
           
           <h2>About Us</h2>
-          <Col xs={12} md={3} mdOffset={2}>
-            <Image  alt="171x180" src={thumb}/>
-          </Col>
-          <Col xs={12} md={4}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </Col>
-        <Row>
-        </Row>
-          <Col xs={12} md={3} mdOffset={2}>
-            <Image  alt="171x180" src={thumb}/>
-          </Col>
-          <Col xs={12} md={4}>
+          
+          <Col xs={12} md={4} mdOffset={2}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </Col>
 
+          <Col xs={12} md={4}>
+            <Image  alt="171x180" src={thumb}/>
+          </Col>
+
+        </Row>
+        <h2>Benefits</h2>
+        <Row>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image src={thumb} circle/>
+            <h4>Benefit 1</h4>
+          </Col>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image src={thumb} circle/>
+            <h4>Benefit 2</h4>
+          </Col>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image src={thumb} circle/>
+            <h4>Benefit 3</h4>
+          </Col>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image src={thumb} circle/>
+            <h4>Benefit 4</h4>
+          </Col>
         </Row>
       </section>
 
@@ -135,52 +144,21 @@ class LandingPage extends Component {
           </Thumbnail>
           </Col>
         </Row>
-        <Row>
-        <h2>Early Sign-up</h2>
-        <Col xs={12} md={6} mdOffset={3} xsOffset={0}>
-          <FormGroup>
-        <InputGroup>
-          <FormControl bsSize="large" type="email" value={this.state.email}
-                  placeholder="Email"/>
-          <InputGroup.Button>
-            <Button bsStyle="primary" bsSize="large" onClick={this.handleSignup}>Sign-up</Button>
-          </InputGroup.Button>
-        </InputGroup>
-      </FormGroup>
-    </Col>
-        </Row>
-
-
       </section>
 
-      <footer className="App-footer">
+      <section className="App-body">
         <Row>
-        <Col md={2} mdOffset={2}>
-        <h6>Lorem ipsum</h6>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Join for Free</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </Col>
-        <Col md={2} >
-        <h6>Lorem ipsum</h6>
-          <ul>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-          </ul>
-        </Col>
-         <Col md={2} >
-            <Image href="#" alt="logo" src={placeholdermap} className="Placeholder-image"/>
-        </Col>
-        <Col md={2} >
-          <Image href="#" alt="logo" src={thumblogo} className="Placeholder-image"/>
-        </Col>
+          
+          <h3>Launch Date</h3>
+          <h3>00:00:00</h3>
+          
+          <Col md={6} xs={12}>
+            
+          </Col>
         </Row>
-      </footer>
+      </section>
+
+      
       </div>
     );
   }
