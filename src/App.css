@@ -1,6 +1,40 @@
-.bg-img {
+/* .bg-img {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
   position: fixed;
+} */
+
+.landing-page-fullpage {
+  /* The image used */
+  background-image: url(./static/img/img1.jpg);
+
+  /* Full height */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-img-style {
+  height: 150px;
+  width: 350px;
+}
+
+.nav-bar-bg {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

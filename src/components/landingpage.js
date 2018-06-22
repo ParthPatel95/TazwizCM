@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
+import logo from "../static/img/iHire.png";
+import communityIMG from "../static/img/community-1.png";
 import {
   Icon,
   Layout,
@@ -25,11 +27,43 @@ class LandingPage extends Component {
 
   render() {
     return (
-      <div style={{ width: "100%", margin: "auto" }}>
-        {/* <img
-          src="http://www.getmdl.io/assets/demos/transparent.jpg"
-          className="bg-img"
-        /> */}
+      <div className="landing-page-fullpage">
+        <Grid style={{ width: "60%", margin: "auto", textAlign: "center" }}>
+          <Cell col={8}>
+            <h1>When life happens</h1>
+          </Cell>
+          <Cell col={4}>
+            <img src={logo} className="logo-img-style" alt="LOGO" />
+          </Cell>
+        </Grid>
+        <Grid
+          style={{
+            position: "absolute",
+            zIndex: "-1",
+            width: "100%",
+            margin: "auto",
+            textAlign: "center"
+          }}
+        >
+          <Cell col={12}>
+            <img src={communityIMG} />
+          </Cell>
+        </Grid>
+        <Grid
+          style={{
+            position: "fixed",
+            bottom: "0",
+            width: "100%",
+            margin: "auto",
+            textAlign: "center"
+          }}
+        >
+          <Cell col={12}>
+            <Button style={{ width: "100%", margin: "auto" }} raised colored>
+              Test
+            </Button>
+          </Cell>
+        </Grid>
       </div>
     );
   }

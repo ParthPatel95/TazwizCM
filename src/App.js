@@ -20,10 +20,9 @@ class App extends Component {
       <div>
         <div className="demo-big-content">
           <Layout>
-            <Header title="iHired" scroll>
+            <Header className="nav-bar-bg" title="iHired" scroll>
               <Navigation>
                 <Link to="/">Home</Link>
-                <Link to="/aboutus">About Us</Link>
                 <Link to="/careers">Careers</Link>
                 <Link to="/contactus">Contact Us</Link>
               </Navigation>
