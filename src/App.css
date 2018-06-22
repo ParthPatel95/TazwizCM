@@ -4,3 +4,85 @@
   object-fit: cover;
   position: fixed;
 }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-body {
+ 
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.App-headsection{
+  background-image: url("images/bg1.jpeg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  padding: 50px;
+}
+
+.App-footer{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.App-footer ul{
+  list-style: none;
+}
+
+.App-footer ul li{
+ text-align: left;
+}
+
+.Placeholder-image{
+  width: 220px;
+  height: 120px;
+}
+
+.App-countdown{
+  font-size: 50px;
+}
+
+.NavItem{
+  padding: 10px;
+}
+
+.LearnMore{/*For learn more button*/
+  width: 100%;
+}
+
+.JoinFree{
+  padding: 10px;
+  border: 2px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
