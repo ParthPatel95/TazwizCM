@@ -1,0 +1,122 @@
+.bg-img {
+  height: 100vh;
+  width: 100vw;
+  /* object-fit: ; */
+  position: fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-body {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.App-headsection {
+  background-image: url("images/bg1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 75px;
+  /* Full height */
+  height: 93vh;
+  width: 100%;
+}
+
+.App-footer {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.App-footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.App-footer ul li {
+  text-align: left;
+  padding-left: 0px;
+}
+
+.App-footer h6 {
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+.Signup {
+  display: flex;
+  display: inline-block;
+}
+
+.Placeholder-image {
+  width: 220px;
+  height: 120px;
+}
+
+.Nav-logo {
+  /* height: 100%;
+  width: auto;
+  padding: 0px; */
+  height: 200%;
+  vertical-align: middle;
+  max-height: 50px;
+  max-width: 130px;
+}
+
+.nav-bar-bg {
+  background: #326273;
+}
+.NavItem {
+  padding: 10px;
+}
+
+.LearnMore {
+  /*For learn more button*/
+  width: 100%;
+  height: 7vh;
+  background: #326273;
+  border: 0;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.button-bg {
+  background-color: #326273;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
