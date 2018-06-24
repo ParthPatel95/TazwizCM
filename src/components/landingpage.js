@@ -20,7 +20,9 @@ import {
   Thumbnail,
   Row,
   Image,
-  InputGroup
+  InputGroup,
+  Modal,
+  OverlayTrigger
 } from "react-bootstrap";
 import {
   Icon,
@@ -54,10 +56,25 @@ class LandingPage extends Component {
     super(props);
 
     this.handleSignup = this.handleSignup.bind(this);
-    this.aboutRef = React.createRef();
+    this.handleClose = this.handleClose.bind(this);
+    {
+      /*this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);*/
+    }
+
+    this.state = {
+      show1: false,
+      show2: false,
+      show3: false,
+      show4: false
+    };
   }
 
   handleSignup() {}
+
+  handleClose() {
+    this.setState({ show1: false, show2: false, show3: false, show4: false });
+  }
 
   render() {
     return (
@@ -77,7 +94,7 @@ class LandingPage extends Component {
               ))}
             </TypistLoop>
           </h3>
-          {/* <Typist>When Life Happend, iHired!</Typist> */}
+          {/* <Typist>When Life Happens, iHired!</Typist> */}
         </section>
 
         {/* <section>
@@ -113,19 +130,63 @@ class LandingPage extends Component {
           <h2>Benefits</h2>
           <Row>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: true,
+                    show2: false,
+                    show3: false,
+                    show4: false
+                  })
+                }
+              />
               <h4>Benefit 1</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: true,
+                    show3: false,
+                    show4: false
+                  })
+                }
+              />
               <h4>Benefit 2</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: false,
+                    show3: true,
+                    show4: false
+                  })
+                }
+              />
               <h4>Benefit 3</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: false,
+                    show3: false,
+                    show4: true
+                  })
+                }
+              />
               <h4>Benefit 4</h4>
             </Col>
           </Row>
@@ -185,6 +246,76 @@ class LandingPage extends Component {
             <Col md={6} xs={12} />
           </Row>
         </section>
+
+        {/*MODALS*/}
+
+        <Modal show={this.state.show1} onClick={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading 1</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Text in a modal</h4>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.handleClose}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+
+        <Modal show={this.state.show2} onClick={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading 2</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Text in a modal</h4>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.handleClose}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+
+        <Modal show={this.state.show3} onClick={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading 3</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Text in a modal</h4>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.handleClose}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+
+        <Modal show={this.state.show4} onClick={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading 4</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Text in a modal</h4>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+              ac consectetur ac, vestibulum at eros.
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.handleClose}>Close</Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     );
   }

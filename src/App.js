@@ -96,6 +96,8 @@ class App extends Component {
               </Navbar>
             </header>
 
+            <div className="Nav-space"></div>
+
             <Content>
               <div className="page-content" />
               <Main />
@@ -114,23 +116,19 @@ class App extends Component {
                     <h6>Company</h6>
                     <ul>
                       <li>
-                        <a href="#">About</a>
+                        <a componentClass={Link} href="/" to="/">Home</a>
                       </li>
                       <li>
-                        <a href="#">Careers</a>
+                        <a componentClass={Link} href="/careers" to="/careers">Careers</a>
                       </li>
                       <li>
-                        <a href="#">Contact</a>
+                        <a componentClass={Link} href="/contactus" to="/contactus">Contact</a>
                       </li>
                     </ul>
                   </Col>
                   <Col md={3}>
-                    <h6>Lorem ipsum</h6>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                    <h6>Contact us</h6>
+                    <p>Building D<br/>1750 Finch Ave E<br/>North York, ON M2J 2X5</p>
                   </Col>
                   <Col md={4}>
                     <FormGroup className="Signup">
