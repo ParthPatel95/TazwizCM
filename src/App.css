@@ -36,6 +36,7 @@ section {
 .App-body {
   /*border: 2px solid black;
   border-radius: 5px;*/
+
   padding: 20px;
 }
 
@@ -86,6 +87,12 @@ p {
   text-align: left;
 }
 
+.left {
+  text-align: left;
+}
+
+
+
 .Signup {
   display: flex;
   display: inline-block;
@@ -108,6 +115,7 @@ p {
 
 .navbar-brand{
 	padding: 0px;
+	margin: 0px;
 }
 
 
@@ -118,6 +126,11 @@ p {
 
 .navbar-default.navbarColour ul > li > a {
   color: white;
+  font-size: 20px;
+}
+
+.Nav-space{
+	height: 10vh;
 }
 
 .header {
@@ -145,6 +158,13 @@ max-height:100%;
 object-fit: contain;
   padding: 0px;
   margin:0px;
+}
+
+.ContactUs-half{
+/*border: 1px solid black;*/
+
+  background-color: white;
+  padding: 20px;
 }
 
 .button-bg {
