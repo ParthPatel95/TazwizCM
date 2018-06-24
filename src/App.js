@@ -47,7 +47,7 @@ class App extends Component {
         <div className="App">
           <Layout>
             <header>
-              <Navbar inverse collapseOnSelect fixedTop>
+              <Navbar collapseOnSelect fixedTop className="navbarColour">
                 <Navbar.Header>
                   <Navbar.Brand>
                     <a componentClass={Link} href="/" to="/">

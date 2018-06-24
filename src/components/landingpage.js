@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
+import { Wave } from "react-animated-text";
+import Typist from "react-typist";
+import TypistLoop from "react-typist-loop";
+import TextLoop from "react-text-loop";
 import {
   Navbar,
   Nav,
@@ -58,19 +62,25 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="App">
-        <section className="App-headsection">
-          {/*<Row>
-        <Col md={8}>
-          <h1>When Life Happens</h1>
-        </Col>
-        <Col md={4}>
-          <Image href="#" alt="logo" src={thumblogo} className="Placeholder-image"/>
-        </Col>
-
-        </Row>*/}
+        <section
+          style={{ textAlign: "right", color: "white" }}
+          className="App-headsection"
+        >
+          {/* <h1 className="h1font">Coming Soon</h1> */}
+          <h1 className="h1font">Coming Soon</h1>
+          <h4>
+            <TypistLoop interval={1000}>
+              {["When Life Happened", "iHired!"].map(text => (
+                <Typist key={text} startDelay={750}>
+                  {text}
+                </Typist>
+              ))}
+            </TypistLoop>
+          </h4>
+          {/* <Typist>When Life Happend, iHired!</Typist> */}
         </section>
 
-        <section>
+        {/* <section>
           <Button
             bsSize="large"
             bsClass="LearnMore"
@@ -78,7 +88,7 @@ class LandingPage extends Component {
           >
             Learn more
           </Button>
-        </section>
+        </section> */}
 
         <section className="App-body" ref={this.aboutRef}>
           <Row>
@@ -125,52 +135,44 @@ class LandingPage extends Component {
           <Row>
             <h2>Processes</h2>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Thumbnail alt="171x180" src={thumb} circle>
-                <h3>Process 1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p />
-              </Thumbnail>
+              <Image src={thumb} circle />
+              <h3>Process 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Thumbnail alt="171x180" src={thumb} circle>
-                <h3>Process 2</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p />
-              </Thumbnail>
+              <Image src={thumb} circle />
+              <h3>Process 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Thumbnail alt="171x180" src={thumb} circle>
-                <h3>Process 3</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p />
-              </Thumbnail>
+              <Image src={thumb} circle />
+              <h3>Process 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Thumbnail alt="171x180" src={thumb} circle>
-                <h3>Process 4</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p />
-              </Thumbnail>
+              <Image src={thumb} circle />
+              <h3>Process 4</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </Col>
           </Row>
         </section>
@@ -206,7 +208,6 @@ export default LandingPage;
   Learn More
 </Button>
 </div>
-
 <div
 style={{}}
 className="violet"
