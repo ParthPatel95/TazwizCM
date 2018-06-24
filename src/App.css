@@ -34,8 +34,8 @@ section {
 }
 
 .App-body {
-  border: 2px solid black;
-  border-radius: 5px;
+  /*border: 2px solid black;
+  border-radius: 5px;*/
   padding: 20px;
 }
 
@@ -57,9 +57,11 @@ section {
 }
 
 .App-footer {
-  border: 2px solid black;
-  border-radius: 5px;
+  /*border: 2px solid black;
+  border-radius: 5px;*/
+  background-color: #e46a0c;
   padding: 20px;
+  color: white;
 }
 
 .App-footer ul {
@@ -70,6 +72,10 @@ section {
 .App-footer ul li {
   text-align: left;
   padding-left: 0px;
+}
+
+.App-footer ul li a{
+  color:white;
 }
 
 .App-footer h6 {
@@ -93,23 +99,27 @@ p {
 .Nav-logo {
   /* height: 100%;
   width: auto;
-  padding: 0px; */
-  height: 200%;
+  padding: 0px;*/
+  height: 150%;
   vertical-align: middle;
   max-height: 50px;
   max-width: 130px;
 }
 
+.navbar-brand{
+	padding: 0px;
+}
+
+
 .navbar-default.navbarColour {
   background: #e46a0c;
-}
+  border: 1px solid black;
+  padding: 0px;}
 
 .navbar-default.navbarColour ul > li > a {
   color: white;
 }
 
-.navbar-default.navbarColour ul > li > a {
-}
 .header {
   background: #326273;
 }
@@ -127,6 +137,14 @@ p {
   color: white;
   font-size: 23px;
   font-weight: bold;
+}
+
+.img-responsive{
+max-width:100%;
+max-height:100%;
+object-fit: contain;
+  padding: 0px;
+  margin:0px;
 }
 
 .button-bg {

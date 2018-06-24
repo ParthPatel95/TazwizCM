@@ -114,7 +114,7 @@ class App extends Component {
                     <h6>Company</h6>
                     <ul>
                       <li>
-                        <a href="#">About</a>
+                        <a href="#">Home</a>
                       </li>
                       <li>
                         <a href="#">Careers</a>
