@@ -68,15 +68,15 @@ class LandingPage extends Component {
         >
           {/* <h1 className="h1font">Coming Soon</h1> */}
           <h1 className="h1font">Coming Soon</h1>
-          <h4>
+          <h3>
             <TypistLoop interval={1000}>
-              {["When Life Happened", "iHired!"].map(text => (
+              {["When Life Happens", "iHired"].map(text => (
                 <Typist key={text} startDelay={750}>
                   {text}
                 </Typist>
               ))}
             </TypistLoop>
-          </h4>
+          </h3>
           {/* <Typist>When Life Happend, iHired!</Typist> */}
         </section>
 
