@@ -57,10 +57,6 @@ class LandingPage extends Component {
 
     this.handleSignup = this.handleSignup.bind(this);
     this.handleClose = this.handleClose.bind(this);
-    {
-      /*this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);*/
-    }
 
     this.state = {
       show1: false,
@@ -83,49 +79,46 @@ class LandingPage extends Component {
           style={{ textAlign: "right", color: "white" }}
           className="App-headsection"
         >
-          {/* <h1 className="h1font">Coming Soon</h1> */}
-          <h1 className="h1font">Coming Soon</h1>
-          <h3>
-            <TypistLoop interval={1000}>
-              {["When Life Happens", "iHired"].map(text => (
-                <Typist key={text} startDelay={750}>
-                  {text}
-                </Typist>
-              ))}
-            </TypistLoop>
-          </h3>
-          {/* <Typist>When Life Happens, iHired!</Typist> */}
-        </section>
+          <Row>
+            <Col md={5}>
+              <h1 style={{ textAlign: "left" }} className="h1font body-font">
+                Coming Soon
+              </h1>
+            </Col>
 
-        {/* <section>
-          <Button
-            bsSize="large"
-            bsClass="LearnMore"
-            onClick={() => scrollToComponent(this.aboutRef)}
+            <Col md={7}>
+              <h1 className="h1font body-font">
+                Make it&nbsp;
+                <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
+                  <div style={{ color: "#a4a4a4" }}>loud.</div>
+                  <div style={{ color: "#a4a4a4" }}>easy.</div>
+                  <div style={{ color: "#a4a4a4" }}>work.</div>
+                  <div style={{ color: "#a4a4a4" }}>strong.</div>
+                  <div style={{ color: "#a4a4a4" }}>beautiful.</div>
+                  <div style={{ color: "#a4a4a4" }}>connected.</div>
+                </TextLoop>
+              </h1>
+            </Col>
+          </Row>
+          <span
+            className="body-font"
+            style={{ color: "white", fontSize: "38px" }}
           >
-            Learn more
-          </Button>
-        </section> */}
+            &lt; With iHired /&gt;
+          </span>
+        </section>
 
         <section className="App-body" ref={this.aboutRef}>
           <Row>
-            <h2>About Us</h2>
+            <h2 className="body-font">About Us</h2>
 
-            <Col xs={12} md={4} mdOffset={2}>
-              <h2>
-                <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
-                  <div>First item</div>
-                  <div>Third item</div>
-                </TextLoop>
-                &nbsp;and something else.
-              </h2>
-            </Col>
+            <Col xs={12} md={4} mdOffset={2} />
 
             <Col xs={12} md={4}>
               <Image alt="171x180" src={thumb} />
             </Col>
           </Row>
-          <h2>Benefits</h2>
+          <h2 className="body-font">Benefits</h2>
           <Row>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -140,7 +133,7 @@ class LandingPage extends Component {
                   })
                 }
               />
-              <h4>Benefit 1</h4>
+              <h4 className="body-font">Benefit 1</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -155,7 +148,7 @@ class LandingPage extends Component {
                   })
                 }
               />
-              <h4>Benefit 2</h4>
+              <h4 className="body-font">Benefit 2</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -170,7 +163,7 @@ class LandingPage extends Component {
                   })
                 }
               />
-              <h4>Benefit 3</h4>
+              <h4 className="body-font">Benefit 3</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -185,18 +178,18 @@ class LandingPage extends Component {
                   })
                 }
               />
-              <h4>Benefit 4</h4>
+              <h4 className="body-font">Benefit 4</h4>
             </Col>
           </Row>
         </section>
 
-        <section className="App-body">
+        <section className="App-body body-font">
           <Row>
-            <h2>Processes</h2>
+            <h2 className="body-font">Processes</h2>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image src={thumb} circle />
-              <h3>Process 1</h3>
-              <p>
+              <h3 className="body-font">Process 1</h3>
+              <p className="body-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -205,8 +198,8 @@ class LandingPage extends Component {
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image src={thumb} circle />
-              <h3>Process 2</h3>
-              <p>
+              <h3 className="body-font">Process 2</h3>
+              <p className="body-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -215,8 +208,8 @@ class LandingPage extends Component {
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image src={thumb} circle />
-              <h3>Process 3</h3>
-              <p>
+              <h3 className="body-font">Process 3</h3>
+              <p className="body-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -225,8 +218,8 @@ class LandingPage extends Component {
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image src={thumb} circle />
-              <h3>Process 4</h3>
-              <p>
+              <h3 className="body-font">Process 4</h3>
+              <p className="body-font">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -236,116 +229,88 @@ class LandingPage extends Component {
           </Row>
         </section>
 
-        <section className="App-body">
+        <section className="App-body body-font">
           <Row>
-            <h3>Launch Date</h3>
-            <h3>00:00:00</h3>
+            <h3 className="body-font">Launch Date</h3>
+            <h3 className="body-font">00:00:00</h3>
 
             <Col md={6} xs={12} />
           </Row>
         </section>
 
         {/*MODALS*/}
+        <section className=" body-font">
+          <Modal show={this.state.show1} onClick={this.handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Modal heading 1</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h4>Text in a modal</h4>
+              <p>
+                Cras mattis consectetur purus sit amet fermentum. Cras justo
+                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
 
-        <Modal show={this.state.show1} onClick={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading 1</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4>Text in a modal</h4>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
-          </Modal.Footer>
-        </Modal>
+          <Modal show={this.state.show2} onClick={this.handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Modal heading 2</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h4>Text in a modal</h4>
+              <p>
+                Cras mattis consectetur purus sit amet fermentum. Cras justo
+                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
 
-        <Modal show={this.state.show2} onClick={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading 2</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4>Text in a modal</h4>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
-          </Modal.Footer>
-        </Modal>
+          <Modal show={this.state.show3} onClick={this.handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Modal heading 3</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h4>Text in a modal</h4>
+              <p>
+                Cras mattis consectetur purus sit amet fermentum. Cras justo
+                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
 
-        <Modal show={this.state.show3} onClick={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading 3</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4>Text in a modal</h4>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-
-        <Modal show={this.state.show4} onClick={this.handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading 4</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4>Text in a modal</h4>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.handleClose}>Close</Button>
-          </Modal.Footer>
-        </Modal>
+          <Modal show={this.state.show4} onClick={this.handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Modal heading 4</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h4>Text in a modal</h4>
+              <p>
+                Cras mattis consectetur purus sit amet fermentum. Cras justo
+                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                risus, porta ac consectetur ac, vestibulum at eros.
+              </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+        </section>
       </div>
     );
   }
 }
 
 export default LandingPage;
-{
-  /* <div>
-<Button
-  style={{ height: "5vh", width: "100vw", position: "relative" }}
-  onClick={() =>
-    scrollToComponent(this.Violet, {
-      offset: 0,
-      align: "top",
-      duration: 1500
-    })
-  }
-  raised
-  colored
->
-  Learn More
-</Button>
-</div>
-<div
-style={{}}
-className="violet"
-ref={section => {
-  this.Violet = section;
-}}
->
-<Button raised colored>
-  Test
-</Button>
-</div> */
-}

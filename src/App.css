@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"), url(./fonts/Kollektif.woff) format("woff");
+}
+
+html {
+}
 .bg-img {
   height: 100vh;
   width: 100vw;
@@ -36,13 +43,13 @@ section {
 .App-body {
   /*border: 2px solid black;
   border-radius: 5px;*/
-
+  font-family: "MyFont";
   padding: 20px;
 }
 
 .App-headsection {
-  background: white;
-  background-image: url("images/bg1.jpeg");
+  background: #343434;
+  /* background-image: url("images/bg1.jpeg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -52,15 +59,17 @@ section {
   width: 100%;
 }
 
+.body-font {
+  font-family: "MyFont";
+}
 .h1font {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 96px;
 }
 
 .App-footer {
   /*border: 2px solid black;
   border-radius: 5px;*/
-  background-color: #e46a0c;
+  background-color: #343434;
   padding: 20px;
   color: white;
 }
@@ -114,11 +123,12 @@ p {
 .navbar-brand {
   padding: 0px;
   margin: 0px;
+  border: 0px;
 }
 
 .navbar-default.navbarColour {
-  background: #e46a0c;
-  border: 1px solid black;
+  background: #343434;
+  border: 0px;
   padding: 0px;
 }
 

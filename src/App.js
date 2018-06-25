@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="body-font">
         <div className="App">
           <Layout>
             <header>
@@ -108,7 +108,7 @@ class App extends Component {
                     <Image
                       href="#"
                       alt="logo"
-                      src={thumblogo}
+                      src={navlogo}
                       className="Placeholder-image"
                     />
                   </Col>
