@@ -96,7 +96,7 @@ class App extends Component {
               </Navbar>
             </header>
 
-            <div className="Nav-space"></div>
+            <div className="Nav-space" />
 
             <Content>
               <div className="page-content" />
@@ -104,7 +104,7 @@ class App extends Component {
 
               <footer className="App-footer">
                 <Row>
-                  <Col md={4}>
+                  <Col md={3}>
                     <Image
                       href="#"
                       alt="logo"
@@ -116,21 +116,40 @@ class App extends Component {
                     <h6>Company</h6>
                     <ul>
                       <li>
-                        <a componentClass={Link} href="/" to="/">Home</a>
+                        <a componentClass={Link} href="/" to="/">
+                          Home
+                        </a>
                       </li>
                       <li>
-                        <a componentClass={Link} href="/careers" to="/careers">Careers</a>
+                        <a componentClass={Link} href="/careers" to="/careers">
+                          Careers
+                        </a>
                       </li>
                       <li>
-                        <a componentClass={Link} href="/contactus" to="/contactus">Contact</a>
+                        <a
+                          componentClass={Link}
+                          href="/contactus"
+                          to="/contactus"
+                        >
+                          Contact
+                        </a>
                       </li>
                     </ul>
                   </Col>
-                  <Col md={3}>
-                    <h6>Contact us</h6>
-                    <p>Building D<br/>1750 Finch Ave E<br/>North York, ON M2J 2X5</p>
+                  <Col md={2}>
+                    <h6 style={{}}>Contact Us</h6>
+                    <p style={{}}>
+                      info@iHired.ca<br />+1 (647) 393-7584
+                    </p>
                   </Col>
-                  <Col md={4}>
+                  <Col md={3}>
+                    <h6>Our Address</h6>
+                    <p>
+                      Helix, Building D<br />1750 Finch Ave E<br />North York,
+                      ON M2J 2X5
+                    </p>
+                  </Col>
+                  <Col md={3}>
                     <FormGroup className="Signup">
                       <h6>Connect with us</h6>
                       <InputGroup>

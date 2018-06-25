@@ -40,6 +40,8 @@ import "../App.css";
 import thumb from "../images/test.png";
 import thumblogo from "../images/iHireLogo.png";
 import placeholdermap from "../images/cbanner.jpg";
+import contactusimg from "../images/lead_original.jpg";
+import startculture from "../images/career-startup-culture.jpg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
@@ -75,19 +77,23 @@ class Careers extends Component {
             src={placeholdermap}
           />
         </div>
-        <br />
-        <div>
-          <Col className="padding-margin-remove" md={6} mdPush={6}>
-            <img alt="headerIMG" src={thumb} />
-          </Col>
-          <Col className="padding-margin-remove" md={6} mdPull={6}>
-            <img alt="headerIMG" src={thumb} />
-          </Col>
-        </div>
 
-        <div>
-          <h2>Perks of Working at iHired</h2>
+        <Grid>
           <Row>
+            <Col md={6} mdPush={6}>
+              <img
+                style={{ maxWidth: "100%" }}
+                alt="headerIMG"
+                src={startculture}
+              />
+            </Col>
+            <Col md={6} mdPull={6}>
+              <img alt="headerIMG" src={thumb} />
+            </Col>
+          </Row>
+
+          <Row style={{ width: "100%" }}>
+            <h2>Perks of Working at iHired</h2>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image src={thumb} circle />
               <h4>Benefit 1</h4>
@@ -105,15 +111,20 @@ class Careers extends Component {
               <h4>Benefit 4</h4>
             </Col>
           </Row>
-        </div>
 
-        <Grid>
           <Row className="career-ihired-intro">
             <Col md={6}>
-              <img alt="headerIMG" src={thumb} />
+              <img
+                style={{ maxWidth: "100%" }}
+                alt="headerIMG"
+                src={contactusimg}
+              />
             </Col>
             <Col md={6}>
-              <form>
+              <h3 style={{ textAlign: "center" }}>
+                Are you ready to take that next step?
+              </h3>
+              <form style={{ width: "75%", margin: "auto" }}>
                 <FormGroup
                   controlId="formBasicText"
                   validationState={this.getValidationState()}
@@ -122,7 +133,22 @@ class Careers extends Component {
                   <FormControl
                     type="text"
                     value={this.state.value}
-                    placeholder="Enter text"
+                    placeholder="Enter Full Name"
+                    onChange={this.handleChange}
+                  />
+                  <FormControl.Feedback />
+                  {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
+                </FormGroup>
+
+                <FormGroup
+                  controlId=""
+                  validationState={this.getValidationState()}
+                >
+                  {/* <ControlLabel>Working example with validation</ControlLabel> */}
+                  <FormControl
+                    type="text"
+                    value={this.state.value}
+                    placeholder="Enter Email"
                     onChange={this.handleChange}
                   />
                   <FormControl.Feedback />
