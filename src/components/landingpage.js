@@ -79,7 +79,8 @@ class LandingPage extends Component {
           style={{ textAlign: "right", color: "white" }}
           className="App-headsection"
         >
-          <Row>
+          {/* <div className="middle-align" /> */}
+          <Row bsClass="absolute">
             <Col md={5}>
               <h1 style={{ textAlign: "left" }} className="h1font body-font">
                 Coming Soon
@@ -99,13 +100,19 @@ class LandingPage extends Component {
                 </TextLoop>
               </h1>
             </Col>
+            <span
+              className="body-font"
+              style={{ color: "white", fontSize: "38px", marginRight: "25px" }}
+            >
+              &lt; With iHired /&gt;
+            </span>
           </Row>
-          <span
+          {/* <div
             className="body-font"
             style={{ color: "white", fontSize: "38px" }}
           >
             &lt; With iHired /&gt;
-          </span>
+          </div> */}
         </section>
 
         <section className="App-body" ref={this.aboutRef}>
@@ -118,69 +125,72 @@ class LandingPage extends Component {
               <Image alt="171x180" src={thumb} />
             </Col>
           </Row>
-          <h2 className="body-font">Benefits</h2>
-          <Row>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: true,
-                    show2: false,
-                    show3: false,
-                    show4: false
-                  })
-                }
-              />
-              <h4 className="body-font">Benefit 1</h4>
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: true,
-                    show3: false,
-                    show4: false
-                  })
-                }
-              />
-              <h4 className="body-font">Benefit 2</h4>
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: false,
-                    show3: true,
-                    show4: false
-                  })
-                }
-              />
-              <h4 className="body-font">Benefit 3</h4>
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: false,
-                    show3: false,
-                    show4: true
-                  })
-                }
-              />
-              <h4 className="body-font">Benefit 4</h4>
-            </Col>
-          </Row>
+
+          <div style={{ background: "#343434", color: "white" }}>
+            <h2 className="body-font">Benefits</h2>
+            <Row>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image
+                  src={thumb}
+                  circle
+                  onClick={() =>
+                    this.setState({
+                      show1: true,
+                      show2: false,
+                      show3: false,
+                      show4: false
+                    })
+                  }
+                />
+                <h4 className="body-font">Benefit 1</h4>
+              </Col>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image
+                  src={thumb}
+                  circle
+                  onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: true,
+                      show3: false,
+                      show4: false
+                    })
+                  }
+                />
+                <h4 className="body-font">Benefit 2</h4>
+              </Col>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image
+                  src={thumb}
+                  circle
+                  onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: false,
+                      show3: true,
+                      show4: false
+                    })
+                  }
+                />
+                <h4 className="body-font">Benefit 3</h4>
+              </Col>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image
+                  src={thumb}
+                  circle
+                  onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: false,
+                      show3: false,
+                      show4: true
+                    })
+                  }
+                />
+                <h4 className="body-font">Benefit 4</h4>
+              </Col>
+            </Row>
+          </div>
         </section>
 
         <section className="App-body body-font">
