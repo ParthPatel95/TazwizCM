@@ -34,6 +34,7 @@ import {
   Grid,
   Cell
 } from "react-mdl";
+import { Days, Hours, Minutes, Seconds } from "react-countdowntimer";
 import "../App.css";
 import thumb from "../images/test.png";
 import thumblogo from "../images/iHireLogo.png";
@@ -79,15 +80,38 @@ class LandingPage extends Component {
           style={{ textAlign: "right", color: "white" }}
           className="App-headsection"
         >
+          <Row bsClass="timer-style">
+            <Col xs={12} md={3}>
+              <h3>Days</h3>
+
+              <Days deadline="2018-07-25" />
+            </Col>
+            <Col xs={12} md={3}>
+              <h3>Hours</h3>
+
+              <Hours deadline="2018-07-25" />
+            </Col>
+            <Col xs={12} md={3}>
+              <h3>Minutes</h3>
+
+              <Minutes deadline="2018-07-25" />
+            </Col>
+            <Col xs={12} md={3}>
+              <h3>Seconds</h3>
+
+              <Seconds deadline="2018-07-25" />
+            </Col>
+          </Row>
+
           {/* <div className="middle-align" /> */}
           <Row bsClass="absolute">
-            <Col md={5}>
+            <Col xsHidden md={5}>
               <h1 style={{ textAlign: "left" }} className="h1font body-font">
                 Coming Soon
               </h1>
             </Col>
 
-            <Col md={7}>
+            <Col xsHidden md={7}>
               <h1 className="h1font body-font">
                 Make it&nbsp;
                 <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
@@ -100,33 +124,70 @@ class LandingPage extends Component {
                 </TextLoop>
               </h1>
             </Col>
-            <span
-              className="body-font"
-              style={{ color: "white", fontSize: "38px", marginRight: "25px" }}
-            >
-              &lt; With iHired /&gt;
-            </span>
+            <Col xsHidden>
+              <span
+                className="body-font"
+                style={{
+                  color: "white",
+                  fontSize: "38px",
+                  marginRight: "25px"
+                }}
+              >
+                &lt; With iHired /&gt;
+              </span>
+            </Col>
           </Row>
-          {/* <div
-            className="body-font"
-            style={{ color: "white", fontSize: "38px" }}
-          >
-            &lt; With iHired /&gt;
-          </div> */}
         </section>
 
         <section className="App-body" ref={this.aboutRef}>
-          <Row>
-            <h2 className="body-font">About Us</h2>
-
-            <Col xs={12} md={4} mdOffset={2} />
-
-            <Col xs={12} md={4}>
-              <Image alt="171x180" src={thumb} />
-            </Col>
-          </Row>
-
-          <div style={{ background: "#343434", color: "white" }}>
+          <Grid>
+            <Row className="show-grid">
+              <h1 className="body-font">
+                We are in the middle of a{" "}
+                <span style={{ color: "#FFDF00" }}>GOLDMINE</span>
+              </h1>
+              <Col md={6} mdPush={6}>
+                <h4 className="body-font" style={{ textAlign: "left" }}>
+                  As we live thru life we gain and foster vast experiences and
+                  wisdom. We build and establish key networks and connections.
+                  We acquire and develop new skill sets that define who we are.
+                  <br />
+                  <br />
+                  <br />With&nbsp;
+                  <span style={{ color: "", fontWeight: "bold" }}>
+                    iHired
+                  </span>&nbsp;earn quick money by lending a helping hand within
+                  your community. You have invested long hours to mold your
+                  talents. You have put in ___ efforts to sharpen your skills.
+                  Then why not reward yourself. Earn extra money by doing what
+                  you do best.
+                </h4>
+              </Col>
+              <Col md={6} mdPull={6}>
+                <h4 className="body-font" style={{ textAlign: "right" }}>
+                  That goldmine is our Community. Everyone in it is different
+                  and unique, that's the beauty of life. But regardless of
+                  origin, background, age or gender one factor that is common
+                  amongst all is the passage of time. <br />
+                  <br />With&nbsp;
+                  <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
+                  &nbsp;tap into that goldmine of local individuals and
+                  professionals. So the next time you are faced with a sudden
+                  problem or a daunting task have no fear. You have the support
+                  of your community at your fingertips, one tap away.
+                </h4>
+              </Col>
+            </Row>
+          </Grid>
+        </section>
+        <section className="" ref={this.aboutRef}>
+          <div
+            style={{
+              background: "#343434",
+              color: "white",
+              paddingTop: "5px"
+            }}
+          >
             <h2 className="body-font">Benefits</h2>
             <Row>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
@@ -142,7 +203,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Benefit 1</h4>
+                <h4 className="body-font">Convenience</h4>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
@@ -157,7 +218,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Benefit 2</h4>
+                <h4 className="body-font">Crystal Clear</h4>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
@@ -172,7 +233,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Benefit 3</h4>
+                <h4 className="body-font">Control</h4>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
@@ -187,7 +248,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Benefit 4</h4>
+                <h4 className="body-font">Connections</h4>
               </Col>
             </Row>
           </div>
@@ -239,28 +300,18 @@ class LandingPage extends Component {
           </Row>
         </section>
 
-        <section className="App-body body-font">
-          <Row>
-            <h3 className="body-font">Launch Date</h3>
-            <h3 className="body-font">00:00:00</h3>
-
-            <Col md={6} xs={12} />
-          </Row>
-        </section>
-
         {/*MODALS*/}
         <section className=" body-font">
           <Modal show={this.state.show1} onClick={this.handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Modal heading 1</Modal.Title>
+            <Modal.Header>
+              <Modal.Title>Convenience</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <h4>Text in a modal</h4>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
+              <h5>
+                Life itself is complex, but solving the problems that come with
+                it shouldn’t be. iHired is a one stop platform to get help with
+                your day-to-day tasks.{" "}
+              </h5>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.handleClose}>Close</Button>
@@ -268,16 +319,16 @@ class LandingPage extends Component {
           </Modal>
 
           <Modal show={this.state.show2} onClick={this.handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Modal heading 2</Modal.Title>
+            <Modal.Header>
+              <Modal.Title>Crystal Clear</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <h4>Text in a modal</h4>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
+              <h5>
+                We’ve built a communication system that’s never been used
+                before. Built solely with the purpose to bring clearity between
+                you and the other party. Goodbye confusions, goodbye buried
+                text. It's simple, cut and straight to the point.
+              </h5>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.handleClose}>Close</Button>
@@ -285,16 +336,15 @@ class LandingPage extends Component {
           </Modal>
 
           <Modal show={this.state.show3} onClick={this.handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Modal heading 3</Modal.Title>
+            <Modal.Header>
+              <Modal.Title>Control</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <h4>Text in a modal</h4>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
+              <h5>
+                With an all new integrated betting system You are in Control. We
+                give you the power to choose who you hire. Set your own price
+                point with the new betting system and edge out your competition.
+              </h5>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.handleClose}>Close</Button>
@@ -302,16 +352,16 @@ class LandingPage extends Component {
           </Modal>
 
           <Modal show={this.state.show4} onClick={this.handleClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Modal heading 4</Modal.Title>
+            <Modal.Header>
+              <Modal.Title>Connections</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <h4>Text in a modal</h4>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
+              <h5>
+                The greatest side benefit of using iHired is the connections you
+                will create with people right in your community. This perk is
+                priceless, the rewards you gain are boundless. Enrich your life
+                with iHired.
+              </h5>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.handleClose}>Close</Button>

@@ -46,9 +46,18 @@ section {
   /*border: 2px solid black;
   border-radius: 5px;*/
   font-family: "MyFont";
-  /* padding: 20px; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
+.timer-style {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  padding-top: 75px;
+  font-family: "MyFont";
+  font-size: 96px;
+  text-align: center;
+}
 .App-headsection {
   background: #343434;
   background-image: url("images/bg1.jpeg");
@@ -145,7 +154,12 @@ p {
   font-size: 20px;
 }
 
+.navbar-default.navbarColour ul > li > a:visited {
+  color: white;
+}
+
 .navbar-default.navbarColour ul > li > a:hover {
+  color: #a4a4a4;
 }
 
 .navbar-default div.navbar-collapse {

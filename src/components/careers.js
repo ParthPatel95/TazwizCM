@@ -38,6 +38,7 @@ import {
 } from "react-mdl";
 import "../App.css";
 import thumb from "../images/test.png";
+import thumb_label from "../images/thumbnail_label.png";
 import thumblogo from "../images/iHireLogo.png";
 import placeholdermap from "../images/cbanner.jpg";
 import contactusimg from "../images/lead_original.jpg";
@@ -80,6 +81,7 @@ class Careers extends Component {
 
         <Grid>
           <Row>
+            <h2> Why settle for average join us! </h2>
             <Col md={6} mdPush={6}>
               <img
                 style={{ maxWidth: "100%" }}
@@ -111,7 +113,53 @@ class Careers extends Component {
               <h4>Benefit 4</h4>
             </Col>
           </Row>
-
+          <Grid>
+            <Row>
+              <h2 className="body-font">
+                The people that make iHired .. iHIRED!
+              </h2>
+              <Col xs={6} md={3}>
+                <Thumbnail src={thumb_label} alt="242x200">
+                  <h3>Thumbnail label</h3>
+                  <p>Description</p>
+                  <p>
+                    <Button bsStyle="primary">Button</Button>&nbsp;
+                    <Button bsStyle="default">Button</Button>
+                  </p>
+                </Thumbnail>
+              </Col>
+              <Col xs={6} md={3}>
+                <Thumbnail src={thumb_label} alt="242x200">
+                  <h3>Thumbnail label</h3>
+                  <p>Description</p>
+                  <p>
+                    <Button bsStyle="primary">Button</Button>&nbsp;
+                    <Button bsStyle="default">Button</Button>
+                  </p>
+                </Thumbnail>
+              </Col>
+              <Col xs={6} md={3}>
+                <Thumbnail src={thumb_label} alt="242x200">
+                  <h3>Thumbnail label</h3>
+                  <p>Description</p>
+                  <p>
+                    <Button bsStyle="primary">Button</Button>&nbsp;
+                    <Button bsStyle="default">Button</Button>
+                  </p>
+                </Thumbnail>
+              </Col>
+              <Col xs={6} md={3}>
+                <Thumbnail src={thumb_label} alt="242x200">
+                  <h3>Thumbnail label</h3>
+                  <p>Description</p>
+                  <p>
+                    <Button bsStyle="primary">Button</Button>&nbsp;
+                    <Button bsStyle="default">Button</Button>
+                  </p>
+                </Thumbnail>
+              </Col>
+            </Row>
+          </Grid>
           <Row className="career-ihired-intro">
             <Col md={6}>
               <img

@@ -7,6 +7,7 @@
     "react": "^16.4.1",
     "react-animated-text": "^0.1.3",
     "react-bootstrap": "^0.32.1",
+    "react-countdowntimer": "^0.1.8",
     "react-dom": "^16.4.1",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^4.3.1",
