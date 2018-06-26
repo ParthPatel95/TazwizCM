@@ -106,13 +106,13 @@ class LandingPage extends Component {
 
           {/* <div className="middle-align" /> */}
           <Row bsClass="absolute">
-            <Col xsHidden md={5}>
+            <Col xsHidden smHidden md={5}>
               <h1 style={{ textAlign: "left" }} className="h1font body-font">
                 Coming Soon
               </h1>
             </Col>
 
-            <Col xsHidden md={7}>
+            <Col xsHidden smHidden md={7}>
               <h1 className="h1font body-font">
                 Make it&nbsp;
                 <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
@@ -125,7 +125,7 @@ class LandingPage extends Component {
                 </TextLoop>
               </h1>
             </Col>
-            <Col xsHidden>
+            <Col xsHidden smHidden>
               <span
                 className="body-font"
                 style={{
