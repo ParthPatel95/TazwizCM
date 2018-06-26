@@ -74,7 +74,8 @@ section {
   font-family: "MyFont";
 }
 .h1font {
-  font-size: 96px;
+  /*font-size: 96px;*/
+  font-size: 12vh;
 }
 .absolute {
   position: absolute;
@@ -117,6 +118,8 @@ p {
 .left {
   text-align: left;
 }
+
+
 
 .Signup {
   display: flex;
