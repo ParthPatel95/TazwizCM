@@ -64,7 +64,7 @@ class ContactUs extends Component {
 					  	</FormGroup>{' '}
 					  	<FormGroup controlId="formControlsTextarea">
 					      
-					      <FormControl componentClass="textarea" placeholder="Feedback" />
+					     <FormControl componentClass="textarea" placeholder="Feedback" />
 					    </FormGroup>
 					    <Button type="submit">Submit</Button>
 					</Form>
@@ -74,7 +74,7 @@ class ContactUs extends Component {
 		        <Col md={12}>
 		            <h6 className="left"><b>Connect with us:</b></h6>
                     <p>
-                      For any support, please Email us at <a href="#">something@email.com</a>.
+                      For any support, please Email us at <a href="#">info@iHired.ca</a>.
                     </p>
                     <h6 className="left"><b>Visit us at:</b></h6>
                     <p>Building D<br/>1750 Finch Ave E<br/>North York, ON M2J 2X5</p>

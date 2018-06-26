@@ -24,7 +24,10 @@ import {
   InputGroup,
   Carousel,
   ButtonGroup,
-  HelpBlock
+  HelpBlock,
+  Modal,
+  Panel,
+  PanelGroup
 } from "react-bootstrap";
 import {
   Icon,
@@ -51,9 +54,14 @@ class Careers extends Component {
     super(props, context);
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleClose = this.handleClose.bind(this);
 
     this.state = {
-      value: ""
+      value: "",
+      show1: false,
+      show2: false,
+      show3: false,
+      show4: false
     };
   }
 
@@ -66,8 +74,13 @@ class Careers extends Component {
   }
 
   handleChange(e) {
-    this.setState({ value: e.target.value });
+    {/*this.setState({ value: e.target.value });*/}
   }
+
+  handleClose() {
+    this.setState({ show1: false, show2: false, show3: false, show4: false });
+  }
+
   render() {
     return (
       <div>
@@ -81,7 +94,7 @@ class Careers extends Component {
 
         <Grid>
           <Row>
-            <h2> Why settle for average join us! </h2>
+            <h2> Why settle for average? Join us! </h2>
             <Col md={6} mdPush={6}>
               <img
                 style={{ maxWidth: "100%" }}
@@ -97,28 +110,56 @@ class Careers extends Component {
           <Row style={{ width: "100%" }}>
             <h2>Perks of Working at iHired</h2>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image src={thumb} circle onClick={() =>
+                    this.setState({
+                      show1: true,
+                      show2: false,
+                      show3: false,
+                      show4: false
+                    })
+                  }/>
               <h4>Benefit 1</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image src={thumb} circle onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: true,
+                      show3: false,
+                      show4: false
+                    })
+                  }/>
               <h4>Benefit 2</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image src={thumb} circle onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: false,
+                      show3: true,
+                      show4: false
+                    })
+                  }/>
               <h4>Benefit 3</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
+              <Image src={thumb} circle onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: false,
+                      show3: false,
+                      show4: true
+                    })
+                  }/>
               <h4>Benefit 4</h4>
             </Col>
           </Row>
           <Grid>
             <Row>
               <h2 className="body-font">
-                The people that make iHired .. iHIRED!
+                The people that make iHired ... iHIRED!
               </h2>
-              <Col xs={6} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <Thumbnail src={thumb_label} alt="242x200">
                   <h3>Thumbnail label</h3>
                   <p>Description</p>
@@ -128,7 +169,7 @@ class Careers extends Component {
                   </p>
                 </Thumbnail>
               </Col>
-              <Col xs={6} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <Thumbnail src={thumb_label} alt="242x200">
                   <h3>Thumbnail label</h3>
                   <p>Description</p>
@@ -138,7 +179,7 @@ class Careers extends Component {
                   </p>
                 </Thumbnail>
               </Col>
-              <Col xs={6} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <Thumbnail src={thumb_label} alt="242x200">
                   <h3>Thumbnail label</h3>
                   <p>Description</p>
@@ -148,7 +189,7 @@ class Careers extends Component {
                   </p>
                 </Thumbnail>
               </Col>
-              <Col xs={6} md={3}>
+              <Col xs={12} sm={6} md={3}>
                 <Thumbnail src={thumb_label} alt="242x200">
                   <h3>Thumbnail label</h3>
                   <p>Description</p>
@@ -160,6 +201,74 @@ class Careers extends Component {
               </Col>
             </Row>
           </Grid>
+        </Grid>
+
+          <section>
+
+              <h3>
+                Available positions
+              </h3>
+            <Row className="table-padding">
+                <Col xs={12} md={2} mdPush={2} xsPush={0} >
+                <Image src={thumb} rounded />
+                </Col>
+                <Col xs={12} md={6} mdPush={2} xsPush={0} >
+                  <p>
+                    <b>Role:</b> Role 1  <br/>
+                    <b>Requirements:</b> Requirements  <br/>
+                    <b>Start Date:</b> xx/xx/xxxx
+                  </p>
+                  <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
+                    <Panel eventKey="1">
+                      <Panel.Heading>
+                        <Panel.Title toggle>Learn More...</Panel.Title>
+                      </Panel.Heading>
+                      <Panel.Body collapsible>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </Panel.Body>
+                    </Panel>
+                  </PanelGroup>
+                </Col>
+            </Row>
+            <Row className="table-padding">
+
+                <Col xs={12} md={2} mdPush={2} xsPush={0} >
+                <Image src={thumb} rounded />
+                </Col>
+                <Col xs={12} md={6} mdPush={2} xsPush={0} >
+                  <p>
+                    <b>Role:</b> Role 2  <br/>
+                    <b>Requirements:</b> Requirements  <br/>
+                    <b>Start Date:</b> xx/xx/xxxx
+                  </p>
+                  <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
+                    <Panel eventKey="1">
+                      <Panel.Heading>
+                        <Panel.Title toggle>Learn More...</Panel.Title>
+                      </Panel.Heading>
+                      <Panel.Body collapsible>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </Panel.Body>
+                    </Panel>
+                  </PanelGroup>
+                </Col>
+
+
+            </Row>
+          </section>
+
+
+        <Grid>
           <Row className="career-ihired-intro">
             <Col md={6}>
               <img
@@ -202,10 +311,96 @@ class Careers extends Component {
                   <FormControl.Feedback />
                   {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
                 </FormGroup>
+
+                <FormGroup controlId="formControlsSelect">
+                  <FormControl componentClass="select" placeholder="Job">
+                    <option value="1">Job 1</option>
+                    <option value="2">Job 2</option>
+                    <option value="3">Job 3</option>
+                    <option value="4">Job 4</option>
+                  </FormControl>
+                </FormGroup>
+
+                <FormGroup>
+                  <FormControl componentClass="textarea" placeholder="Tell us about yourself">
+                  </FormControl>
+                </FormGroup>
+
+                <Button type="submit">Sign-up</Button>
               </form>
             </Col>
           </Row>
         </Grid>
+
+        {/*MODALS*/}
+        <section className=" body-font">
+          <Modal show={this.state.show1} onClick={this.handleClose}>
+            <Modal.Header>
+              <Modal.Title>Benefit 1</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h5>
+                Life itself is complex, but solving the problems that come with
+                it shouldn’t be. iHired is a one stop platform to get help with
+                your day-to-day tasks.{" "}
+              </h5>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+
+          <Modal show={this.state.show2} onClick={this.handleClose}>
+            <Modal.Header>
+              <Modal.Title>Benefit 2</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h5>
+                We’ve built a communication system that’s never been used
+                before. Built solely with the purpose to bring clearity between
+                you and the other party. Goodbye confusions, goodbye buried
+                text. It's simple, cut and straight to the point.
+              </h5>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+
+          <Modal show={this.state.show3} onClick={this.handleClose}>
+            <Modal.Header>
+              <Modal.Title>Benefit 3</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h5>
+                With an all new integrated betting system You are in Control. We
+                give you the power to choose who you hire. Set your own price
+                point with the new betting system and edge out your competition.
+              </h5>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+
+          <Modal show={this.state.show4} onClick={this.handleClose}>
+            <Modal.Header>
+              <Modal.Title>Benefit 4</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h5>
+                The greatest side benefit of using iHired is the connections you
+                will create with people right in your community. This perk is
+                priceless, the rewards you gain are boundless. Enrich your life
+                with iHired.
+              </h5>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={this.handleClose}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+        </section>
+
       </div>
     );
   }

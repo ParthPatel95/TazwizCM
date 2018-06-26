@@ -22,7 +22,8 @@ import {
   Image,
   InputGroup,
   Modal,
-  OverlayTrigger
+  OverlayTrigger,
+  Form
 } from "react-bootstrap";
 import {
   Icon,
@@ -297,6 +298,33 @@ class LandingPage extends Component {
                 nisi ut aliquip ex ea commodo consequat.
               </p>
             </Col>
+          </Row>
+        </section>
+
+        <section className="App-body body-font" >
+          <Row>
+            <h2 className="body-font">Early Sign-up</h2>
+            <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
+              <Image src={thumb}/>
+            </Col>
+            <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
+            <Form>
+                <FormGroup controlId="formInlineName">
+                  
+                  <FormControl type="text" placeholder="Name" />
+                </FormGroup>{' '}
+                <FormGroup controlId="formInlineEmail">
+                  
+                  <FormControl type="email" placeholder="Email" />
+                </FormGroup>{' '}
+
+                <Button type="submit">Sign-up</Button>
+            </Form>
+            </Col>
+            <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
+              <Image src={thumb}/>
+            </Col>
+
           </Row>
         </section>
 
