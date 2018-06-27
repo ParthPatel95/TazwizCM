@@ -1,6 +1,242 @@
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"), url(./fonts/Kollektif.woff) format("woff");
+}
+
+html {
+}
 .bg-img {
   height: 100vh;
   width: 100vw;
-  object-fit: cover;
+  /* object-fit: ; */
   position: fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+section {
+  border: 0px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.table-padding {
+  padding: 10px;
+}
+.App-body {
+  /*border: 2px solid black;
+  border-radius: 5px;*/
+  font-family: "MyFont";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.timer-style {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  padding-top: 75px;
+  font-family: "MyFont";
+  font-size: 96px;
+  text-align: center;
+}
+.App-headsection {
+  background: #343434;
+  background-image: url("images/bg1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* padding: 75px; */
+  /* Full height */
+  height: 100vh;
+  width: 100%;
+}
+
+.body-font {
+  font-family: "MyFont";
+}
+.h1font {
+  /*font-size: 96px;*/
+  font-size: 12vh;
+}
+.absolute {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+}
+
+.App-footer {
+  /*border: 2px solid black;
+  border-radius: 5px;*/
+  background-color: #343434;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.App-footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.App-footer ul li {
+  text-align: left;
+  padding-left: 0px;
+}
+
+.App-footer ul li a {
+  color: white;
+}
+
+.App-footer h6 {
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+.left {
+  text-align: left;
+}
+
+
+
+.Signup {
+  display: flex;
+  display: inline-block;
+}
+
+.Placeholder-image {
+  width: 220px;
+  height: 120px;
+}
+
+.Nav-logo {
+  /* height: 100%;
+  width: auto;
+  padding: 0px;*/
+  height: 150%;
+  vertical-align: middle;
+  max-height: 50px;
+  max-width: 130px;
+}
+
+.navbar-brand {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.navbar-default.navbarColour {
+  background: #343434;
+  border: 0px;
+  padding: 0px;
+}
+
+.navbar-default.navbarColour ul > li > a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-default.navbarColour ul > li > a:visited {
+  color: white;
+}
+
+.navbar-default.navbarColour ul > li > a:hover {
+  color: #a4a4a4;
+}
+
+.navbar-default div.navbar-collapse {
+  border-top: none;
+  box-shadow: none;
+}
+
+.navbar-default.navbarColour ul > li > a {
+}
+
+.Nav-space {
+  height: 10vh;
+}
+
+.header {
+  background: #326273;
+}
+
+.NavItem {
+  padding: 10px;
+}
+
+.Main-Career-Button {
+  background: #e46a0c;
+}
+
+.career-ihired-intro {
+  width: 100%;
+  text-align: center;
+}
+.padding-margin-remove {
+  margin: 0px;
+  padding: 0px;
+}
+.LearnMore {
+  /*For learn more button*/
+  width: 100%;
+  height: 7vh;
+  background: #326273;
+  border: 0;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.img-responsive {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ContactUs-half {
+  /*border: 1px solid black;*/
+
+  background-color: white;
+  padding: 20px;
+}
+
+.button-bg {
+  background-color: #326273;
+}
+
+.career-header-img {
+  width: 100%;
+  height: 50vh;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
