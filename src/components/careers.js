@@ -379,7 +379,7 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
 
@@ -396,7 +396,7 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
         </section>
