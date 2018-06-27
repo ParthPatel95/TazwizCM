@@ -301,30 +301,26 @@ class LandingPage extends Component {
           </Row>
         </section>
 
-        <section className="App-body body-font" >
+        <section className="App-body body-font">
           <Row>
             <h2 className="body-font">Early Sign-up</h2>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image src={thumb}/>
+              <Image src={thumb} />
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-            <Form>
+              <Form>
                 <FormGroup controlId="formInlineName">
-                  
                   <FormControl type="text" placeholder="Name" />
-                </FormGroup>{' '}
+                </FormGroup>{" "}
                 <FormGroup controlId="formInlineEmail">
-                  
                   <FormControl type="email" placeholder="Email" />
-                </FormGroup>{' '}
-
-                <Button bsClass="App-button" type="submit">Sign-up</Button>
-            </Form>
+                </FormGroup>{" "}
+                <Button type="submit">Sign-up</Button>
+              </Form>
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image src={thumb}/>
+              <Image src={thumb} />
             </Col>
-
           </Row>
         </section>
 
