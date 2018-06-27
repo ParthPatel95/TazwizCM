@@ -315,7 +315,7 @@ class LandingPage extends Component {
                 <FormGroup controlId="formInlineEmail">
                   <FormControl type="email" placeholder="Email" />
                 </FormGroup>{" "}
-                <Button type="submit">Sign-up</Button>
+                <Button type="submit" bsClass="App-button">Sign-up</Button>
               </Form>
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
@@ -338,7 +338,7 @@ class LandingPage extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
 
@@ -355,7 +355,7 @@ class LandingPage extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
 
@@ -371,7 +371,7 @@ class LandingPage extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
 
@@ -388,7 +388,7 @@ class LandingPage extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
         </section>
