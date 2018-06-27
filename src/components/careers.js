@@ -219,9 +219,9 @@ class Careers extends Component {
                     <b>Start Date:</b> xx/xx/xxxx
                   </p>
                   <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
-                    <Panel eventKey="1">
+                    <Panel eventKey="1" bsClass="App-button">
                       <Panel.Heading>
-                        <Panel.Title toggle>Learn More...</Panel.Title>
+                        <Panel.Title toggle><div className="text-color">Learn More...</div></Panel.Title>
                       </Panel.Heading>
                       <Panel.Body collapsible>
                         <p>
@@ -247,9 +247,9 @@ class Careers extends Component {
                     <b>Start Date:</b> xx/xx/xxxx
                   </p>
                   <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
-                    <Panel eventKey="1">
+                    <Panel eventKey="1" bsClass="App-button">
                       <Panel.Heading>
-                        <Panel.Title toggle>Learn More...</Panel.Title>
+                        <Panel.Title toggle><div className="text-color">Learn More...</div></Panel.Title>
                       </Panel.Heading>
                       <Panel.Body collapsible>
                         <p>
@@ -326,7 +326,7 @@ class Careers extends Component {
                   </FormControl>
                 </FormGroup>
 
-                <Button type="submit">Sign-up</Button>
+                <Button bsClass="App-button" type="submit">Sign-up</Button>
               </form>
             </Col>
           </Row>
@@ -346,7 +346,7 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
 
@@ -363,7 +363,7 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
 
@@ -384,7 +384,7 @@ class Careers extends Component {
           </Modal>
 
           <Modal show={this.state.show4} onClick={this.handleClose}>
-            <Modal.Header>
+            <Modal.Header className="App-button">
               <Modal.Title>Benefit 4</Modal.Title>
             </Modal.Header>
             <Modal.Body>

@@ -66,7 +66,7 @@ class ContactUs extends Component {
 					      
 					     <FormControl componentClass="textarea" placeholder="Feedback" />
 					    </FormGroup>
-					    <Button type="submit">Submit</Button>
+					    <Button type="submit" bsClass="App-button">Submit</Button>
 					</Form>
 
 		        </Col>

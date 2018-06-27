@@ -318,7 +318,7 @@ class LandingPage extends Component {
                   <FormControl type="email" placeholder="Email" />
                 </FormGroup>{' '}
 
-                <Button type="submit">Sign-up</Button>
+                <Button bsClass="App-button" type="submit">Sign-up</Button>
             </Form>
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
