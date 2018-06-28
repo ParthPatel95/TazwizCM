@@ -302,51 +302,107 @@ class LandingPage extends Component {
             </Row>
           </div>
         </section>
-
-        <section className="App-body body-font">
-          <Row>
-            <h2 className="body-font">Processes</h2>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
-              <h3 className="body-font">Process 1</h3>
-              <p className="body-font">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
-              <h3 className="body-font">Process 2</h3>
-              <p className="body-font">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
-              <h3 className="body-font">Process 3</h3>
-              <p className="body-font">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle />
-              <h3 className="body-font">Process 4</h3>
-              <p className="body-font">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Col>
-          </Row>
+        <section className="App-body" ref={this.aboutRef}>
+          <Grid>
+            <Row className="show-grid">
+              <Col md={6} mdPush={6}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    padding: "5% 0"
+                  }}
+                >
+                  <h1 className="body-font">Why complicate life ... </h1>
+                  <h2>
+                    let{" "}
+                    <span
+                      style={{
+                        color: "#FFD700",
+                        textShadow: "4px 1px #326273"
+                      }}
+                    >
+                      iHired
+                    </span>{" "}
+                    handle your problems!
+                  </h2>
+                </div>
+              </Col>
+              <Col md={6} mdPull={6}>
+                <h4 className="body-font" style={{ textAlign: "right" }}>
+                  With&nbsp;
+                  <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
+                  &nbsp;tap into that goldmine of local individuals and
+                  professionals. So the next time you are faced with a sudden
+                  problem or a daunting task have no fear. You have the support
+                  of your community at your fingertips, one tap away.
+                  <br />
+                  <br />
+                  With&nbsp;
+                  <span style={{ color: "", fontWeight: "bold" }}>
+                    iHired
+                  </span>&nbsp;earn quick money by lending a helping hand within
+                  your community. You have invested long hours to mold your
+                  talents. You have put in ___ efforts to sharpen your skills.
+                  Then why not reward yourself. Earn extra money by doing what
+                  you do best.
+                </h4>
+              </Col>
+            </Row>
+          </Grid>
+        </section>
+        <section className=" body-font">
+          <div
+            style={{
+              background: "#3f88c5",
+              color: "white",
+              paddingLeft: "15px",
+              paddingRight: "15px"
+            }}
+          >
+            <Row>
+              <h2 className="body-font">Processes</h2>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image src={thumb} circle />
+                <h3 className="body-font">Process 1</h3>
+                <p className="body-font">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </Col>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image src={thumb} circle />
+                <h3 className="body-font">Process 2</h3>
+                <p className="body-font">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </Col>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image src={thumb} circle />
+                <h3 className="body-font">Process 3</h3>
+                <p className="body-font">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </Col>
+              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+                <Image src={thumb} circle />
+                <h3 className="body-font">Process 4</h3>
+                <p className="body-font">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </Col>
+            </Row>
+          </div>
         </section>
 
         <section className="App-body body-font">
