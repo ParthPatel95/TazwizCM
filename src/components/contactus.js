@@ -48,6 +48,7 @@ class ContactUs extends Component {
             <Image
               alt="contact-us-img"
               src={contactusimg}
+              style={{ borderRadius: "28px" }}
               className="img-responsive"
             />
           </Col>

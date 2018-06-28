@@ -4,7 +4,6 @@ import { Wave } from "react-animated-text";
 import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 import TextLoop from "react-text-loop";
-import posed from "react-pose";
 import {
   Navbar,
   Nav,
@@ -47,15 +46,9 @@ import crystalclear from "../images/003-computer.png";
 import control from "../images/002-switch.png";
 import connections from "../images/001-network.png";
 import communityPIC from "../images/communityPIC.jpg";
-import Zoom from "react-reveal/Zoom";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
-
-const Square = posed.div({
-  idle: { scale: 1 },
-  hovered: { scale: 1.5 }
-});
 
 class LandingPage extends Component {
   componentDidMount() {
@@ -363,17 +356,7 @@ class LandingPage extends Component {
               <Image src={thumb} />
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Form>
-                <FormGroup controlId="formInlineName">
-                  <FormControl type="text" placeholder="Name" />
-                </FormGroup>{" "}
-                <FormGroup controlId="formInlineEmail">
-                  <FormControl type="email" placeholder="Email" />
-                </FormGroup>{" "}
-                <Button type="submit" bsClass="App-button">
-                  Sign-up
-                </Button>
-              </Form>
+              <Image src={thumb} />
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
               <Image src={thumb} />
