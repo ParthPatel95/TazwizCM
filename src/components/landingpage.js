@@ -4,6 +4,7 @@ import { Wave } from "react-animated-text";
 import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 import TextLoop from "react-text-loop";
+import posed from "react-pose";
 import {
   Navbar,
   Nav,
@@ -23,7 +24,8 @@ import {
   InputGroup,
   Modal,
   OverlayTrigger,
-  Form
+  Form,
+  Glyphicon
 } from "react-bootstrap";
 import {
   Icon,
@@ -40,9 +42,20 @@ import "../App.css";
 import thumb from "../images/test.png";
 import thumblogo from "../images/iHireLogo.png";
 import placeholdermap from "../images/placeholdermap.PNG";
+import convenicnce from "../images/004-checked.png";
+import crystalclear from "../images/003-computer.png";
+import control from "../images/002-switch.png";
+import connections from "../images/001-network.png";
+import communityPIC from "../images/communityPIC.jpg";
+import Zoom from "react-reveal/Zoom";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
+
+const Square = posed.div({
+  idle: { scale: 1 },
+  hovered: { scale: 1.5 }
+});
 
 class LandingPage extends Component {
   componentDidMount() {
@@ -81,29 +94,6 @@ class LandingPage extends Component {
           style={{ textAlign: "right", color: "white" }}
           className="App-headsection"
         >
-          <Row bsClass="timer-style">
-            <Col xs={12} md={3}>
-              <h3>Days</h3>
-
-              <Days deadline="2018-07-25" />
-            </Col>
-            <Col xs={12} md={3}>
-              <h3>Hours</h3>
-
-              <Hours deadline="2018-07-25" />
-            </Col>
-            <Col xs={12} md={3}>
-              <h3>Minutes</h3>
-
-              <Minutes deadline="2018-07-25" />
-            </Col>
-            <Col xs={12} md={3}>
-              <h3>Seconds</h3>
-
-              <Seconds deadline="2018-07-25" />
-            </Col>
-          </Row>
-
           {/* <div className="middle-align" /> */}
           <Row bsClass="absolute">
             <Col xsHidden smHidden md={5}>
@@ -116,12 +106,12 @@ class LandingPage extends Component {
               <h1 className="h1font body-font">
                 Make it&nbsp;
                 <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
-                  <div style={{ color: "#a4a4a4" }}>loud.</div>
-                  <div style={{ color: "#a4a4a4" }}>easy.</div>
-                  <div style={{ color: "#a4a4a4" }}>work.</div>
-                  <div style={{ color: "#a4a4a4" }}>strong.</div>
-                  <div style={{ color: "#a4a4a4" }}>beautiful.</div>
-                  <div style={{ color: "#a4a4a4" }}>connected.</div>
+                  <div style={{ color: "#343434" }}>loud.</div>
+                  <div style={{ color: "#343434" }}>easy.</div>
+                  <div style={{ color: "#343434" }}>work.</div>
+                  <div style={{ color: "#343434" }}>strong.</div>
+                  <div style={{ color: "#343434" }}>beautiful.</div>
+                  <div style={{ color: "#343434" }}>connected.</div>
                 </TextLoop>
               </h1>
             </Col>
@@ -145,38 +135,93 @@ class LandingPage extends Component {
             <Row className="show-grid">
               <h1 className="body-font">
                 We are in the middle of a{" "}
-                <span style={{ color: "#FFDF00" }}>GOLDMINE</span>
+                <span
+                  style={{ color: "#FFD700", textShadow: "6px 2px #343434" }}
+                >
+                  GOLDMINE
+                </span>
               </h1>
               <Col md={6} mdPush={6}>
-                <h4 className="body-font" style={{ textAlign: "left" }}>
-                  As we live thru life we gain and foster vast experiences and
-                  wisdom. We build and establish key networks and connections.
-                  We acquire and develop new skill sets that define who we are.
-                  <br />
-                  <br />
-                  <br />With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>
-                    iHired
-                  </span>&nbsp;earn quick money by lending a helping hand within
-                  your community. You have invested long hours to mold your
-                  talents. You have put in ___ efforts to sharpen your skills.
-                  Then why not reward yourself. Earn extra money by doing what
-                  you do best.
+                <h4 className="body-font" style={{ textAlign: "center" }}>
+                  That goldmine is our Community. Regardless of origin,
+                  background, age or gender one factor that is common amongst
+                  all is the passage of time. As we live thru life we gain and
+                  foster vast experiences and wisdom. Why not use our past to
+                  better our future by helping out our neighbours, earning a
+                  second income.
                 </h4>
               </Col>
               <Col md={6} mdPull={6}>
-                <h4 className="body-font" style={{ textAlign: "right" }}>
-                  That goldmine is our Community. Everyone in it is different
-                  and unique, that's the beauty of life. But regardless of
-                  origin, background, age or gender one factor that is common
-                  amongst all is the passage of time. <br />
-                  <br />With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
-                  &nbsp;tap into that goldmine of local individuals and
-                  professionals. So the next time you are faced with a sudden
-                  problem or a daunting task have no fear. You have the support
-                  of your community at your fingertips, one tap away.
-                </h4>
+                <Row bsClass="timer-style">
+                  <Col xs={12} md={3}>
+                    <h3>Days</h3>
+
+                    <Days deadline="2018-07-25" />
+                  </Col>
+                  <Col xs={12} md={3}>
+                    <h3>Hours</h3>
+
+                    <Hours deadline="2018-07-25" />
+                  </Col>
+                  <Col xs={12} md={3}>
+                    <h3>Minutes</h3>
+
+                    <Minutes deadline="2018-07-25" />
+                  </Col>
+                  <Col xs={12} md={3}>
+                    <h3>Seconds</h3>
+
+                    <Seconds deadline="2018-07-25" />
+                  </Col>
+                </Row>
+              </Col>
+              <Col md={12}>
+                <Row>
+                  {/* <h2 className="body-font">Early Sign-up</h2> */}
+                  {/* <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
+                    <Image src={thumb} />
+                  </Col> */}
+                  <Col xs={12} xsOffset={0} md={6} mdOffset={0}>
+                    <h2 className="body-font">Early Access</h2>
+                    <Form className="form-style">
+                      <FormGroup controlId="formInlineName">
+                        <InputGroup>
+                          <InputGroup.Addon>
+                            <Glyphicon glyph="envelope" />
+                          </InputGroup.Addon>
+                          <FormControl type="text" placeholder="Email" />
+                        </InputGroup>
+                      </FormGroup>{" "}
+                      <FormGroup controlId="formInlineEmail">
+                        <InputGroup>
+                          <InputGroup.Addon>
+                            <Glyphicon glyph="user" />
+                          </InputGroup.Addon>
+                          <FormControl type="text" placeholder="Full Name" />
+                        </InputGroup>
+                      </FormGroup>{" "}
+                      <Button
+                        type="submit"
+                        style={{ width: "35%" }}
+                        bsClass="App-button"
+                      >
+                        Sign-up
+                      </Button>
+                    </Form>
+                  </Col>
+                  <Col xs={12} xsOffset={0} md={6} mdOffset={0}>
+                    <Image
+                      style={{
+                        maxWidth: "100%",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center center",
+                        borderRadius: "28px"
+                      }}
+                      src={communityPIC}
+                    />
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Grid>
@@ -184,17 +229,24 @@ class LandingPage extends Component {
         <section className="" ref={this.aboutRef}>
           <div
             style={{
-              background: "#343434",
+              background: "#3f88c5",
               color: "white",
               paddingTop: "5px"
             }}
           >
             <h2 className="body-font">Benefits</h2>
             <Row>
-              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+              <Col
+                // className="bg-hover"
+                xs={12}
+                xsOffset={0}
+                md={3}
+                mdOffset={0}
+              >
                 <Image
-                  src={thumb}
-                  circle
+                  className="imagehover"
+                  src={convenicnce}
+                  square
                   onClick={() =>
                     this.setState({
                       show1: true,
@@ -208,8 +260,9 @@ class LandingPage extends Component {
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
-                  src={thumb}
-                  circle
+                  className="imagehover"
+                  src={crystalclear}
+                  square
                   onClick={() =>
                     this.setState({
                       show1: false,
@@ -223,8 +276,9 @@ class LandingPage extends Component {
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
-                  src={thumb}
-                  circle
+                  className="imagehover"
+                  src={control}
+                  square
                   onClick={() =>
                     this.setState({
                       show1: false,
@@ -238,8 +292,9 @@ class LandingPage extends Component {
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
-                  src={thumb}
-                  circle
+                  className="imagehover"
+                  src={connections}
+                  square
                   onClick={() =>
                     this.setState({
                       show1: false,
@@ -408,3 +463,47 @@ class LandingPage extends Component {
 }
 
 export default LandingPage;
+
+{
+  /* <section className="App-body" ref={this.aboutRef}>
+<Grid>
+  <Row className="show-grid">
+    <h1 className="body-font">
+      We are in the middle of a{" "}
+      <span style={{ color: "#FFDF00" }}>GOLDMINE</span>
+    </h1>
+    <Col md={6} mdPush={6}>
+      <h4 className="body-font" style={{ textAlign: "left" }}>
+        As we live thru life we gain and foster vast experiences and
+        wisdom. We build and establish key networks and connections.
+        We acquire and develop new skill sets that define who we are.
+        <br />
+        <br />
+        <br />With&nbsp;
+        <span style={{ color: "", fontWeight: "bold" }}>
+          iHired
+        </span>&nbsp;earn quick money by lending a helping hand within
+        your community. You have invested long hours to mold your
+        talents. You have put in ___ efforts to sharpen your skills.
+        Then why not reward yourself. Earn extra money by doing what
+        you do best.
+      </h4>
+    </Col>
+    <Col md={6} mdPull={6}>
+      <h4 className="body-font" style={{ textAlign: "right" }}>
+        That goldmine is our Community. Everyone in it is different
+        and unique, that's the beauty of life. But regardless of
+        origin, background, age or gender one factor that is common
+        amongst all is the passage of time. <br />
+        <br />With&nbsp;
+        <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
+        &nbsp;tap into that goldmine of local individuals and
+        professionals. So the next time you are faced with a sudden
+        problem or a daunting task have no fear. You have the support
+        of your community at your fingertips, one tap away.
+      </h4>
+    </Col>
+  </Row>
+</Grid>
+</section> */
+}

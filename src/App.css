@@ -22,7 +22,7 @@ html {
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(29, 134, 182);
   height: 150px;
   padding: 20px;
   color: white;
@@ -53,7 +53,7 @@ section {
   position: relative;
   width: 75%;
   margin: auto;
-  padding-top: 75px;
+  padding-top: 25px;
   font-family: "MyFont";
   font-size: 96px;
   text-align: center;
@@ -69,11 +69,21 @@ section {
   height: 100vh;
   width: 100%;
 }
-
+.form-style {
+  width: 50%;
+  margin: auto;
+}
 .body-font {
   font-family: "MyFont";
 }
 .h1font {
+  text-align: right;
+  /*font-size: 96px;*/
+  font-size: 12vh;
+}
+.h1font-header {
+  margin-top: 50px;
+  text-align: center;
   /*font-size: 96px;*/
   font-size: 12vh;
 }
@@ -85,9 +95,9 @@ section {
 }
 
 .App-footer {
-  /*border: 2px solid black;
+  /*border: 2px solid black; 1577b8
   border-radius: 5px;*/
-  background-color: #343434;
+  background-color: #3f88c5;
   padding: 20px;
   margin-top: 20px;
   color: white;
@@ -119,20 +129,28 @@ p {
   text-align: left;
 }
 
-.App-button{
+.App-button {
   padding: 10px;
   background: #343434;
   color: white;
-  border:1px solid #343434;
+  border: 1px solid #343434;
   border-radius: 5px;
-
 }
 
-.text-color{
+.App-button-timer {
+  padding: 10px;
+  background: #343434;
+  width: 75%;
+  font-size: 23px;
+  color: white;
+  border: 1px solid #343434;
+  border-radius: 5px;
+}
+.text-color {
   color: white;
 }
 
-.center-element{
+.center-element {
   margin: auto;
   max-width: 100%;
 }
@@ -162,9 +180,9 @@ p {
   margin: 0px;
   border: 0px;
 }
-
+/*3f88c5*/
 .navbar-default.navbarColour {
-  background: #343434;
+  background: #3f88c5;
   border: 0px;
   padding: 0px;
 }
@@ -230,7 +248,8 @@ p {
   max-height: 100%;
   object-fit: contain;
   padding: 0px;
-  margin: 0px;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 .ContactUs-half {
@@ -243,7 +262,14 @@ p {
 .button-bg {
   background-color: #326273;
 }
+.imagehover:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
+.bg-hover:hover {
+  background: cadetblue;
+}
 .career-header-img {
   width: 100%;
   height: 50vh;

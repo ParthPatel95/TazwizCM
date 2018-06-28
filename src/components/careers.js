@@ -74,7 +74,9 @@ class Careers extends Component {
   }
 
   handleChange(e) {
-    {/*this.setState({ value: e.target.value });*/}
+    {
+      /*this.setState({ value: e.target.value });*/
+    }
   }
 
   handleClose() {
@@ -94,63 +96,81 @@ class Careers extends Component {
 
         <Grid>
           <Row>
-            <h2> Why settle for average? Join us! </h2>
-            <Col md={6} mdPush={6}>
+            {/* <h2> Why settle for average? Join us! </h2> */}
+            <Col md={6} mdPush={6} />
+            <Col md={6} mdPull={6}>
               <img
-                style={{ maxWidth: "100%" }}
+                style={{
+                  maxWidth: "100%",
+                  padding: "10px",
+                  borderRadius: "28px"
+                }}
                 alt="headerIMG"
                 src={startculture}
               />
-            </Col>
-            <Col md={6} mdPull={6}>
-              <img alt="headerIMG" src={thumb} />
             </Col>
           </Row>
 
           <Row style={{ width: "100%" }}>
             <h2>Perks of Working at iHired</h2>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle onClick={() =>
-                    this.setState({
-                      show1: true,
-                      show2: false,
-                      show3: false,
-                      show4: false
-                    })
-                  }/>
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: true,
+                    show2: false,
+                    show3: false,
+                    show4: false
+                  })
+                }
+              />
               <h4>Benefit 1</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle onClick={() =>
-                    this.setState({
-                      show1: false,
-                      show2: true,
-                      show3: false,
-                      show4: false
-                    })
-                  }/>
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: true,
+                    show3: false,
+                    show4: false
+                  })
+                }
+              />
               <h4>Benefit 2</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle onClick={() =>
-                    this.setState({
-                      show1: false,
-                      show2: false,
-                      show3: true,
-                      show4: false
-                    })
-                  }/>
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: false,
+                    show3: true,
+                    show4: false
+                  })
+                }
+              />
               <h4>Benefit 3</h4>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image src={thumb} circle onClick={() =>
-                    this.setState({
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: true
-                    })
-                  }/>
+              <Image
+                src={thumb}
+                circle
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: false,
+                    show3: false,
+                    show4: true
+                  })
+                }
+              />
               <h4>Benefit 4</h4>
             </Col>
           </Row>
@@ -203,70 +223,75 @@ class Careers extends Component {
           </Grid>
         </Grid>
 
-          <section>
-
-              <h3>
-                Available positions
-              </h3>
-            <Row className="table-padding">
-                <Col xs={12} md={2} mdPush={2} xsPush={0} >
-                <Image src={thumb} rounded />
-                </Col>
-                <Col xs={12} md={6} mdPush={2} xsPush={0} >
-                  <p>
-                    <b>Role:</b> Role 1  <br/>
-                    <b>Requirements:</b> Requirements  <br/>
-                    <b>Start Date:</b> xx/xx/xxxx
-                  </p>
-                  <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
-                    <Panel eventKey="1" bsClass="App-button">
-                      <Panel.Heading>
-                        <Panel.Title toggle><div className="text-color">Learn More...</div></Panel.Title>
-                      </Panel.Heading>
-                      <Panel.Body collapsible>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                      </Panel.Body>
-                    </Panel>
-                  </PanelGroup>
-                </Col>
-            </Row>
-            <Row className="table-padding">
-
-                <Col xs={12} md={2} mdPush={2} xsPush={0} >
-                <Image src={thumb} rounded />
-                </Col>
-                <Col xs={12} md={6} mdPush={2} xsPush={0} >
-                  <p>
-                    <b>Role:</b> Role 2  <br/>
-                    <b>Requirements:</b> Requirements  <br/>
-                    <b>Start Date:</b> xx/xx/xxxx
-                  </p>
-                  <PanelGroup accordion id="accordion-uncontrolled-example" defaultActiveKey="2">
-                    <Panel eventKey="1" bsClass="App-button">
-                      <Panel.Heading>
-                        <Panel.Title toggle><div className="text-color">Learn More...</div></Panel.Title>
-                      </Panel.Heading>
-                      <Panel.Body collapsible>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                      </Panel.Body>
-                    </Panel>
-                  </PanelGroup>
-                </Col>
-
-
-            </Row>
-          </section>
-
+        <section>
+          <h3>Available positions</h3>
+          <Row className="table-padding">
+            <Col xs={12} md={2} mdPush={2} xsPush={0}>
+              <Image src={thumb} rounded />
+            </Col>
+            <Col xs={12} md={6} mdPush={2} xsPush={0}>
+              <p>
+                <b>Role:</b> Role 1 <br />
+                <b>Requirements:</b> Requirements <br />
+                <b>Start Date:</b> xx/xx/xxxx
+              </p>
+              <PanelGroup
+                accordion
+                id="accordion-uncontrolled-example"
+                defaultActiveKey="2"
+              >
+                <Panel eventKey="1" bsClass="App-button">
+                  <Panel.Heading>
+                    <Panel.Title toggle>
+                      <div className="text-color">Learn More...</div>
+                    </Panel.Title>
+                  </Panel.Heading>
+                  <Panel.Body collapsible>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </Panel.Body>
+                </Panel>
+              </PanelGroup>
+            </Col>
+          </Row>
+          <Row className="table-padding">
+            <Col xs={12} md={2} mdPush={2} xsPush={0}>
+              <Image src={thumb} rounded />
+            </Col>
+            <Col xs={12} md={6} mdPush={2} xsPush={0}>
+              <p>
+                <b>Role:</b> Role 2 <br />
+                <b>Requirements:</b> Requirements <br />
+                <b>Start Date:</b> xx/xx/xxxx
+              </p>
+              <PanelGroup
+                accordion
+                id="accordion-uncontrolled-example"
+                defaultActiveKey="2"
+              >
+                <Panel eventKey="1" bsClass="App-button">
+                  <Panel.Heading>
+                    <Panel.Title toggle>
+                      <div className="text-color">Learn More...</div>
+                    </Panel.Title>
+                  </Panel.Heading>
+                  <Panel.Body collapsible>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </Panel.Body>
+                </Panel>
+              </PanelGroup>
+            </Col>
+          </Row>
+        </section>
 
         <Grid>
           <Row className="career-ihired-intro">
@@ -322,11 +347,15 @@ class Careers extends Component {
                 </FormGroup>
 
                 <FormGroup>
-                  <FormControl componentClass="textarea" placeholder="Tell us about yourself">
-                  </FormControl>
+                  <FormControl
+                    componentClass="textarea"
+                    placeholder="Tell us about yourself"
+                  />
                 </FormGroup>
 
-                <Button bsClass="App-button" type="submit">Sign-up</Button>
+                <Button bsClass="App-button" type="submit">
+                  Sign-up
+                </Button>
               </form>
             </Col>
           </Row>
@@ -346,7 +375,9 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>
+                Close
+              </Button>
             </Modal.Footer>
           </Modal>
 
@@ -363,7 +394,9 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>
+                Close
+              </Button>
             </Modal.Footer>
           </Modal>
 
@@ -379,7 +412,9 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>
+                Close
+              </Button>
             </Modal.Footer>
           </Modal>
 
@@ -396,11 +431,12 @@ class Careers extends Component {
               </h5>
             </Modal.Body>
             <Modal.Footer>
-              <Button bsClass="App-button" onClick={this.handleClose}>Close</Button>
+              <Button bsClass="App-button" onClick={this.handleClose}>
+                Close
+              </Button>
             </Modal.Footer>
           </Modal>
         </section>
-
       </div>
     );
   }
