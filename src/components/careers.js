@@ -113,7 +113,7 @@ class Careers extends Component {
               />
             </Col>
             <Col md={6} xs={12}>
-              <h1> Why settle for average? Join us! </h1>
+              <h1 > Why settle for average? Join us! </h1>
             </Col>
           </Row>
 
@@ -132,7 +132,9 @@ class Careers extends Component {
                   })
                 }
               />
-              <h4>Benefit 1</h4>
+              <h4>Scale your IQ</h4>
+              <p>We don’t look for expert experience, we help build your experience
+</p>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -147,7 +149,8 @@ class Careers extends Component {
                   })
                 }
               />
-              <h4>Benefit 2</h4>
+              <h4>Value</h4>
+              <p>Big or small anything you bring to the table can be a game changer</p>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -162,7 +165,8 @@ class Careers extends Component {
                   })
                 }
               />
-              <h4>Benefit 3</h4>
+              <h4>Knitted</h4>
+              <p>Bringing the community together starts with a strong unified team, come join our iHired family!    </p>
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -177,7 +181,8 @@ class Careers extends Component {
                   })
                 }
               />
-              <h4>Benefit 4</h4>
+              <h4>Accommodation</h4>
+              <p>Give you the perks to fuel your thinking cells. Function the best, be the best. Water, coffee, munchies, and ofcourse ice-cream. All inclusive for iHired Family </p>
             </Col>
           </Row>
           <Grid>

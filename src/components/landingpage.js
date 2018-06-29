@@ -91,13 +91,11 @@ class LandingPage extends Component {
 
             <Col xsHidden smHidden md={7}>
               <h1 className="h1font body-font">
-                Make it&nbsp;
+                Make life&nbsp;
                 <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
-                  <div style={{ color: "#343434" }}>loud.</div>
+                  <div style={{ color: "#343434" }}>rewarding.</div>
                   <div style={{ color: "#343434" }}>easy.</div>
-                  <div style={{ color: "#343434" }}>work.</div>
-                  <div style={{ color: "#343434" }}>strong.</div>
-                  <div style={{ color: "#343434" }}>beautiful.</div>
+                  <div style={{ color: "#343434" }}>simple.</div>
                   <div style={{ color: "#343434" }}>connected.</div>
                 </TextLoop>
               </h1>
@@ -130,33 +128,28 @@ class LandingPage extends Component {
               </h1>
               <Col md={6} mdPush={6}>
                 <h4 className="body-font" style={{ textAlign: "center" }}>
-                  That goldmine is our Community. Regardless of origin,
-                  background, age or gender one factor that is common amongst
-                  all is the passage of time. As we live thru life we gain and
-                  foster vast experiences and wisdom. Why not use our past to
-                  better our future by helping out our neighbours, earning a
-                  second income.
+                That goldmine is our community. Regardless of background age or gender we all have one thing in common: We face problems one after another. But as we overcome these hurdles we gain vast experiences and wisdom. Hense, together, we are a community with endless talents and helpful connections.  
                 </h4>
               </Col>
               <Col md={6} mdPull={6}>
                 <Row bsClass="timer-style">
                   <Col xs={12} md={3}>
-                    <h3>Days</h3>
+                    <h3 className="timer-text-size table-padding">Days</h3>
 
                     <Days deadline="2018-07-25" />
                   </Col>
                   <Col xs={12} md={3}>
-                    <h3>Hours</h3>
+                    <h3 className="timer-text-size table-padding">Hours</h3>
 
                     <Hours deadline="2018-07-25" />
                   </Col>
                   <Col xs={12} md={3}>
-                    <h3>Minutes</h3>
+                    <h3 className="timer-text-size table-padding">Minutes</h3>
 
                     <Minutes deadline="2018-07-25" />
                   </Col>
                   <Col xs={12} md={3}>
-                    <h3>Seconds</h3>
+                    <h3 className="timer-text-size table-padding">Seconds</h3>
 
                     <Seconds deadline="2018-07-25" />
                   </Col>
@@ -299,7 +292,7 @@ class LandingPage extends Component {
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
             <Row className="show-grid">
-              <Col md={6} mdPush={6}>
+              <Col md={6} xs={12}>
                 <Image
                   style={{
                     maxWidth: "100%",
@@ -312,13 +305,9 @@ class LandingPage extends Component {
                   src={localINV}
                 />
               </Col>
-              <Col md={6} mdPull={6}>
+              <Col md={6} xs={12}>
                 <div
-                  style={{
-                    height: "100%",
-                    position: "absolute",
-                    marginTop: "8%"
-                  }}
+
                 >
                   <h4 className="body-font" style={{ textAlign: "center" }}>
                     With&nbsp;
@@ -334,27 +323,20 @@ class LandingPage extends Component {
               </Col>
             </Row>
             <Row className="show-grid">
-              <Col md={6} mdPush={6}>
+              <Col md={6} xs={12}>
                 <div
-                  style={{
-                    height: "100%",
-                    position: "absolute",
-                    marginTop: "8%"
-                  }}
+                  
                 >
                   <h4 className="body-font" style={{ textAlign: "center" }}>
                     With&nbsp;
                     <span style={{ color: "", fontWeight: "bold" }}>
                       iHired
-                    </span>&nbsp;earn quick money by lending a helping hand
-                    within your community. You have invested long hours to mold
-                    your talents. You have put in ___ efforts to sharpen your
-                    skills. Then why not reward yourself. Earn extra money by
-                    doing what you do best.
+                    </span>&nbsp;earn quick money by lending a helping hand within your community.  You have invested long hours to mold your talents and sharpen your skills. Then why not reward yourself. Earn extra money by doing what you do best. 
+
                   </h4>
                 </div>
               </Col>
-              <Col md={6} mdPull={6}>
+              <Col md={6} xs={12}>
                 <Image
                   style={{
                     maxWidth: "100%",
@@ -379,45 +361,37 @@ class LandingPage extends Component {
             }}
           >
             <Row>
-              <h2 className="body-font">Processes</h2>
+              <h2 className="body-font"> Solving Problems made EASY…..How easy?? :</h2>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
-                <h3 className="body-font">Process 1</h3>
+                <h3 className="body-font">Capture </h3>
                 <p className="body-font">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Need something fixed? Take a Photo or video.
+
                 </p>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
-                <h3 className="body-font">Process 2</h3>
+                <h3 className="body-font">Tag</h3>
                 <p className="body-font">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Set your requirements, budget and tag your tasks.
+
                 </p>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
-                <h3 className="body-font">Process 3</h3>
+                <h3 className="body-font">Post</h3>
                 <p className="body-font">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Post it onto iHired ecosystem.
+
                 </p>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
-                <h3 className="body-font">Process 4</h3>
+                <h3 className="body-font">Connect</h3>
                 <p className="body-font">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Your iHired community at your fingertips. 
+
                 </p>
               </Col>
             </Row>

@@ -205,6 +205,10 @@ p {
   box-shadow: none;
 }
 
+.timer-text-size{
+  font-size: 5vh;
+}
+
 /*.navbar-default.navbarColour ul > li > a {
 }*/
 
