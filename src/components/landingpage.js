@@ -4,6 +4,7 @@ import { Wave } from "react-animated-text";
 import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 import TextLoop from "react-text-loop";
+import ReactDOM from "react-dom";
 import {
   Navbar,
   Nav,
@@ -46,20 +47,18 @@ import crystalclear from "../images/003-computer.png";
 import control from "../images/002-switch.png";
 import connections from "../images/001-network.png";
 import communityPIC from "../images/communityPIC.jpg";
+import localINV from "../images/local_individual.jpeg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 
 class LandingPage extends Component {
   componentDidMount() {
-    scrollToComponent(this.Blue, {
-      offset: 0,
-      align: "middle",
-      duration: 500,
-      ease: "inCirc"
-    });
+    window.scrollTo(0, 0);
   }
-
+  componentDidUpdate() {
+    ReactDOM.findDOMNode(this).scrollTop = 0;
+  }
   constructor(props) {
     super(props);
 
@@ -304,48 +303,73 @@ class LandingPage extends Component {
         </section>
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
+            <Row style={{ width: "100%" }} className="show-grid">
+              <Col md={6} mdPush={6}>
+                <Image
+                  style={{
+                    maxWidth: "100%",
+
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center center",
+                    borderRadius: "28px"
+                  }}
+                  src={localINV}
+                />
+              </Col>
+              <Col md={6} mdPull={6}>
+                <div
+                  style={{
+                    height: "100%",
+                    position: "absolute",
+                    marginTop: "8%"
+                  }}
+                >
+                  <h4 className="body-font" style={{ textAlign: "center" }}>
+                    With&nbsp;
+                    <span style={{ color: "", fontWeight: "bold" }}>
+                      iHired
+                    </span>
+                    &nbsp;tap into that goldmine of local individuals and
+                    professionals. So the next time you are faced with a sudden
+                    problem or a daunting task have no fear. You have the
+                    support of your community at your fingertips, one tap away.
+                  </h4>
+                </div>
+              </Col>
+            </Row>
             <Row className="show-grid">
               <Col md={6} mdPush={6}>
                 <div
                   style={{
-                    textAlign: "center",
-                    padding: "5% 0"
+                    height: "100%",
+                    position: "absolute",
+                    marginTop: "8%"
                   }}
                 >
-                  <h1 className="body-font">Why complicate life ... </h1>
-                  <h2>
-                    let{" "}
-                    <span
-                      style={{
-                        color: "#FFD700",
-                        textShadow: "4px 1px #326273"
-                      }}
-                    >
+                  <h4 className="body-font" style={{ textAlign: "center" }}>
+                    With&nbsp;
+                    <span style={{ color: "", fontWeight: "bold" }}>
                       iHired
-                    </span>{" "}
-                    handle your problems!
-                  </h2>
+                    </span>&nbsp;earn quick money by lending a helping hand
+                    within your community. You have invested long hours to mold
+                    your talents. You have put in ___ efforts to sharpen your
+                    skills. Then why not reward yourself. Earn extra money by
+                    doing what you do best.
+                  </h4>
                 </div>
               </Col>
               <Col md={6} mdPull={6}>
-                <h4 className="body-font" style={{ textAlign: "right" }}>
-                  With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
-                  &nbsp;tap into that goldmine of local individuals and
-                  professionals. So the next time you are faced with a sudden
-                  problem or a daunting task have no fear. You have the support
-                  of your community at your fingertips, one tap away.
-                  <br />
-                  <br />
-                  With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>
-                    iHired
-                  </span>&nbsp;earn quick money by lending a helping hand within
-                  your community. You have invested long hours to mold your
-                  talents. You have put in ___ efforts to sharpen your skills.
-                  Then why not reward yourself. Earn extra money by doing what
-                  you do best.
-                </h4>
+                <Image
+                  style={{
+                    maxWidth: "100%",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center center",
+                    borderRadius: "28px"
+                  }}
+                  src={communityPIC}
+                />
               </Col>
             </Row>
           </Grid>
@@ -407,15 +431,29 @@ class LandingPage extends Component {
 
         <section className="App-body body-font">
           <Row>
-            <h2 className="body-font">Early Sign-up</h2>
+            <h2 className="body-font">Decomplicate life with iHired!</h2>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image src={thumb} />
+              <a href="#">
+                <Image
+                  className="imagehover"
+                  style={{ width: "100%" }}
+                  src={communityPIC}
+                />
+              </a>
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image src={thumb} />
+              <Image
+                className="imagehover"
+                style={{ width: "100%" }}
+                src={communityPIC}
+              />
             </Col>
             <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image src={thumb} />
+              <Image
+                className="imagehover"
+                style={{ width: "100%" }}
+                src={communityPIC}
+              />
             </Col>
           </Row>
         </section>
