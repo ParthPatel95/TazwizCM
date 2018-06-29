@@ -3,8 +3,8 @@
   src: local("MyFont"), url(./fonts/Kollektif.woff) format("woff");
 }
 
-html {
-}
+/*html {
+}*/
 .bg-img {
   height: 100vh;
   width: 100vw;
@@ -205,8 +205,8 @@ p {
   box-shadow: none;
 }
 
-.navbar-default.navbarColour ul > li > a {
-}
+/*.navbar-default.navbarColour ul > li > a {
+}*/
 
 .Nav-space {
   height: 10vh;

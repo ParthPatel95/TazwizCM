@@ -17,6 +17,7 @@ import {
   InputGroup,
   Button
 } from "react-bootstrap";
+import { ScrollTo } from "react-scroll-to";
 import "./App.css";
 import "./scroll";
 import { Icon, Layout, Header, Navigation, Drawer, Content } from "react-mdl";
@@ -35,10 +36,16 @@ import "bootstrap/dist/css/bootstrap-theme.css";
 class App extends Component {
   constructor(props) {
     super(props);
-
+    this.scrollUp = this.scrollUp.bind(this);
     this.state = {
       email: ""
     };
+  }
+
+  
+
+  scrollUp(){
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -65,29 +72,32 @@ class App extends Component {
                 <Navbar.Collapse>
                   <Nav pullRight>
                     <NavItem
-                      eventKey={1}
+
                       componentClass={Link}
                       href="/"
                       to="/"
                       className="NavItem"
+                      onClick={this.scrollUp}
                     >
                       Home
                     </NavItem>
                     <NavItem
-                      eventKey={2}
+
                       componentClass={Link}
                       href="/careers"
                       to="/careers"
                       className="NavItem"
+                      onClick={this.scrollUp}
                     >
                       Careers
                     </NavItem>
                     <NavItem
-                      eventKey={3}
+
                       componentClass={Link}
                       href="/contactus"
                       to="/contactus"
                       className="NavItem"
+                      onClick={this.scrollUp}
                     >
                       Contact Us
                     </NavItem>
@@ -116,23 +126,34 @@ class App extends Component {
                     <h6>Company</h6>
                     <ul>
                       <li>
-                        <a componentClass={Link} href="/" to="/">
+                        <Link 
+                          componentClass={Link} 
+                          eventKey={4} 
+                          href="/" 
+                          to="/"
+                        >
                           Home
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a componentClass={Link} href="/careers" to="/careers">
+                        <Link 
+                          componentClass={Link} 
+                          eventKey={5} 
+                          href="/careers" 
+                          to="/careers"
+                        >
                           Careers
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           componentClass={Link}
+                          eventKey={6}
                           href="/contactus"
                           to="/contactus"
                         >
                           Contact
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </Col>

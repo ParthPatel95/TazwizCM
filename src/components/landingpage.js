@@ -53,12 +53,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 
 class LandingPage extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-  componentDidUpdate() {
-    ReactDOM.findDOMNode(this).scrollTop = 0;
-  }
+
   constructor(props) {
     super(props);
 
@@ -303,7 +298,7 @@ class LandingPage extends Component {
         </section>
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
-            <Row style={{ width: "100%" }} className="show-grid">
+            <Row className="show-grid">
               <Col md={6} mdPush={6}>
                 <Image
                   style={{

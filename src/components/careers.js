@@ -49,6 +49,8 @@ import startculture from "../images/career-startup-culture.jpg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
+
+
 class Careers extends Component {
   constructor(props, context) {
     super(props, context);
@@ -64,6 +66,7 @@ class Careers extends Component {
       show4: false
     };
   }
+  
 
   getValidationState() {
     const length = this.state.value.length;
@@ -96,9 +99,9 @@ class Careers extends Component {
 
         <Grid>
           <Row>
-            {/* <h2> Why settle for average? Join us! </h2> */}
-            <Col md={6} mdPush={6} />
-            <Col md={6} mdPull={6}>
+            {/*  */}
+
+            <Col md={6} xs={12}>
               <img
                 style={{
                   maxWidth: "100%",
@@ -108,6 +111,9 @@ class Careers extends Component {
                 alt="headerIMG"
                 src={startculture}
               />
+            </Col>
+            <Col md={6} xs={12}>
+              <h1> Why settle for average? Join us! </h1>
             </Col>
           </Row>
 
