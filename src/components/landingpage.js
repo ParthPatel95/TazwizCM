@@ -303,12 +303,11 @@ class LandingPage extends Component {
         </section>
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
-            <Row style={{ width: "100%" }} className="show-grid">
+            <Row style={{}} className="show-grid">
               <Col md={6} mdPush={6}>
                 <Image
                   style={{
                     maxWidth: "100%",
-
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center center",

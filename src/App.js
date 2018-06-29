@@ -116,23 +116,13 @@ class App extends Component {
                     <h6>Company</h6>
                     <ul>
                       <li>
-                        <a componentClass={Link} href="/" to="/">
-                          Home
-                        </a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a componentClass={Link} href="/careers" to="/careers">
-                          Careers
-                        </a>
+                        <Link to="/careers">Careers</Link>
                       </li>
                       <li>
-                        <a
-                          componentClass={Link}
-                          href="/contactus"
-                          to="/contactus"
-                        >
-                          Contact
-                        </a>
+                        <Link to="/contactus">Contact</Link>
                       </li>
                     </ul>
                   </Col>
