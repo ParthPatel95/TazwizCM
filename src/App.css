@@ -69,6 +69,19 @@ section {
   height: 100vh;
   width: 100%;
 }
+
+.App-headsection2 {
+  background: #343434;
+  background-image: url("images/bg1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* padding: 75px; */
+  /* Full height */
+  height: 75vh;
+  width: 100%;
+}
+
 .form-style {
   width: 50%;
   margin: auto;
@@ -121,9 +134,7 @@ section {
   text-align: left;
 }
 
-p {
-  text-align: left;
-}
+
 
 .left {
   text-align: left;
@@ -208,6 +219,11 @@ p {
 .timer-text-size{
   font-size: 5vh;
 }
+
+.timer-count-size{
+  font-size: 7vh;
+}
+
 
 /*.navbar-default.navbarColour ul > li > a {
 }*/
