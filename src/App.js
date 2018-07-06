@@ -154,13 +154,13 @@ class App extends Component {
                   </Col>
                   <Col md={2}>
                     <h6 style={{}}>Contact Us</h6>
-                    <p style={{}}>
+                    <p className="left">
                       info@iHired.ca<br />+1 (647) 393-7584
                     </p>
                   </Col>
                   <Col md={3}>
                     <h6>Our Address</h6>
-                    <p>
+                    <p className="left">
                       Helix, Building D<br />1750 Finch Ave E<br />North York,
                       ON M2J 2X5
                     </p>

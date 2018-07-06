@@ -44,7 +44,8 @@ import thumb from "../images/test.png";
 import thumb_label from "../images/thumbnail_label.png";
 import thumblogo from "../images/iHireLogo.png";
 import placeholdermap from "../images/cbanner.jpg";
-import contactusimg from "../images/lead_original.jpg";
+
+import contactusimg from "../images/contactus.jpg";
 import startculture from "../images/career-startup-culture.jpg";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -89,22 +90,30 @@ class Careers extends Component {
   render() {
     return (
       <div>
-        <div>
-          <img
+        <div className="App-headsection2">
+        <Row>
+        <Col md={12}>
+          <h1 className="h1font-header h1font body-font text-color">placeholder</h1>
+        </Col>
+        </Row>
+          {/*<img
             className="career-header-img"
             alt="headerIMG"
             src={placeholdermap}
-          />
+          />*/}
         </div>
 
-        <Grid>
-          <Row>
-            {/*  */}
 
-            <Col md={6} xs={12}>
+           {/*
+          <Row>
+             
+            <Col xs={12}>
+              <h1 >Join iHired and tap into your potential</h1>
+            </Col>
+            <Col xs={12}>
               <img
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "50%",
                   padding: "10px",
                   borderRadius: "28px"
                 }}
@@ -112,13 +121,13 @@ class Careers extends Component {
                 src={startculture}
               />
             </Col>
-            <Col md={6} xs={12}>
-              <h1 > Why settle for average? Join us! </h1>
-            </Col>
-          </Row>
 
-          <Row style={{ width: "100%" }}>
-            <h2>Perks of Working at iHired</h2>
+          </Row>
+*/}
+
+          <Row>
+            <h1 >Join iHired and tap into your potential</h1>
+            
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
                 src={thumb}
@@ -133,8 +142,7 @@ class Careers extends Component {
                 }
               />
               <h4>Scale your IQ</h4>
-              <p>We don’t look for expert experience, we help build your experience
-</p>
+              
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -150,7 +158,7 @@ class Careers extends Component {
                 }
               />
               <h4>Value</h4>
-              <p>Big or small anything you bring to the table can be a game changer</p>
+              
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -166,7 +174,7 @@ class Careers extends Component {
                 }
               />
               <h4>Knitted</h4>
-              <p>Bringing the community together starts with a strong unified team, come join our iHired family!    </p>
+              
             </Col>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <Image
@@ -182,10 +190,10 @@ class Careers extends Component {
                 }
               />
               <h4>Accommodation</h4>
-              <p>Give you the perks to fuel your thinking cells. Function the best, be the best. Water, coffee, munchies, and ofcourse ice-cream. All inclusive for iHired Family </p>
+              
             </Col>
           </Row>
-          <Grid>
+          
             <Row>
               <h2 className="body-font">
                 The people that make iHired ... iHIRED!
@@ -193,46 +201,41 @@ class Careers extends Component {
               <Col xs={12} sm={6} md={3}>
                 <Thumbnail src={thumb_label} alt="242x200">
                   <h3>Thumbnail label</h3>
-                  <p>Description</p>
+                  <p>Role: Lorem</p>
                   <p>
-                    <Button bsStyle="primary">Button</Button>&nbsp;
-                    <Button bsStyle="default">Button</Button>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
+                  </p>
+                </Thumbnail>
+              </Col>
+              <Col xs={12} sm={6} md={3}>
+                <Thumbnail src={thumb_label} alt="242x200">
+                <h3>Thumbnail label</h3>
+                  <p>Role: Lorem</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
+                  </p>
+                </Thumbnail>
+              </Col>
+              <Col xs={12} sm={6} md={3}>
+                <Thumbnail src={thumb_label} alt="242x200">
+                <h3>Thumbnail label</h3>
+                  <p>Role: Lorem</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
                   </p>
                 </Thumbnail>
               </Col>
               <Col xs={12} sm={6} md={3}>
                 <Thumbnail src={thumb_label} alt="242x200">
                   <h3>Thumbnail label</h3>
-                  <p>Description</p>
+                  <p>Role: Lorem</p>
                   <p>
-                    <Button bsStyle="primary">Button</Button>&nbsp;
-                    <Button bsStyle="default">Button</Button>
-                  </p>
-                </Thumbnail>
-              </Col>
-              <Col xs={12} sm={6} md={3}>
-                <Thumbnail src={thumb_label} alt="242x200">
-                  <h3>Thumbnail label</h3>
-                  <p>Description</p>
-                  <p>
-                    <Button bsStyle="primary">Button</Button>&nbsp;
-                    <Button bsStyle="default">Button</Button>
-                  </p>
-                </Thumbnail>
-              </Col>
-              <Col xs={12} sm={6} md={3}>
-                <Thumbnail src={thumb_label} alt="242x200">
-                  <h3>Thumbnail label</h3>
-                  <p>Description</p>
-                  <p>
-                    <Button bsStyle="primary">Button</Button>&nbsp;
-                    <Button bsStyle="default">Button</Button>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
                   </p>
                 </Thumbnail>
               </Col>
             </Row>
-          </Grid>
-        </Grid>
+
 
         <section>
           <h3>Available positions</h3>
@@ -376,13 +379,11 @@ class Careers extends Component {
         <section className=" body-font">
           <Modal show={this.state.show1} onClick={this.handleClose}>
             <Modal.Header>
-              <Modal.Title>Benefit 1</Modal.Title>
+              <Modal.Title>Scale your IQ</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h5>
-                Life itself is complex, but solving the problems that come with
-                it shouldn’t be. iHired is a one stop platform to get help with
-                your day-to-day tasks.{" "}
+              We don’t look for expert experience, we help build your experience
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -394,14 +395,11 @@ class Careers extends Component {
 
           <Modal show={this.state.show2} onClick={this.handleClose}>
             <Modal.Header>
-              <Modal.Title>Benefit 2</Modal.Title>
+              <Modal.Title>Value</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h5>
-                We’ve built a communication system that’s never been used
-                before. Built solely with the purpose to bring clearity between
-                you and the other party. Goodbye confusions, goodbye buried
-                text. It's simple, cut and straight to the point.
+              Big or small anything you bring to the table can be a game changer
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -413,13 +411,11 @@ class Careers extends Component {
 
           <Modal show={this.state.show3} onClick={this.handleClose}>
             <Modal.Header>
-              <Modal.Title>Benefit 3</Modal.Title>
+              <Modal.Title>Knitted</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h5>
-                With an all new integrated betting system You are in Control. We
-                give you the power to choose who you hire. Set your own price
-                point with the new betting system and edge out your competition.
+              Bringing the community together starts with a strong unified team, come join our iHired family!
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -430,15 +426,12 @@ class Careers extends Component {
           </Modal>
 
           <Modal show={this.state.show4} onClick={this.handleClose}>
-            <Modal.Header className="App-button">
-              <Modal.Title>Benefit 4</Modal.Title>
+            <Modal.Header>
+              <Modal.Title>Accommodation</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h5>
-                The greatest side benefit of using iHired is the connections you
-                will create with people right in your community. This perk is
-                priceless, the rewards you gain are boundless. Enrich your life
-                with iHired.
+              Give you the perks to fuel your thinking cells. Function the best, be the best. Water, coffee, munchies, and ofcourse ice-cream. All inclusive for iHired Family 
               </h5>
             </Modal.Body>
             <Modal.Footer>

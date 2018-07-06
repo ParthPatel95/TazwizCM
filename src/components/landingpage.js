@@ -136,25 +136,31 @@ class LandingPage extends Component {
               </Col>
               <Col md={6} mdPull={6}>
                 <Row bsClass="timer-style">
-                  <Col xs={12} md={3}>
+                  <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Days</h3>
 
-                    <Days deadline="2018-07-25" />
+                    <Days deadline="2018-07-25" className="timer-count-size" />
                   </Col>
-                  <Col xs={12} md={3}>
+                  <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Hours</h3>
 
-                    <Hours deadline="2018-07-25" />
+                    <Hours deadline="2018-07-25" className="timer-count-size" />
                   </Col>
-                  <Col xs={12} md={3}>
+                  <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Minutes</h3>
 
-                    <Minutes deadline="2018-07-25" />
+                    <Minutes
+                      deadline="2018-07-25"
+                      className="timer-count-size"
+                    />
                   </Col>
-                  <Col xs={12} md={3}>
+                  <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Seconds</h3>
 
-                    <Seconds deadline="2018-07-25" />
+                    <Seconds
+                      deadline="2018-07-25"
+                      className="timer-count-size"
+                    />
                   </Col>
                 </Row>
               </Col>
@@ -361,35 +367,32 @@ class LandingPage extends Component {
             }}
           >
             <Row>
-              <h2 className="body-font">
-                {" "}
-                Solving Problems made EASY…..How easy?? :
-              </h2>
+              <h2 className="body-font"> Solving Problems made easy.</h2>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
                 <h3 className="body-font">Capture </h3>
-                <p className="body-font">
+                <h5 className="body-font">
                   Need something fixed? Take a Photo or video.
-                </p>
+                </h5>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
                 <h3 className="body-font">Tag</h3>
-                <p className="body-font">
+                <h5 className="body-font">
                   Set your requirements, budget and tag your tasks.
-                </p>
+                </h5>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
                 <h3 className="body-font">Post</h3>
-                <p className="body-font">Post it onto iHired ecosystem.</p>
+                <h5 className="body-font">Post it onto iHired ecosystem.</h5>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image src={thumb} circle />
                 <h3 className="body-font">Connect</h3>
-                <p className="body-font">
+                <h5 className="body-font">
                   Your iHired community at your fingertips.
-                </p>
+                </h5>
               </Col>
             </Row>
           </div>

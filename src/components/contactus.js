@@ -29,7 +29,8 @@ import {
   Cell
 } from "react-mdl";
 import "../App.css";
-import contactusimg from "../images/contactus.jpg";
+
+import contactusimg from "../images/lead_original.jpg";
 import placeholdermap from "../images/cbanner.jpg";
 
 class ContactUs extends Component {
@@ -38,13 +39,8 @@ class ContactUs extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <img
-            className="career-header-img"
-            alt="headerIMG"
-            src={placeholdermap}
-          />
-        </div>
+
+
         <Row>
           <Col md={6} className="ContactUs-half">
             <Image
@@ -77,23 +73,30 @@ class ContactUs extends Component {
               </Form>
             </Col>
 
-            <Col md={12}>
+
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={6} md={2} mdPush={6}>
               <h6 className="left">
                 <b>Connect with us:</b>
               </h6>
-              <p>
+              <p className="left">
                 For any support, please Email us at{" "}
                 <a href="#">info@iHired.ca</a>.
               </p>
+
+          </Col>
+          <Col xs={6} md={2}>
               <h6 className="left">
                 <b>Visit us at:</b>
               </h6>
-              <p>
+              <p className="left">
                 Building D<br />1750 Finch Ave E<br />North York, ON M2J 2X5
               </p>
-            </Col>
           </Col>
         </Row>
+
       </div>
     );
   }
