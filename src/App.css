@@ -3,8 +3,8 @@
   src: local("MyFont"), url(./fonts/Kollektif.woff) format("woff");
 }
 
-html {
-}
+/*html {
+}*/
 .bg-img {
   height: 100vh;
   width: 100vw;
@@ -182,7 +182,7 @@ p {
 }
 /*3f88c5*/
 .navbar-default.navbarColour {
-  background: #3f88c5;
+  background: #343434;
   border: 0px;
   padding: 0px;
 }
@@ -205,8 +205,12 @@ p {
   box-shadow: none;
 }
 
-.navbar-default.navbarColour ul > li > a {
+.timer-text-size {
+  font-size: 5vh;
 }
+
+/*.navbar-default.navbarColour ul > li > a {
+}*/
 
 .Nav-space {
   height: 10vh;
