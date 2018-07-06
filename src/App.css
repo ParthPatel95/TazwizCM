@@ -134,8 +134,6 @@ section {
   text-align: left;
 }
 
-
-
 .left {
   text-align: left;
 }
@@ -193,7 +191,7 @@ section {
 }
 /*3f88c5*/
 .navbar-default.navbarColour {
-  background: #343434;
+  background: #3f88c5;
   border: 0px;
   padding: 0px;
 }
@@ -220,10 +218,9 @@ section {
   font-size: 5vh;
 }
 
-.timer-count-size{
+.timer-count-size {
   font-size: 7vh;
 }
-
 
 /*.navbar-default.navbarColour ul > li > a {
 }*/

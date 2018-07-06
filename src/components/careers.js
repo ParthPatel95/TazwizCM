@@ -44,13 +44,13 @@ import thumb from "../images/test.png";
 import thumb_label from "../images/thumbnail_label.png";
 import thumblogo from "../images/iHireLogo.png";
 import placeholdermap from "../images/cbanner.jpg";
+import communityPIC from "../images/communityPIC.jpg";
 
 import contactusimg from "../images/contactus.jpg";
 import startculture from "../images/career-startup-culture.jpg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
-
 
 class Careers extends Component {
   constructor(props, context) {
@@ -67,7 +67,6 @@ class Careers extends Component {
       show4: false
     };
   }
-  
 
   getValidationState() {
     const length = this.state.value.length;
@@ -90,21 +89,64 @@ class Careers extends Component {
   render() {
     return (
       <div>
-        <div className="App-headsection2">
         <Row>
-        <Col md={12}>
-          <h1 className="h1font-header h1font body-font text-color">placeholder</h1>
-        </Col>
+          <section className="App-body body-font">
+            <Row>
+              <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
+                <Carousel>
+                  <Carousel.Item>
+                    <img
+                      style={{ maxWidth: "100%" }}
+                      alt="900x500"
+                      src={communityPIC}
+                    />
+                    <Carousel.Caption>
+                      <h3>First slide label</h3>
+                      <p>
+                        Nulla vitae elit libero, a pharetra augue mollis
+                        interdum.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ maxWidth: "100%" }}
+                      alt="900x500"
+                      src={communityPIC}
+                    />
+                    <Carousel.Caption>
+                      <h3>Second slide label</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      style={{ maxWidth: "100%" }}
+                      alt="900x500"
+                      src={communityPIC}
+                    />
+                    <Carousel.Caption>
+                      <h3>Third slide label</h3>
+                      <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur.
+                      </p>
+                    </Carousel.Caption>
+                  </Carousel.Item>
+                </Carousel>
+              </Col>
+            </Row>
+          </section>
         </Row>
-          {/*<img
+        {/*<img
             className="career-header-img"
             alt="headerIMG"
             src={placeholdermap}
           />*/}
-        </div>
 
-
-           {/*
+        {/*
           <Row>
              
             <Col xs={12}>
@@ -125,117 +167,122 @@ class Careers extends Component {
           </Row>
 */}
 
-          <Row>
-            <h1 >Join iHired and tap into your potential</h1>
-            
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: true,
-                    show2: false,
-                    show3: false,
-                    show4: false
-                  })
-                }
-              />
-              <h4>Scale your IQ</h4>
-              
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: true,
-                    show3: false,
-                    show4: false
-                  })
-                }
-              />
-              <h4>Value</h4>
-              
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: false,
-                    show3: true,
-                    show4: false
-                  })
-                }
-              />
-              <h4>Knitted</h4>
-              
-            </Col>
-            <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-              <Image
-                src={thumb}
-                circle
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: false,
-                    show3: false,
-                    show4: true
-                  })
-                }
-              />
-              <h4>Accommodation</h4>
-              
-            </Col>
-          </Row>
-          
-            <Row>
-              <h2 className="body-font">
-                The people that make iHired ... iHIRED!
-              </h2>
-              <Col xs={12} sm={6} md={3}>
-                <Thumbnail src={thumb_label} alt="242x200">
-                  <h3>Thumbnail label</h3>
-                  <p>Role: Lorem</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
-                  </p>
-                </Thumbnail>
-              </Col>
-              <Col xs={12} sm={6} md={3}>
-                <Thumbnail src={thumb_label} alt="242x200">
-                <h3>Thumbnail label</h3>
-                  <p>Role: Lorem</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
-                  </p>
-                </Thumbnail>
-              </Col>
-              <Col xs={12} sm={6} md={3}>
-                <Thumbnail src={thumb_label} alt="242x200">
-                <h3>Thumbnail label</h3>
-                  <p>Role: Lorem</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
-                  </p>
-                </Thumbnail>
-              </Col>
-              <Col xs={12} sm={6} md={3}>
-                <Thumbnail src={thumb_label} alt="242x200">
-                  <h3>Thumbnail label</h3>
-                  <p>Role: Lorem</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate illo quidem voluptate est praesentium et ut, reprehenderit reiciendis ea harum veritatis ipsa quod, esse quaerat labore hic sit eius.
-                  </p>
-                </Thumbnail>
-              </Col>
-            </Row>
+        <Row>
+          <h1>Join iHired and tap into your potential</h1>
 
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image
+              src={thumb}
+              circle
+              onClick={() =>
+                this.setState({
+                  show1: true,
+                  show2: false,
+                  show3: false,
+                  show4: false
+                })
+              }
+            />
+            <h4>Scale your IQ</h4>
+          </Col>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image
+              src={thumb}
+              circle
+              onClick={() =>
+                this.setState({
+                  show1: false,
+                  show2: true,
+                  show3: false,
+                  show4: false
+                })
+              }
+            />
+            <h4>Value</h4>
+          </Col>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image
+              src={thumb}
+              circle
+              onClick={() =>
+                this.setState({
+                  show1: false,
+                  show2: false,
+                  show3: true,
+                  show4: false
+                })
+              }
+            />
+            <h4>Knitted</h4>
+          </Col>
+          <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+            <Image
+              src={thumb}
+              circle
+              onClick={() =>
+                this.setState({
+                  show1: false,
+                  show2: false,
+                  show3: false,
+                  show4: true
+                })
+              }
+            />
+            <h4>Accommodation</h4>
+          </Col>
+        </Row>
+
+        <Row>
+          <h2 className="body-font">The people that make iHired ... iHIRED!</h2>
+          <Col xs={12} sm={6} md={3}>
+            <Thumbnail src={thumb_label} alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Role: Lorem</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                cupiditate illo quidem voluptate est praesentium et ut,
+                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
+                quaerat labore hic sit eius.
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Thumbnail src={thumb_label} alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Role: Lorem</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                cupiditate illo quidem voluptate est praesentium et ut,
+                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
+                quaerat labore hic sit eius.
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Thumbnail src={thumb_label} alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Role: Lorem</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                cupiditate illo quidem voluptate est praesentium et ut,
+                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
+                quaerat labore hic sit eius.
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={12} sm={6} md={3}>
+            <Thumbnail src={thumb_label} alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Role: Lorem</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                cupiditate illo quidem voluptate est praesentium et ut,
+                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
+                quaerat labore hic sit eius.
+              </p>
+            </Thumbnail>
+          </Col>
+        </Row>
 
         <section>
           <h3>Available positions</h3>
@@ -308,7 +355,10 @@ class Careers extends Component {
         </section>
 
         <Grid>
-          <Row className="career-ihired-intro">
+          <Row
+            style={{ display: "flex", alignItems: "center" }}
+            className="career-ihired-intro"
+          >
             <Col md={6}>
               <img
                 style={{ maxWidth: "100%" }}
@@ -383,7 +433,8 @@ class Careers extends Component {
             </Modal.Header>
             <Modal.Body>
               <h5>
-              We don’t look for expert experience, we help build your experience
+                We don’t look for expert experience, we help build your
+                experience
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -399,7 +450,8 @@ class Careers extends Component {
             </Modal.Header>
             <Modal.Body>
               <h5>
-              Big or small anything you bring to the table can be a game changer
+                Big or small anything you bring to the table can be a game
+                changer
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -415,7 +467,8 @@ class Careers extends Component {
             </Modal.Header>
             <Modal.Body>
               <h5>
-              Bringing the community together starts with a strong unified team, come join our iHired family!
+                Bringing the community together starts with a strong unified
+                team, come join our iHired family!
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -431,7 +484,9 @@ class Careers extends Component {
             </Modal.Header>
             <Modal.Body>
               <h5>
-              Give you the perks to fuel your thinking cells. Function the best, be the best. Water, coffee, munchies, and ofcourse ice-cream. All inclusive for iHired Family 
+                Give you the perks to fuel your thinking cells. Function the
+                best, be the best. Water, coffee, munchies, and ofcourse
+                ice-cream. All inclusive for iHired Family
               </h5>
             </Modal.Body>
             <Modal.Footer>

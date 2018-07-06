@@ -25,7 +25,8 @@ import {
   Modal,
   OverlayTrigger,
   Form,
-  Glyphicon
+  Glyphicon,
+  Carousel
 } from "react-bootstrap";
 import {
   Icon,
@@ -48,6 +49,11 @@ import control from "../images/002-switch.png";
 import connections from "../images/001-network.png";
 import communityPIC from "../images/communityPIC.jpg";
 import localINV from "../images/local_individual.jpeg";
+import capture from "../images/capture.png";
+import tag from "../images/tag.png";
+import post from "../images/post.png";
+import connect from "../images/connect.png";
+import illest from "../images/illustration.png";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
@@ -155,7 +161,7 @@ class LandingPage extends Component {
                     />
                   </Col>
                   <Col xs={12} md={3} className="table-padding">
-                    <h3 className="timer-text-size table-padding">Seconds</h3>
+                    <h3 className="timer-text-size table-padding"> Seconds</h3>
 
                     <Seconds
                       deadline="2018-07-25"
@@ -165,7 +171,7 @@ class LandingPage extends Component {
                 </Row>
               </Col>
               <Col md={12}>
-                <Row>
+                <Row style={{ display: "flex", alignItems: "center" }}>
                   {/* <h2 className="body-font">Early Sign-up</h2> */}
                   {/* <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
                     <Image src={thumb} />
@@ -223,7 +229,7 @@ class LandingPage extends Component {
               paddingTop: "5px"
             }}
           >
-            <h2 className="body-font">Benefits</h2>
+            <h1 className="body-font">Benefits</h1>
             <Row>
               <Col
                 // className="bg-hover"
@@ -245,7 +251,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Convenience</h4>
+                <h2 className="body-font">Convenience</h2>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
@@ -261,7 +267,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Crystal Clear</h4>
+                <h2 className="body-font">Crystal Clear</h2>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
@@ -277,7 +283,7 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Control</h4>
+                <h2 className="body-font">Control</h2>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 <Image
@@ -293,54 +299,36 @@ class LandingPage extends Component {
                     })
                   }
                 />
-                <h4 className="body-font">Connections</h4>
+                <h2 className="body-font">Connections</h2>
               </Col>
             </Row>
           </div>
         </section>
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
-            <Row className="show-grid">
-              <Col md={6} xs={12}>
-                <Image
-                  style={{
-                    maxWidth: "100%",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center center",
-                    borderRadius: "28px"
-                  }}
-                  src={localINV}
-                />
-              </Col>
-              <Col md={6} xs={12}>
-                <div>
-                  <h4 className="body-font" style={{ textAlign: "center" }}>
-                    With&nbsp;
-                    <span style={{ color: "", fontWeight: "bold" }}>
-                      iHired
-                    </span>
-                    &nbsp;tap into that goldmine of local individuals and
-                    professionals. So the next time you are faced with a sudden
-                    problem or a daunting task have no fear. You have the
-                    support of your community at your fingertips, one tap away.
-                  </h4>
-                </div>
-              </Col>
-            </Row>
-            <Row className="show-grid">
-              <Col md={6} xs={12}>
-                <div>
-                  <h4 className="body-font" style={{ textAlign: "center" }}>
-                    With&nbsp;
-                    <span style={{ color: "", fontWeight: "bold" }}>
-                      iHired
-                    </span>&nbsp;earn quick money by lending a helping hand
-                    within your community. You have invested long hours to mold
-                    your talents and sharpen your skills. Then why not reward
-                    yourself. Earn extra money by doing what you do best.
-                  </h4>
-                </div>
+            <Row
+              style={{ display: "flex", alignItems: "center" }}
+              className="show-grid"
+            >
+              <Col style={{}} md={6} xs={12}>
+                <h4 className="body-font" style={{ textAlign: "center" }}>
+                  With&nbsp;
+                  <span style={{ color: "", fontWeight: "bold" }}>
+                    iHired
+                  </span>&nbsp;earn quick money by lending a helping hand within
+                  your community. You have invested long hours to mold your
+                  talents and sharpen your skills. Then why not reward yourself.
+                  Earn extra money by doing what you do best.
+                </h4>
+
+                <h4 className="body-font" style={{ textAlign: "center" }}>
+                  With&nbsp;
+                  <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
+                  &nbsp;tap into that goldmine of local individuals and
+                  professionals. So the next time you are faced with a sudden
+                  problem or a daunting task have no fear. You have the support
+                  of your community at your fingertips, one tap away.
+                </h4>
               </Col>
               <Col md={6} xs={12}>
                 <Image
@@ -349,9 +337,10 @@ class LandingPage extends Component {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center center",
-                    borderRadius: "28px"
+                    borderRadius: "28px",
+                    verticalAlign: "baseline"
                   }}
-                  src={communityPIC}
+                  src={illest}
                 />
               </Col>
             </Row>
@@ -367,29 +356,29 @@ class LandingPage extends Component {
             }}
           >
             <Row>
-              <h2 className="body-font"> Solving Problems made easy.</h2>
+              <h1 className="body-font">It's as easy as ....</h1>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-                <Image src={thumb} circle />
-                <h3 className="body-font">Capture </h3>
+                <Image style={{ maxWidth: "50%" }} src={capture} />
+                <h2 className="body-font">Capture </h2>
                 <h5 className="body-font">
                   Need something fixed? Take a Photo or video.
                 </h5>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-                <Image src={thumb} circle />
-                <h3 className="body-font">Tag</h3>
+                <Image style={{ maxWidth: "50%" }} src={tag} />
+                <h2 className="body-font">Tag</h2>
                 <h5 className="body-font">
                   Set your requirements, budget and tag your tasks.
                 </h5>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-                <Image src={thumb} circle />
-                <h3 className="body-font">Post</h3>
+                <Image style={{ maxWidth: "50%" }} src={post} />
+                <h2 className="body-font">Post</h2>
                 <h5 className="body-font">Post it onto iHired ecosystem.</h5>
               </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-                <Image src={thumb} circle />
-                <h3 className="body-font">Connect</h3>
+                <Image style={{ maxWidth: "50%" }} src={connect} />
+                <h2 className="body-font">Connect</h2>
                 <h5 className="body-font">
                   Your iHired community at your fingertips.
                 </h5>
@@ -401,29 +390,7 @@ class LandingPage extends Component {
         <section className="App-body body-font">
           <Row>
             <h2 className="body-font">Decomplicate life with iHired!</h2>
-            <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <a href="#">
-                <Image
-                  className="imagehover"
-                  style={{ width: "100%" }}
-                  src={communityPIC}
-                />
-              </a>
-            </Col>
-            <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image
-                className="imagehover"
-                style={{ width: "100%" }}
-                src={communityPIC}
-              />
-            </Col>
-            <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
-              <Image
-                className="imagehover"
-                style={{ width: "100%" }}
-                src={communityPIC}
-              />
-            </Col>
+            <Col xs={12} xsOffset={0} md={12} mdOffset={0} />
           </Row>
         </section>
 
