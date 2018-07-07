@@ -283,7 +283,13 @@ section {
   transform: scale(1.1);
   cursor: pointer;
 }
-
+.cursorchange:hover {
+  cursor: pointer;
+}
+.overlay-css {
+  background: #3f88c5;
+  color: black;
+}
 .bg-hover:hover {
   background: cadetblue;
 }

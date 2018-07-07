@@ -26,7 +26,8 @@ import {
   OverlayTrigger,
   Form,
   Glyphicon,
-  Carousel
+  Carousel,
+  Popover
 } from "react-bootstrap";
 import {
   Icon,
@@ -58,6 +59,12 @@ import illest from "../images/illustration.png";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 
+const popoverHoverFocus = (
+  <Popover id="popover-trigger-hover-focus" title="Capture">
+    Need something fixed? Take a Photo or video.
+  </Popover>
+);
+
 class LandingPage extends Component {
   constructor(props) {
     super(props);
@@ -69,14 +76,21 @@ class LandingPage extends Component {
       show1: false,
       show2: false,
       show3: false,
-      show4: false
+      show4: false,
+      show5: false
     };
   }
 
   handleSignup() {}
 
   handleClose() {
-    this.setState({ show1: false, show2: false, show3: false, show4: false });
+    this.setState({
+      show1: false,
+      show2: false,
+      show3: false,
+      show4: false,
+      show5: false
+    });
   }
 
   render() {
@@ -145,18 +159,18 @@ class LandingPage extends Component {
                   <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Days</h3>
 
-                    <Days deadline="2018-07-25" className="timer-count-size" />
+                    <Days deadline="2018-07-28" className="timer-count-size" />
                   </Col>
                   <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Hours</h3>
 
-                    <Hours deadline="2018-07-25" className="timer-count-size" />
+                    <Hours deadline="2018-07-28" className="timer-count-size" />
                   </Col>
                   <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Minutes</h3>
 
                     <Minutes
-                      deadline="2018-07-25"
+                      deadline="2018-07-28"
                       className="timer-count-size"
                     />
                   </Col>
@@ -164,13 +178,13 @@ class LandingPage extends Component {
                     <h3 className="timer-text-size table-padding"> Seconds</h3>
 
                     <Seconds
-                      deadline="2018-07-25"
+                      deadline="2018-07-28"
                       className="timer-count-size"
                     />
                   </Col>
                 </Row>
               </Col>
-              <Col md={12}>
+              <Col xs={12} md={12}>
                 <Row style={{ display: "flex", alignItems: "center" }}>
                   {/* <h2 className="body-font">Early Sign-up</h2> */}
                   {/* <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
@@ -178,7 +192,11 @@ class LandingPage extends Component {
                   </Col> */}
                   <Col xs={12} xsOffset={0} md={6} mdOffset={0}>
                     <h2 className="body-font">Early Access</h2>
-                    <Form className="form-style">
+                    <Form
+                      action="https://formspree.io/baps.parthpatel@email.com"
+                      method="POST"
+                      className="form-style"
+                    >
                       <FormGroup controlId="formInlineName">
                         <InputGroup>
                           <InputGroup.Addon>
@@ -197,6 +215,7 @@ class LandingPage extends Component {
                       </FormGroup>{" "}
                       <Button
                         type="submit"
+                        value="Send"
                         style={{ width: "35%" }}
                         bsClass="App-button"
                       >
@@ -310,11 +329,12 @@ class LandingPage extends Component {
               style={{ display: "flex", alignItems: "center" }}
               className="show-grid"
             >
+              <h1 className="body-font">Why Tazwiz</h1>
               <Col style={{}} md={6} xs={12}>
                 <h4 className="body-font" style={{ textAlign: "center" }}>
                   With&nbsp;
                   <span style={{ color: "", fontWeight: "bold" }}>
-                    iHired
+                    Tazwiz
                   </span>&nbsp;earn quick money by lending a helping hand within
                   your community. You have invested long hours to mold your
                   talents and sharpen your skills. Then why not reward yourself.
@@ -323,7 +343,7 @@ class LandingPage extends Component {
 
                 <h4 className="body-font" style={{ textAlign: "center" }}>
                   With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
+                  <span style={{ color: "", fontWeight: "bold" }}>Tazwiz</span>
                   &nbsp;tap into that goldmine of local individuals and
                   professionals. So the next time you are faced with a sudden
                   problem or a daunting task have no fear. You have the support
@@ -344,21 +364,20 @@ class LandingPage extends Component {
                 />
               </Col>
             </Row>
-          </Grid>
-        </section>
-        <section className=" body-font">
-          <div
-            style={{
-              background: "#3f88c5",
-              color: "white",
-              paddingLeft: "15px",
-              paddingRight: "15px"
-            }}
-          >
             <Row>
-              <h1 className="body-font">It's as easy as ....</h1>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
-                <Image style={{ maxWidth: "50%" }} src={capture} />
+                {/* <OverlayTrigger
+                  trigger={["hover", "focus"]}
+                  placement="bottom"
+                  overlay={popoverHoverFocus}
+                  bsClass="overlay-css"
+                > */}
+                <Image
+                  className="cursorchange"
+                  style={{ maxWidth: "50%" }}
+                  src={capture}
+                />
+                {/* </OverlayTrigger> */}
                 <h2 className="body-font">Capture </h2>
                 <h5 className="body-font">
                   Need something fixed? Take a Photo or video.
@@ -384,13 +403,39 @@ class LandingPage extends Component {
                 </h5>
               </Col>
             </Row>
-          </div>
+          </Grid>
         </section>
 
         <section className="App-body body-font">
-          <Row>
-            <h2 className="body-font">Decomplicate life with iHired!</h2>
-            <Col xs={12} xsOffset={0} md={12} mdOffset={0} />
+          <Row
+            style={{
+              display: "flex",
+              alignItems: "center"
+            }}
+          >
+            <Col style={{}} xs={12} md={12}>
+              <Button
+                type="submit"
+                style={{
+                  width: "35%",
+                  margin: "auto",
+                  background: "#3f88c5",
+                  fontSize: "18px"
+                }}
+                onClick={() =>
+                  this.setState({
+                    show1: false,
+                    show2: false,
+                    show3: false,
+                    show4: false,
+                    show5: true
+                  })
+                }
+                bsClass="App-button"
+              >
+                Sign up
+              </Button>
+            </Col>
           </Row>
         </section>
 
@@ -466,6 +511,36 @@ class LandingPage extends Component {
             <Modal.Footer>
               <Button bsClass="App-button" onClick={this.handleClose}>
                 Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          <Modal show={this.state.show5} onClick={this.handleClose}>
+            <Modal.Header>
+              <Modal.Title>Sign Up</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Form className="form-style">
+                <FormGroup controlId="formInlineName">
+                  <InputGroup>
+                    <InputGroup.Addon>
+                      <Glyphicon glyph="envelope" />
+                    </InputGroup.Addon>
+                    <FormControl type="text" placeholder="Email" />
+                  </InputGroup>
+                </FormGroup>{" "}
+                <FormGroup controlId="formInlineEmail">
+                  <InputGroup>
+                    <InputGroup.Addon>
+                      <Glyphicon glyph="user" />
+                    </InputGroup.Addon>
+                    <FormControl type="text" placeholder="Full Name" />
+                  </InputGroup>
+                </FormGroup>
+              </Form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button bsClass="App-button" onClick={this.handleClose}>
+                Sign Up
               </Button>
             </Modal.Footer>
           </Modal>
