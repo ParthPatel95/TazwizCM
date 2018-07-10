@@ -55,6 +55,8 @@ import tag from "../images/tag.png";
 import post from "../images/post.png";
 import connect from "../images/connect.png";
 import illest from "../images/illustration.png";
+import signup from "../images/signup.png";
+import overlayIMG from "../images/overlay-img.jpeg";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
@@ -140,7 +142,7 @@ class LandingPage extends Component {
               <h1 className="body-font">
                 We are in the middle of a{" "}
                 <span
-                  style={{ color: "#FFD700", textShadow: "6px 2px #343434" }}
+                  style={{ color: "#3f88c5", textShadow: "2px 1px #FFD700" }}
                 >
                   GOLDMINE
                 </span>
@@ -216,8 +218,8 @@ class LandingPage extends Component {
                       <Button
                         type="submit"
                         value="Send"
-                        style={{ width: "35%" }}
                         bsClass="App-button"
+                        style={{ width: "35%" }}
                       >
                         Sign-up
                       </Button>
@@ -323,6 +325,7 @@ class LandingPage extends Component {
             </Row>
           </div>
         </section>
+
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
             <Row
@@ -364,7 +367,52 @@ class LandingPage extends Component {
                 />
               </Col>
             </Row>
-            <Row>
+
+            <Row style={{ display: "flex", alignItems: "center" }}>
+              <Col style={{ maxWidth: "100%" }} md={4}>
+                {/* <Button
+                  type="submit"
+                  bsClass=""
+                  style={{
+                    background: "#3f88c5",
+                    fontSize: "28px",
+                    width: "35%",
+                    marginBottom: "20px",
+                    borderRadius: "20px"
+                  }}
+                  onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: false,
+                      show3: false,
+                      show4: false,
+                      show5: true
+                    })
+                  }
+                  bsClass="App-button"
+                >
+                  <b>Sign up</b>
+                </Button> */}
+                <h2 className="body-font">
+                  <b>
+                    <span style={{ color: "#3f88c5" }}>Sign </span>Up
+                  </b>
+                </h2>
+                <Image
+                  className="imagehover"
+                  src={signup}
+                  square
+                  onClick={() =>
+                    this.setState({
+                      show1: false,
+                      show2: false,
+                      show3: false,
+                      show4: false,
+                      show5: true
+                    })
+                  }
+                />
+              </Col>
               <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
                 {/* <OverlayTrigger
                   trigger={["hover", "focus"]}
@@ -373,7 +421,7 @@ class LandingPage extends Component {
                   bsClass="overlay-css"
                 > */}
                 <Image
-                  className="cursorchange"
+                  // className="cursorchange"
                   style={{ maxWidth: "50%" }}
                   src={capture}
                 />
@@ -399,44 +447,11 @@ class LandingPage extends Component {
                 <Image style={{ maxWidth: "50%" }} src={connect} />
                 <h2 className="body-font">Connect</h2>
                 <h5 className="body-font">
-                  Your iHired community at your fingertips.
+                  Your Tazwiz community at your fingertips.
                 </h5>
               </Col>
             </Row>
           </Grid>
-        </section>
-
-        <section className="App-body body-font">
-          <Row
-            style={{
-              display: "flex",
-              alignItems: "center"
-            }}
-          >
-            <Col style={{}} xs={12} md={12}>
-              <Button
-                type="submit"
-                style={{
-                  width: "35%",
-                  margin: "auto",
-                  background: "#3f88c5",
-                  fontSize: "18px"
-                }}
-                onClick={() =>
-                  this.setState({
-                    show1: false,
-                    show2: false,
-                    show3: false,
-                    show4: false,
-                    show5: true
-                  })
-                }
-                bsClass="App-button"
-              >
-                Sign up
-              </Button>
-            </Col>
-          </Row>
         </section>
 
         {/*MODALS*/}
@@ -519,24 +534,40 @@ class LandingPage extends Component {
               <Modal.Title>Sign Up</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <Form className="form-style">
-                <FormGroup controlId="formInlineName">
-                  <InputGroup>
-                    <InputGroup.Addon>
-                      <Glyphicon glyph="envelope" />
-                    </InputGroup.Addon>
-                    <FormControl type="text" placeholder="Email" />
-                  </InputGroup>
-                </FormGroup>{" "}
-                <FormGroup controlId="formInlineEmail">
-                  <InputGroup>
-                    <InputGroup.Addon>
-                      <Glyphicon glyph="user" />
-                    </InputGroup.Addon>
-                    <FormControl type="text" placeholder="Full Name" />
-                  </InputGroup>
-                </FormGroup>
-              </Form>
+              <Row>
+                <Col md={6} xs={12}>
+                  <Image
+                    className="cursorchange"
+                    style={{ maxWidth: "100%" }}
+                    src={overlayIMG}
+                  />
+                </Col>
+                <Col style={{ marginTop: "5%" }} md={6} xs={12}>
+                  <Form
+                    style={{
+                      width: "100%"
+                    }}
+                    className="form-style"
+                  >
+                    <FormGroup controlId="formInlineName">
+                      <InputGroup style={{}}>
+                        <InputGroup.Addon>
+                          <Glyphicon glyph="envelope" />
+                        </InputGroup.Addon>
+                        <FormControl type="text" placeholder="Email" />
+                      </InputGroup>
+                    </FormGroup>{" "}
+                    <FormGroup controlId="formInlineEmail">
+                      <InputGroup>
+                        <InputGroup.Addon>
+                          <Glyphicon glyph="user" />
+                        </InputGroup.Addon>
+                        <FormControl type="text" placeholder="Full Name" />
+                      </InputGroup>
+                    </FormGroup>
+                  </Form>
+                </Col>
+              </Row>
             </Modal.Body>
             <Modal.Footer>
               <Button bsClass="App-button" onClick={this.handleClose}>

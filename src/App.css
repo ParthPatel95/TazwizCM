@@ -135,17 +135,23 @@ section {
 }
 
 .left {
-  text-align: left;
+  text-align: center;
 }
 
 .App-button {
   padding: 10px;
-  background: #343434;
+  background: #3f88c5;
+  font-size: 18px;
   color: white;
-  border: 1px solid #343434;
+  border: 1px solid rgb(235, 226, 226);
   border-radius: 5px;
 }
-
+.App-button:hover {
+  background: #67b6ff;
+}
+.buttonhver:hover {
+  background: #67b6ff;
+}
 .App-button-timer {
   padding: 10px;
   background: #343434;
@@ -170,8 +176,9 @@ section {
 }
 
 .Placeholder-image {
-  width: 220px;
-  height: 120px;
+  /* width: 220px;
+  height: 120px; */
+  max-width: 100%;
 }
 
 .Nav-logo {

@@ -48,7 +48,10 @@ import communityPIC from "../images/communityPIC.jpg";
 
 import contactusimg from "../images/contactus.jpg";
 import startculture from "../images/career-startup-culture.jpg";
-
+import IQ from "../images/intellectual.png";
+import value from "../images/rate-star-button.png";
+import support from "../images/social-care.png";
+import accommodation from "../images/coffee-cup.png";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 
@@ -166,14 +169,24 @@ class Careers extends Component {
 
           </Row>
 */}
-
+        <h1 style={{ textAlign: "center" }} className="body-font">
+          Join <span style={{ color: "#3f88c5" }}>Tazwiz</span> and tap into
+          your <span style={{ color: "#3f88c5" }}>Potential</span>
+        </h1>
+        <Row style={{ maxWidth: "75%", margin: "auto" }}>
+          <Col xs={12} md={12}>
+            <h3 style={{ textAlign: "center" }} className="body-font">
+              In you there is a spark of magic. That spark is your Creativity,
+              your Energy, your Identity. Here at Tazwiz we don’t contain that
+              spark, we Ignite it. Be Bold. Be Fearless. Be Apart of Tazwiz.
+            </h3>
+          </Col>
+        </Row>
         <Row>
-          <h1>Join iHired and tap into your potential</h1>
-
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              src={thumb}
-              circle
+              src={IQ}
+              style={{ maxWidth: "50%" }}
               onClick={() =>
                 this.setState({
                   show1: true,
@@ -183,12 +196,12 @@ class Careers extends Component {
                 })
               }
             />
-            <h4>Scale your IQ</h4>
+            <h3 className="body-font">Scale your IQ</h3>
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              src={thumb}
-              circle
+              src={value}
+              style={{ maxWidth: "50%" }}
               onClick={() =>
                 this.setState({
                   show1: false,
@@ -198,12 +211,12 @@ class Careers extends Component {
                 })
               }
             />
-            <h4>Value</h4>
+            <h3 className="body-font">Value</h3>
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              src={thumb}
-              circle
+              src={support}
+              style={{ maxWidth: "50%" }}
               onClick={() =>
                 this.setState({
                   show1: false,
@@ -213,12 +226,12 @@ class Careers extends Component {
                 })
               }
             />
-            <h4>Knitted</h4>
+            <h3 className="body-font">Support</h3>
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              src={thumb}
-              circle
+              src={accommodation}
+              style={{ maxWidth: "50%" }}
               onClick={() =>
                 this.setState({
                   show1: false,
@@ -228,11 +241,11 @@ class Careers extends Component {
                 })
               }
             />
-            <h4>Accommodation</h4>
+            <h3 className="body-font">Accommodation</h3>
           </Col>
         </Row>
 
-        <Row>
+        {/* <Row>
           <h2 className="body-font">The people that make iHired ... iHIRED!</h2>
           <Col xs={12} sm={6} md={3}>
             <Thumbnail src={thumb_label} alt="242x200">
@@ -282,7 +295,7 @@ class Careers extends Component {
               </p>
             </Thumbnail>
           </Col>
-        </Row>
+        </Row> */}
 
         <section>
           <h3>Available positions</h3>

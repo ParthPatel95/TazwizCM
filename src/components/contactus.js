@@ -67,25 +67,20 @@ class ContactUs extends Component {
                   Submit
                 </Button>
               </Form>
+              <h6 style={{ textAlign: "left" }}>
+                <b>Connect with us:</b>
+              </h6>
+              <p style={{ textAlign: "left" }}>
+                For any support, please Email us at{" "}
+                <a href="#">info@Tazwiz.ca</a>.
+              </p>
+              <h6 style={{ textAlign: "left" }}>
+                <b>Visit us at:</b>
+              </h6>
+              <p style={{ textAlign: "left" }}>
+                Building D<br />1750 Finch Ave E<br />North York, ON M2J 2X5
+              </p>
             </Col>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={6} md={2} mdPush={6}>
-            <h6 className="left">
-              <b>Connect with us:</b>
-            </h6>
-            <p className="left">
-              For any support, please Email us at <a href="#">info@iHired.ca</a>.
-            </p>
-          </Col>
-          <Col xs={6} md={2}>
-            <h6 className="left">
-              <b>Visit us at:</b>
-            </h6>
-            <p className="left">
-              Building D<br />1750 Finch Ave E<br />North York, ON M2J 2X5
-            </p>
           </Col>
         </Row>
       </div>
