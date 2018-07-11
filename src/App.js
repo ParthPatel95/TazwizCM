@@ -117,7 +117,7 @@ class App extends Component {
                       className="Placeholder-image"
                     />
                   </Col>
-                  <Col xs={2} md={1}>
+                  <Col xsHidden md={1}>
                     <h6>Company</h6>
                     <ul>
                       <li>
@@ -152,13 +152,13 @@ class App extends Component {
                       </li>
                     </ul>
                   </Col>
-                  <Col xs={12} md={2}>
+                  <Col xs={6} md={2}>
                     <h6 className="text-align-center">Contact Us</h6>
                     <p className="text-align-left">
                       info@iHired.ca<br />+1 (647) 393-7584
                     </p>
                   </Col>
-                  <Col xs={12} md={3}>
+                  <Col xs={6} md={3}>
                     <h6 className="text-align-center">Our Address</h6>
                     <p className="text-align-left">
                       Helix, Building D<br />1750 Finch Ave E<br />North York,
