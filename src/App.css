@@ -201,14 +201,14 @@ section {
 .Placeholder-image {
   /* width: 220px;
   height: 120px; */
-  max-width: 100%;
+  max-width: 65%;
 }
 
 .Nav-logo {
   /* height: 100%;
   width: auto;
   padding: 0px;*/
-  height: 150%;
+  height: 200%;
   vertical-align: middle;
   max-height: 50px;
   max-width: 130px;

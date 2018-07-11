@@ -38,7 +38,7 @@ class ContactUs extends Component {
     return (
       <div className="App">
         <Row style={{ display: "flex", alignItems: "center" }}>
-          <Col md={6} className="ContactUs-half">
+          <Col xsHidden smHidde md={6} className="ContactUs-half">
             <Image
               alt="contact-us-img"
               src={contactusimg}
