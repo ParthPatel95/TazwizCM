@@ -1,53 +1,24 @@
 import React, { Component } from "react";
 
-import scrollToComponent from "react-scroll-to-component";
-import { Wave } from "react-animated-text";
-import Typist from "react-typist";
-import TypistLoop from "react-typist-loop";
-import TextLoop from "react-text-loop";
 import {
-  Navbar,
-  Nav,
-  NavItem,
-  NavDropdown,
-  MenuItem,
-  Well,
-  Jumbotron,
   Button,
   FormGroup,
   FormControl,
-  ControlLabel,
   Col,
-  Thumbnail,
   Row,
   Image,
-  InputGroup,
-  Carousel,
-  ButtonGroup,
-  HelpBlock,
   Modal,
   Panel,
   PanelGroup
 } from "react-bootstrap";
-import {
-  Icon,
-  Layout,
-  Header,
-  Navigation,
-  Drawer,
-  Content,
-  Grid,
-  Cell
-} from "react-mdl";
+import { Grid } from "react-mdl";
 import "../App.css";
 import thumb from "../images/test.png";
-import thumb_label from "../images/thumbnail_label.png";
-import thumblogo from "../images/iHireLogo.png";
-import placeholdermap from "../images/cbanner.jpg";
-import communityPIC from "../images/communityPIC.jpg";
+import jobICONCoder from "../images/career-coder.png";
 
 import contactusimg from "../images/contactus.jpg";
-import startculture from "../images/career-startup-culture.jpg";
+import business_job from "../images/career_contract.png";
+
 import IQ from "../images/intellectual.png";
 import value from "../images/rate-star-button.png";
 import support from "../images/social-care.png";
@@ -96,79 +67,16 @@ class Careers extends Component {
           <section className="App-body body-font">
             <Row>
               <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
-                <Carousel>
-                  <Carousel.Item>
-                    <img
-                      style={{ maxWidth: "100%" }}
-                      alt="900x500"
-                      src={communityPIC}
-                    />
-                    <Carousel.Caption>
-                      <h3>First slide label</h3>
-                      <p>
-                        Nulla vitae elit libero, a pharetra augue mollis
-                        interdum.
-                      </p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ maxWidth: "100%" }}
-                      alt="900x500"
-                      src={communityPIC}
-                    />
-                    <Carousel.Caption>
-                      <h3>Second slide label</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      style={{ maxWidth: "100%" }}
-                      alt="900x500"
-                      src={communityPIC}
-                    />
-                    <Carousel.Caption>
-                      <h3>Third slide label</h3>
-                      <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl
-                        consectetur.
-                      </p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                </Carousel>
+                <div className="career-headersection">
+                  <div className="career-header-text-bg">
+                    <h1 className="TextAlignCenter">The Next Big Step</h1>
+                  </div>
+                </div>
               </Col>
             </Row>
           </section>
         </Row>
-        {/*<img
-            className="career-header-img"
-            alt="headerIMG"
-            src={placeholdermap}
-          />*/}
 
-        {/*
-          <Row>
-             
-            <Col xs={12}>
-              <h1 >Join iHired and tap into your potential</h1>
-            </Col>
-            <Col xs={12}>
-              <img
-                style={{
-                  maxWidth: "50%",
-                  padding: "10px",
-                  borderRadius: "28px"
-                }}
-                alt="headerIMG"
-                src={startculture}
-              />
-            </Col>
-
-          </Row>
-*/}
         <h1 style={{ textAlign: "center" }} className="body-font">
           Join <span style={{ color: "#3f88c5" }}>Tazwiz</span> and tap into
           your <span style={{ color: "#3f88c5" }}>Potential</span>
@@ -185,6 +93,7 @@ class Careers extends Component {
         <Row>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
+              className="imagehover"
               src={IQ}
               style={{ maxWidth: "50%" }}
               onClick={() =>
@@ -200,6 +109,7 @@ class Careers extends Component {
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
+              className="imagehover"
               src={value}
               style={{ maxWidth: "50%" }}
               onClick={() =>
@@ -215,6 +125,7 @@ class Careers extends Component {
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
+              className="imagehover"
               src={support}
               style={{ maxWidth: "50%" }}
               onClick={() =>
@@ -230,6 +141,7 @@ class Careers extends Component {
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
+              className="imagehover"
               src={accommodation}
               style={{ maxWidth: "50%" }}
               onClick={() =>
@@ -245,69 +157,25 @@ class Careers extends Component {
           </Col>
         </Row>
 
-        {/* <Row>
-          <h2 className="body-font">The people that make iHired ... iHIRED!</h2>
-          <Col xs={12} sm={6} md={3}>
-            <Thumbnail src={thumb_label} alt="242x200">
-              <h3>Thumbnail label</h3>
-              <p>Role: Lorem</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                cupiditate illo quidem voluptate est praesentium et ut,
-                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
-                quaerat labore hic sit eius.
-              </p>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <Thumbnail src={thumb_label} alt="242x200">
-              <h3>Thumbnail label</h3>
-              <p>Role: Lorem</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                cupiditate illo quidem voluptate est praesentium et ut,
-                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
-                quaerat labore hic sit eius.
-              </p>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <Thumbnail src={thumb_label} alt="242x200">
-              <h3>Thumbnail label</h3>
-              <p>Role: Lorem</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                cupiditate illo quidem voluptate est praesentium et ut,
-                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
-                quaerat labore hic sit eius.
-              </p>
-            </Thumbnail>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <Thumbnail src={thumb_label} alt="242x200">
-              <h3>Thumbnail label</h3>
-              <p>Role: Lorem</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                cupiditate illo quidem voluptate est praesentium et ut,
-                reprehenderit reiciendis ea harum veritatis ipsa quod, esse
-                quaerat labore hic sit eius.
-              </p>
-            </Thumbnail>
-          </Col>
-        </Row> */}
-
         <section>
-          <h3>Available positions</h3>
+          <h1 style={{ textAlign: "center" }} className="body-font">
+            Available positions
+          </h1>
           <Row className="table-padding">
             <Col xs={12} md={2} mdPush={2} xsPush={0}>
-              <Image src={thumb} rounded />
+              <Image style={{ maxWidth: "80%" }} src={jobICONCoder} rounded />
             </Col>
             <Col xs={12} md={6} mdPush={2} xsPush={0}>
-              <p>
-                <b>Role:</b> Role 1 <br />
-                <b>Requirements:</b> Requirements <br />
-                <b>Start Date:</b> xx/xx/xxxx
+              <p style={{ textAlign: "left" }}>
+                <b>Role:</b> Full Stack Developer Intern <br />
+                <b>Requirements:</b> Some full stack background
+                <br />
+                <b>Compensation:</b> The provisional intern term is until the
+                end of the summer. This is a non-paid internship. However,
+                Students will receive university/college credits towards their
+                program requirement as part of their participation in our
+                program.<br />
+                <b>Start Date:</b> Immediate
               </p>
               <PanelGroup
                 accordion
@@ -317,15 +185,15 @@ class Careers extends Component {
                 <Panel eventKey="1" bsClass="App-button">
                   <Panel.Heading>
                     <Panel.Title toggle>
-                      <div className="text-color">Learn More...</div>
+                      <div className="text-color">Learn More</div>
                     </Panel.Title>
                   </Panel.Heading>
                   <Panel.Body collapsible>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Gain relevant work experience working with front and
+                      backend technologies. Further build their portfolio of
+                      professional work. Work closely with our team to develop
+                      contemporary, functional, responsive web applications.
                     </p>
                   </Panel.Body>
                 </Panel>
@@ -334,13 +202,17 @@ class Careers extends Component {
           </Row>
           <Row className="table-padding">
             <Col xs={12} md={2} mdPush={2} xsPush={0}>
-              <Image src={thumb} rounded />
+              <Image style={{ maxWidth: "80%" }} src={business_job} rounded />
             </Col>
             <Col xs={12} md={6} mdPush={2} xsPush={0}>
-              <p>
-                <b>Role:</b> Role 2 <br />
-                <b>Requirements:</b> Requirements <br />
-                <b>Start Date:</b> xx/xx/xxxx
+              <p style={{ textAlign: "left" }}>
+                <b>Role:</b> Junior Business Development Representative <br />
+                <b>Requirements:</b> Bachelor’s degree in Business, Sales,
+                Marketing, Communications or an Equivalent. An entrepreneurial
+                spirit, passionate about what you do, enthusiastic, competitive,
+                disciplined, self-motivated, hands-on, with a strong work ethic
+                <br />
+                <b>Start Date:</b> 01/08/2018
               </p>
               <PanelGroup
                 accordion
@@ -350,15 +222,101 @@ class Careers extends Component {
                 <Panel eventKey="1" bsClass="App-button">
                   <Panel.Heading>
                     <Panel.Title toggle>
-                      <div className="text-color">Learn More...</div>
+                      <div className="text-color">Learn More</div>
                     </Panel.Title>
                   </Panel.Heading>
                   <Panel.Body collapsible>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      The right candidate will have experience in both strategy
+                      and execution. They will be able to think big, but also
+                      deliver on the small tasks. There is a lot of room for
+                      ownership and leadership, so being a self-starter is an
+                      asset.
+                    </p>
+                  </Panel.Body>
+                </Panel>
+              </PanelGroup>
+            </Col>
+          </Row>
+          <Row className="table-padding">
+            <Col xs={12} md={2} mdPush={2} xsPush={0}>
+              <Image style={{ maxWidth: "80%" }} src={jobICONCoder} rounded />
+            </Col>
+            <Col xs={12} md={6} mdPush={2} xsPush={0}>
+              <p style={{ textAlign: "left" }}>
+                <b>Role:</b> Front-end Developer (Reactjs) <br />
+                <b>Requirements:</b> A Degree, Diploma, or Certificate in web
+                design and development or a related field; Some experience in
+                working with ReactJs and any other relevant front-end
+                technologies. <br />
+                <b>Start Date:</b> 01/08/2018
+              </p>
+              <PanelGroup
+                accordion
+                id="accordion-uncontrolled-example"
+                defaultActiveKey="2"
+              >
+                <Panel eventKey="1" bsClass="App-button">
+                  <Panel.Heading>
+                    <Panel.Title toggle>
+                      <div className="text-color">Learn More</div>
+                    </Panel.Title>
+                  </Panel.Heading>
+                  <Panel.Body collapsible>
+                    <p>
+                      Solid understanding of web markup, including HTML5, CSS3
+                      and JS including ES6 features. Strong understanding
+                      ofReact JS Framework. Good understanding of server-side
+                      CSS pre-processing platforms, such as SASS. Proficient
+                      understanding of client-side scripting and JavaScript
+                      frameworks, including jQuery. Proficient understanding and
+                      hands on experience of Node js and NPM. Good understanding
+                      of asynchronous request handling, partial page updates,
+                      and AJAX. Basic knowledge of image authoring tools, to be
+                      able to crop, resize, or perform small adjustments on an
+                      image. Familiarity with tools such as Gimp or Photoshop is
+                      a plus. Proficient understanding of cross-browser
+                      compatibility issues and ways to work around them.
+                      Proficient understanding of code versioning toolGit. Good
+                      understanding of SEO principles and ensuring that
+                      application will adhere to them.
+                    </p>
+                  </Panel.Body>
+                </Panel>
+              </PanelGroup>
+            </Col>
+          </Row>
+          <Row className="table-padding">
+            <Col xs={12} md={2} mdPush={2} xsPush={0}>
+              <Image style={{ maxWidth: "80%" }} src={jobICONCoder} rounded />
+            </Col>
+            <Col xs={12} md={6} mdPush={2} xsPush={0}>
+              <p style={{ textAlign: "left" }}>
+                <b>Role:</b> NodeJS Application Developer <br />
+                <b>Requirements:</b> A Degree, Diploma, or Certificate in web
+                design and development or a related field; Some experience in
+                working with NodeJS <br />
+                <b>Start Date:</b> 01/08/2018
+              </p>
+              <PanelGroup
+                accordion
+                id="accordion-uncontrolled-example"
+                defaultActiveKey="2"
+              >
+                <Panel eventKey="1" bsClass="App-button">
+                  <Panel.Heading>
+                    <Panel.Title toggle>
+                      <div className="text-color">Learn More</div>
+                    </Panel.Title>
+                  </Panel.Heading>
+                  <Panel.Body collapsible>
+                    <p>
+                      This is a challenging full-time position in a fast paced
+                      environment based in Toronto, Ontario. Tazwiz offers
+                      excellent technical and career opportunities for talented
+                      and enthusiastic developers. You will be exposed to new
+                      technologies and projects and have a lot of opportunity to
+                      grow. Reporting to the Development Manager
                     </p>
                   </Panel.Body>
                 </Panel>
@@ -374,7 +332,7 @@ class Careers extends Component {
           >
             <Col md={6}>
               <img
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "80%" }}
                 alt="headerIMG"
                 src={contactusimg}
               />
@@ -416,17 +374,20 @@ class Careers extends Component {
 
                 <FormGroup controlId="formControlsSelect">
                   <FormControl componentClass="select" placeholder="Job">
-                    <option value="1">Job 1</option>
-                    <option value="2">Job 2</option>
-                    <option value="3">Job 3</option>
-                    <option value="4">Job 4</option>
+                    <option value="">Position</option>
+                    <option value="1">Full Stack Developer Intern </option>
+                    <option value="2">
+                      Junior Business Development Representative{" "}
+                    </option>
+                    <option value="3">Front-end Developer (Reactjs) </option>
+                    <option value="4">NodeJS Application Developer </option>
                   </FormControl>
                 </FormGroup>
 
                 <FormGroup>
                   <FormControl
                     componentClass="textarea"
-                    placeholder="Tell us about yourself"
+                    placeholder="Forget resumes, tell us why we should hire you?"
                   />
                 </FormGroup>
 

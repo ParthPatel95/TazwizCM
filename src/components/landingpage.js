@@ -219,13 +219,13 @@ class LandingPage extends Component {
                         type="submit"
                         value="Send"
                         bsClass="App-button"
-                        style={{ width: "35%" }}
+                        style={{ width: "45%" }}
                       >
-                        Sign-up
+                        Sign up
                       </Button>
                     </Form>
                   </Col>
-                  <Col xs={12} xsOffset={0} md={6} mdOffset={0}>
+                  <Col xsHidden smHidden md={6} mdOffset={0}>
                     <Image
                       style={{
                         maxWidth: "100%",
@@ -353,7 +353,7 @@ class LandingPage extends Component {
                   of your community at your fingertips, one tap away.
                 </h4>
               </Col>
-              <Col md={6} xs={12}>
+              <Col md={6} xsHidden smHidden>
                 <Image
                   style={{
                     maxWidth: "100%",
@@ -368,31 +368,8 @@ class LandingPage extends Component {
               </Col>
             </Row>
 
-            <Row style={{ display: "flex", alignItems: "center" }}>
-              <Col style={{ maxWidth: "100%" }} md={4}>
-                {/* <Button
-                  type="submit"
-                  bsClass=""
-                  style={{
-                    background: "#3f88c5",
-                    fontSize: "28px",
-                    width: "35%",
-                    marginBottom: "20px",
-                    borderRadius: "20px"
-                  }}
-                  onClick={() =>
-                    this.setState({
-                      show1: false,
-                      show2: false,
-                      show3: false,
-                      show4: false,
-                      show5: true
-                    })
-                  }
-                  bsClass="App-button"
-                >
-                  <b>Sign up</b>
-                </Button> */}
+            <Row className="iconadjust" style={{}}>
+              <Col xsHidden smHidden md={3}>
                 <h2 className="body-font">
                   <b>
                     <span style={{ color: "#3f88c5" }}>Sign </span>Up
@@ -400,6 +377,7 @@ class LandingPage extends Component {
                 </h2>
                 <Image
                   className="imagehover"
+                  style={{ maxWidth: "100%" }}
                   src={signup}
                   square
                   onClick={() =>
@@ -413,7 +391,7 @@ class LandingPage extends Component {
                   }
                 />
               </Col>
-              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+              <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
                 {/* <OverlayTrigger
                   trigger={["hover", "focus"]}
                   placement="bottom"
@@ -431,19 +409,19 @@ class LandingPage extends Component {
                   Need something fixed? Take a Photo or video.
                 </h5>
               </Col>
-              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+              <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
                 <Image style={{ maxWidth: "50%" }} src={tag} />
                 <h2 className="body-font">Tag</h2>
                 <h5 className="body-font">
                   Set your requirements, budget and tag your tasks.
                 </h5>
               </Col>
-              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+              <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
                 <Image style={{ maxWidth: "50%" }} src={post} />
                 <h2 className="body-font">Post</h2>
                 <h5 className="body-font">Post it onto iHired ecosystem.</h5>
               </Col>
-              <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
+              <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
                 <Image style={{ maxWidth: "50%" }} src={connect} />
                 <h2 className="body-font">Connect</h2>
                 <h5 className="body-font">

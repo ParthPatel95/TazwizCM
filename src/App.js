@@ -109,15 +109,18 @@ class App extends Component {
 
               <footer className="App-footer">
                 <Row>
-                  <Col md={3}>
+                  <Col xsHidden smHidden md={3}>
                     <Image
                       href="#"
                       alt="logo"
                       src={navlogo}
                       className="Placeholder-image"
                     />
+                    <p className="body-font">
+                      Copyright © 2018 Tazwiz Inc. All rights reserved.
+                    </p>
                   </Col>
-                  <Col md={1}>
+                  <Col xs={2} md={1}>
                     <h6>Company</h6>
                     <ul>
                       <li>
@@ -152,7 +155,7 @@ class App extends Component {
                       </li>
                     </ul>
                   </Col>
-                  <Col md={2}>
+                  <Col xs={4} md={2}>
                     <h6 style={{ textAlign: "center" }}>Contact Us</h6>
                     <p className="left">
                       info@iHired.ca<br />+1 (647) 393-7584
@@ -165,7 +168,7 @@ class App extends Component {
                       ON M2J 2X5
                     </p>
                   </Col>
-                  <Col md={3}>
+                  <Col xs={6} md={3}>
                     <FormGroup className="Signup">
                       <h6>Connect with us</h6>
                       <InputGroup>
@@ -187,6 +190,11 @@ class App extends Component {
                       </InputGroup>
                     </FormGroup>
                   </Col>
+                  {/* <Col xs={12} md={12}>
+                    <p className="body-font">
+                      Copyright © 2018 Tazwiz Inc. All rights reserved.
+                    </p>
+                  </Col> */}
                 </Row>
               </footer>
             </Content>

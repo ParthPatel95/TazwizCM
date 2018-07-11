@@ -20,7 +20,20 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+.TextAlignCenter {
+  text-align: center;
+  font-weight: bold;
+  font-family: "MyFont";
+  color: white;
+}
 
+.career-header-text-bg {
+  margin: auto;
+  background-color: #3f88c5;
+  opacity: 0.8;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .App-header {
   background-color: rgb(29, 134, 182);
   height: 150px;
@@ -58,6 +71,7 @@ section {
   font-size: 96px;
   text-align: center;
 }
+
 .App-headsection {
   background: #343434;
   background-image: url("images/bg1.jpeg");
@@ -69,7 +83,16 @@ section {
   height: 100vh;
   width: 100%;
 }
-
+.career-headersection {
+  background-image: url("images/career_3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
 .App-headsection2 {
   background: #343434;
   background-image: url("images/bg1.jpeg");
@@ -213,7 +236,7 @@ section {
 }
 
 .navbar-default.navbarColour ul > li > a:hover {
-  color: #a4a4a4;
+  font-weight: bold;
 }
 
 .navbar-default div.navbar-collapse {
@@ -310,5 +333,11 @@ section {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .iconadjust {
+    color: black;
   }
 }
