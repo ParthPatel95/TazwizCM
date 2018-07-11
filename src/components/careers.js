@@ -329,7 +329,7 @@ class Careers extends Component {
           <Row
             className="career-ihired-intro div-vertical-center"
           >
-            <Col md={6}>
+            <Col md={6} xsHidden>
               <img
                 className="maxwidth-80"
                 alt="headerIMG"

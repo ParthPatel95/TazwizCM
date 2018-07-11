@@ -152,20 +152,20 @@ class App extends Component {
                       </li>
                     </ul>
                   </Col>
-                  <Col xs={4} md={2}>
+                  <Col xs={12} md={2}>
                     <h6 className="text-align-center">Contact Us</h6>
-                    <p className="left">
+                    <p className="text-align-left">
                       info@iHired.ca<br />+1 (647) 393-7584
                     </p>
                   </Col>
-                  <Col md={3}>
+                  <Col xs={12} md={3}>
                     <h6 className="text-align-center">Our Address</h6>
-                    <p className="left">
+                    <p className="text-align-left">
                       Helix, Building D<br />1750 Finch Ave E<br />North York,
                       ON M2J 2X5
                     </p>
                   </Col>
-                  <Col xs={6} md={3}>
+                  <Col xs={12} md={3}>
                     <FormGroup className="Signup">
                       <h6>Connect with us</h6>
                       <InputGroup>

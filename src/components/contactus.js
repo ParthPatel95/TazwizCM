@@ -38,15 +38,16 @@ class ContactUs extends Component {
     return (
       <div className="App">
         <Row className="div-vertical-center">
-          <Col md={6} className="ContactUs-half">
+          <Col md={6} xsHidden className="ContactUs-half">
             <Image
+            xsHidden
               alt="contact-us-img"
               src={contactusimg}
               className="img-responsive border-radius-28"
             />
           </Col>
 
-          <Col md={6} className="ContactUs-half">
+          <Col md={6} xs={12} className="ContactUs-half">
             <Col md={12}>
               <h3>Lets Talk!</h3>
               <Form>

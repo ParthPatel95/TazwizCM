@@ -313,10 +313,15 @@ class LandingPage extends Component {
 
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
+          <Col smHidden mdHidden lgHidden>
+          <h1 >Why Tazwiz</h1>
+          </Col>
             <Row
               className="show-grid div-vertical-center"
             >
+              <Col md={2} xs={12} xsHidden>
               <h1 className="body-font">Why Tazwiz</h1>
+              </Col>
               <Col md={6} xs={12}>
                 <h4 className="body-font" className="text-align-center">
                   With&nbsp;
