@@ -116,9 +116,6 @@ class App extends Component {
                       src={navlogo}
                       className="Placeholder-image"
                     />
-                    <p className="body-font">
-                      Copyright © 2018 Tazwiz Inc. All rights reserved.
-                    </p>
                   </Col>
                   <Col xs={2} md={1}>
                     <h6>Company</h6>
@@ -189,6 +186,9 @@ class App extends Component {
                         </InputGroup.Button>
                       </InputGroup>
                     </FormGroup>
+                    <p className="body-font">
+                      Copyright © 2018 Tazwiz Inc. All rights reserved.
+                    </p>
                   </Col>
                   {/* <Col xs={12} md={12}>
                     <p className="body-font">
