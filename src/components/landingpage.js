@@ -125,9 +125,36 @@ class LandingPage extends Component {
                 className="body-font With-iHired-text"
 
               >
-                &lt; With iHired /&gt;
+                &lt; With Tazwiz /&gt;
               </span>
             </Col>
+
+            <Col mdHidden lgHidden xs={12}>
+              <h2 className=" body-font text-align-center">
+                Coming Soon
+              </h2>
+            </Col>
+
+            <Col mdHidden lgHidden xs={12}>
+              <h4 className="body-font text-align-center">
+                Make life&nbsp;
+                <TextLoop springConfig={{ stiffness: 180, damping: 8 }} >
+                  <div className="color-black">rewarding.</div>
+                  <div className="color-black">easy.</div>
+                  <div className="color-black">simple.</div>
+                  <div className="color-black">connected.</div>
+                </TextLoop>
+              </h4>
+            </Col>
+            <Col mdHidden lgHidden xs={12} className="text-align-center">
+              <span
+                className="body-font "
+              >
+                &lt; With Tazwiz /&gt;
+              </span>
+            </Col>
+
+
           </Row>
         </section>
 
@@ -314,7 +341,7 @@ class LandingPage extends Component {
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
           <Col smHidden mdHidden lgHidden>
-          <h1 >Why Tazwiz</h1>
+          <h1 className="text-align-center">Why Tazwiz</h1>
           </Col>
             <Row
               className="show-grid div-vertical-center"
@@ -400,7 +427,7 @@ class LandingPage extends Component {
               <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
                 <Image className="maxwidth-50" src={post} />
                 <h2 className="body-font">Post</h2>
-                <h5 className="body-font">Post it onto iHired ecosystem.</h5>
+                <h5 className="body-font">Post it onto Tazwiz ecosystem.</h5>
               </Col>
               <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
                 <Image className="maxwidth-50" src={connect} />
@@ -422,7 +449,7 @@ class LandingPage extends Component {
             <Modal.Body>
               <h5>
                 Life itself is complex, but solving the problems that come with
-                it shouldn’t be. iHired is a one stop platform to get help with
+                it shouldn’t be. Tazwiz is a one stop platform to get help with
                 your day-to-day tasks.{" "}
               </h5>
             </Modal.Body>
@@ -476,10 +503,10 @@ class LandingPage extends Component {
             </Modal.Header>
             <Modal.Body>
               <h5>
-                The greatest side benefit of using iHired is the connections you
+                The greatest side benefit of using Tazwiz is the connections you
                 will create with people right in your community. This perk is
                 priceless, the rewards you gain are boundless. Enrich your life
-                with iHired.
+                with Tazwiz.
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -555,7 +582,7 @@ export default LandingPage;
         <br />
         <br />With&nbsp;
         <span style={{ color: "", fontWeight: "bold" }}>
-          iHired
+          Tazwiz
         </span>&nbsp;earn quick money by lending a helping hand within
         your community. You have invested long hours to mold your
         talents. You have put in ___ efforts to sharpen your skills.
@@ -570,7 +597,7 @@ export default LandingPage;
         origin, background, age or gender one factor that is common
         amongst all is the passage of time. <br />
         <br />With&nbsp;
-        <span style={{ color: "", fontWeight: "bold" }}>iHired</span>
+        <span style={{ color: "", fontWeight: "bold" }}>Tazwiz</span>
         &nbsp;tap into that goldmine of local individuals and
         professionals. So the next time you are faced with a sudden
         problem or a daunting task have no fear. You have the support

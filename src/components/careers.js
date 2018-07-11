@@ -441,7 +441,7 @@ class Careers extends Component {
             <Modal.Body>
               <h5>
                 Bringing the community together starts with a strong unified
-                team, come join our iHired family!
+                team, come join our Tazwiz family!
               </h5>
             </Modal.Body>
             <Modal.Footer>
@@ -459,7 +459,7 @@ class Careers extends Component {
               <h5>
                 Give you the perks to fuel your thinking cells. Function the
                 best, be the best. Water, coffee, munchies, and ofcourse
-                ice-cream. All inclusive for iHired Family
+                ice-cream. All inclusive for Tazwiz Family
               </h5>
             </Modal.Body>
             <Modal.Footer>

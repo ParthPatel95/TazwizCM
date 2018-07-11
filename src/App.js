@@ -155,7 +155,7 @@ class App extends Component {
                   <Col xs={6} md={2}>
                     <h6 className="text-align-center">Contact Us</h6>
                     <p className="text-align-left">
-                      info@iHired.ca<br />+1 (647) 393-7584
+                      info@Tazwiz.ca<br />+1 (647) 393-7584
                     </p>
                   </Col>
                   <Col xs={6} md={3}>
