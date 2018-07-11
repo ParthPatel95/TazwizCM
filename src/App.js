@@ -156,13 +156,13 @@ class App extends Component {
                     </ul>
                   </Col>
                   <Col xs={4} md={2}>
-                    <h6 style={{ textAlign: "center" }}>Contact Us</h6>
+                    <h6 className="text-align-center">Contact Us</h6>
                     <p className="left">
                       info@iHired.ca<br />+1 (647) 393-7584
                     </p>
                   </Col>
                   <Col md={3}>
-                    <h6 style={{ textAlign: "center" }}>Our Address</h6>
+                    <h6 className="text-align-center">Our Address</h6>
                     <p className="left">
                       Helix, Building D<br />1750 Finch Ave E<br />North York,
                       ON M2J 2X5

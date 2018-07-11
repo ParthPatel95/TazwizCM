@@ -327,6 +327,107 @@ section {
   width: 100%;
   height: 50vh;
 }
+
+.With-iHired-text{
+  color: white;
+  font-size: 38px;
+  margin-right: 25px;
+}
+
+.Gold-text{
+  color: #3f88c5; 
+  text-shadow: 2px 1px #FFD700;
+}
+
+.Community-pic{
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 28px;
+}
+
+.border-radius-28{
+  border-radius: 28px;
+}
+
+.vertical-align-baseline{
+  vertical-align: baseline;
+}
+
+.margin-top-5{
+  margin-top: 5%;
+}
+
+.margin-auto{
+  margin:auto;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.width-75{
+  width: 75%;
+}
+
+.width-45{
+  width: 45%;
+}
+
+.maxwidth-100{
+  max-width: 100%;
+}
+
+.maxwidth-80{
+  max-width: 80%;
+}
+
+.maxwidth-75{
+  max-width: 75%;
+}
+
+.maxwidth-50{
+  max-width: 50%;
+}
+
+.div-benefits{
+  background: #3f88c5;
+  color: white;
+  padding-top: 5px;
+}
+
+.div-vertical-center{
+  display: flex ; 
+  align-items: center;
+}
+
+.text-align-left{
+  text-align: left;
+}
+
+.text-align-right{
+  text-align: right;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.color-white{
+  color:white;
+}
+
+.color-black{
+  color:#343434;
+}
+
+.color-blue{
+  color: #3f88c5;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

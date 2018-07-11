@@ -99,13 +99,12 @@ class LandingPage extends Component {
     return (
       <div className="App">
         <section
-          style={{ textAlign: "right", color: "white" }}
-          className="App-headsection"
+          className="App-headsection color-white text-align-right"
         >
           {/* <div className="middle-align" /> */}
           <Row bsClass="absolute">
             <Col xsHidden smHidden md={5}>
-              <h1 style={{ textAlign: "left" }} className="h1font body-font">
+              <h1 className="h1font body-font text-align-left">
                 Coming Soon
               </h1>
             </Col>
@@ -113,22 +112,18 @@ class LandingPage extends Component {
             <Col xsHidden smHidden md={7}>
               <h1 className="h1font body-font">
                 Make life&nbsp;
-                <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
-                  <div style={{ color: "#343434" }}>rewarding.</div>
-                  <div style={{ color: "#343434" }}>easy.</div>
-                  <div style={{ color: "#343434" }}>simple.</div>
-                  <div style={{ color: "#343434" }}>connected.</div>
+                <TextLoop springConfig={{ stiffness: 180, damping: 8 }} >
+                  <div className="color-black">rewarding.</div>
+                  <div className="color-black">easy.</div>
+                  <div className="color-black">simple.</div>
+                  <div className="color-black">connected.</div>
                 </TextLoop>
               </h1>
             </Col>
             <Col xsHidden smHidden>
               <span
-                className="body-font"
-                style={{
-                  color: "white",
-                  fontSize: "38px",
-                  marginRight: "25px"
-                }}
+                className="body-font With-iHired-text"
+
               >
                 &lt; With iHired /&gt;
               </span>
@@ -142,13 +137,13 @@ class LandingPage extends Component {
               <h1 className="body-font">
                 We are in the middle of a{" "}
                 <span
-                  style={{ color: "#3f88c5", textShadow: "2px 1px #FFD700" }}
+                  className="Gold-text"
                 >
                   GOLDMINE
                 </span>
               </h1>
               <Col md={6} mdPush={6}>
-                <h4 className="body-font" style={{ textAlign: "center" }}>
+                <h4 className="body-font text-align-center">
                   That goldmine is our community. Regardless of background age
                   or gender we all have one thing in common: We face problems
                   one after another. But as we overcome these hurdles we gain
@@ -187,7 +182,7 @@ class LandingPage extends Component {
                 </Row>
               </Col>
               <Col xs={12} md={12}>
-                <Row style={{ display: "flex", alignItems: "center" }}>
+                <Row className="div-vertical-center">
                   {/* <h2 className="body-font">Early Sign-up</h2> */}
                   {/* <Col xs={12} xsOffset={0} md={4} mdOffset={0}>
                     <Image src={thumb} />
@@ -219,7 +214,7 @@ class LandingPage extends Component {
                         type="submit"
                         value="Send"
                         bsClass="App-button"
-                        style={{ width: "45%" }}
+                        className="width-45"
                       >
                         Sign up
                       </Button>
@@ -227,13 +222,7 @@ class LandingPage extends Component {
                   </Col>
                   <Col xsHidden smHidden md={6} mdOffset={0}>
                     <Image
-                      style={{
-                        maxWidth: "100%",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center center",
-                        borderRadius: "28px"
-                      }}
+                      className="Community-pic"
                       src={communityPIC}
                     />
                   </Col>
@@ -244,11 +233,7 @@ class LandingPage extends Component {
         </section>
         <section className="" ref={this.aboutRef}>
           <div
-            style={{
-              background: "#3f88c5",
-              color: "white",
-              paddingTop: "5px"
-            }}
+            className="div-benefits"
           >
             <h1 className="body-font">Benefits</h1>
             <Row>
@@ -329,24 +314,23 @@ class LandingPage extends Component {
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
             <Row
-              style={{ display: "flex", alignItems: "center" }}
-              className="show-grid"
+              className="show-grid div-vertical-center"
             >
               <h1 className="body-font">Why Tazwiz</h1>
-              <Col style={{}} md={6} xs={12}>
-                <h4 className="body-font" style={{ textAlign: "center" }}>
+              <Col md={6} xs={12}>
+                <h4 className="body-font" className="text-align-center">
                   With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>
+                  <b>
                     Tazwiz
-                  </span>&nbsp;earn quick money by lending a helping hand within
+                  </b>&nbsp;earn quick money by lending a helping hand within
                   your community. You have invested long hours to mold your
                   talents and sharpen your skills. Then why not reward yourself.
                   Earn extra money by doing what you do best.
                 </h4>
 
-                <h4 className="body-font" style={{ textAlign: "center" }}>
+                <h4 className="body-font" className="text-align-center">
                   With&nbsp;
-                  <span style={{ color: "", fontWeight: "bold" }}>Tazwiz</span>
+                  <b>Tazwiz</b>
                   &nbsp;tap into that goldmine of local individuals and
                   professionals. So the next time you are faced with a sudden
                   problem or a daunting task have no fear. You have the support
@@ -355,29 +339,21 @@ class LandingPage extends Component {
               </Col>
               <Col md={6} xsHidden smHidden>
                 <Image
-                  style={{
-                    maxWidth: "100%",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center center",
-                    borderRadius: "28px",
-                    verticalAlign: "baseline"
-                  }}
+                  className="vertical-align-baseline Community-pic"
                   src={illest}
                 />
               </Col>
             </Row>
 
-            <Row className="iconadjust" style={{}}>
+            <Row className="iconadjust" >
               <Col xsHidden smHidden md={3}>
                 <h2 className="body-font">
                   <b>
-                    <span style={{ color: "#3f88c5" }}>Sign </span>Up
+                    <span className="color-blue">Sign </span>Up
                   </b>
                 </h2>
                 <Image
-                  className="imagehover"
-                  style={{ maxWidth: "100%" }}
+                  className="imagehover maxwidth-50"
                   src={signup}
                   square
                   onClick={() =>
@@ -400,7 +376,7 @@ class LandingPage extends Component {
                 > */}
                 <Image
                   // className="cursorchange"
-                  style={{ maxWidth: "50%" }}
+                  className="maxwidth-50"
                   src={capture}
                 />
                 {/* </OverlayTrigger> */}
@@ -410,19 +386,19 @@ class LandingPage extends Component {
                 </h5>
               </Col>
               <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
-                <Image style={{ maxWidth: "50%" }} src={tag} />
+                <Image className="maxwidth-50" src={tag} />
                 <h2 className="body-font">Tag</h2>
                 <h5 className="body-font">
                   Set your requirements, budget and tag your tasks.
                 </h5>
               </Col>
               <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
-                <Image style={{ maxWidth: "50%" }} src={post} />
+                <Image className="maxwidth-50" src={post} />
                 <h2 className="body-font">Post</h2>
                 <h5 className="body-font">Post it onto iHired ecosystem.</h5>
               </Col>
               <Col xs={12} xsOffset={0} md={2} mdOffset={0}>
-                <Image style={{ maxWidth: "50%" }} src={connect} />
+                <Image className="maxwidth-50" src={connect} />
                 <h2 className="body-font">Connect</h2>
                 <h5 className="body-font">
                   Your Tazwiz community at your fingertips.
@@ -515,20 +491,16 @@ class LandingPage extends Component {
               <Row>
                 <Col md={6} xs={12}>
                   <Image
-                    className="cursorchange"
-                    style={{ maxWidth: "100%" }}
+                    className="cursorchange maxwidth-100"
                     src={overlayIMG}
                   />
                 </Col>
-                <Col style={{ marginTop: "5%" }} md={6} xs={12}>
+                <Col className="margin-top-5" md={6} xs={12}>
                   <Form
-                    style={{
-                      width: "100%"
-                    }}
-                    className="form-style"
+                    className="form-style width-100"
                   >
                     <FormGroup controlId="formInlineName">
-                      <InputGroup style={{}}>
+                      <InputGroup>
                         <InputGroup.Addon>
                           <Glyphicon glyph="envelope" />
                         </InputGroup.Addon>

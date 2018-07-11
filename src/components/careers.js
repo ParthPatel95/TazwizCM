@@ -77,13 +77,13 @@ class Careers extends Component {
           </section>
         </Row>
 
-        <h1 style={{ textAlign: "center" }} className="body-font">
-          Join <span style={{ color: "#3f88c5" }}>Tazwiz</span> and tap into
-          your <span style={{ color: "#3f88c5" }}>Potential</span>
+        <h1 className="body-font text-align-center">
+          Join <span className="color-blue">Tazwiz</span> and tap into
+          your <span className="color-blue">Potential</span>
         </h1>
-        <Row style={{ maxWidth: "75%", margin: "auto" }}>
-          <Col xs={12} md={12}>
-            <h3 style={{ textAlign: "center" }} className="body-font">
+        <Row className="margin-auto">
+          <Col xs={12} md={12} className="text-align-center">
+            <h3 className="body-font ">
               In you there is a spark of magic. That spark is your Creativity,
               your Energy, your Identity. Here at Tazwiz we don’t contain that
               spark, we Ignite it. Be Bold. Be Fearless. Be Apart of Tazwiz.
@@ -93,9 +93,9 @@ class Careers extends Component {
         <Row>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              className="imagehover"
+              className="imagehover maxwidth-50"
               src={IQ}
-              style={{ maxWidth: "50%" }}
+
               onClick={() =>
                 this.setState({
                   show1: true,
@@ -109,9 +109,9 @@ class Careers extends Component {
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              className="imagehover"
+              className="imagehover maxwidth-50"
               src={value}
-              style={{ maxWidth: "50%" }}
+
               onClick={() =>
                 this.setState({
                   show1: false,
@@ -125,9 +125,9 @@ class Careers extends Component {
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              className="imagehover"
+              className="imagehover maxwidth-50"
               src={support}
-              style={{ maxWidth: "50%" }}
+
               onClick={() =>
                 this.setState({
                   show1: false,
@@ -141,9 +141,9 @@ class Careers extends Component {
           </Col>
           <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
             <Image
-              className="imagehover"
+              className="imagehover maxwidth-50"
               src={accommodation}
-              style={{ maxWidth: "50%" }}
+
               onClick={() =>
                 this.setState({
                   show1: false,
@@ -158,15 +158,15 @@ class Careers extends Component {
         </Row>
 
         <section>
-          <h1 style={{ textAlign: "center" }} className="body-font">
+          <h1 className="body-font text-align-center">
             Available positions
           </h1>
           <Row className="table-padding">
             <Col xs={12} md={2} mdPush={2} xsPush={0}>
-              <Image style={{ maxWidth: "80%" }} src={jobICONCoder} rounded />
+              <Image className="maxwidth-80" src={jobICONCoder} rounded />
             </Col>
             <Col xs={12} md={6} mdPush={2} xsPush={0}>
-              <p style={{ textAlign: "left" }}>
+              <p className="text-align-left">
                 <b>Role:</b> Full Stack Developer Intern <br />
                 <b>Requirements:</b> Some full stack background
                 <br />
@@ -202,10 +202,10 @@ class Careers extends Component {
           </Row>
           <Row className="table-padding">
             <Col xs={12} md={2} mdPush={2} xsPush={0}>
-              <Image style={{ maxWidth: "80%" }} src={business_job} rounded />
+              <Image className="maxwidth-80" src={business_job} rounded />
             </Col>
             <Col xs={12} md={6} mdPush={2} xsPush={0}>
-              <p style={{ textAlign: "left" }}>
+              <p className="text-align-left">
                 <b>Role:</b> Junior Business Development Representative <br />
                 <b>Requirements:</b> Bachelor’s degree in Business, Sales,
                 Marketing, Communications or an Equivalent. An entrepreneurial
@@ -240,10 +240,10 @@ class Careers extends Component {
           </Row>
           <Row className="table-padding">
             <Col xs={12} md={2} mdPush={2} xsPush={0}>
-              <Image style={{ maxWidth: "80%" }} src={jobICONCoder} rounded />
+              <Image className="maxwidth-80" src={jobICONCoder} rounded />
             </Col>
             <Col xs={12} md={6} mdPush={2} xsPush={0}>
-              <p style={{ textAlign: "left" }}>
+              <p className="text-align-left">
                 <b>Role:</b> Front-end Developer (Reactjs) <br />
                 <b>Requirements:</b> A Degree, Diploma, or Certificate in web
                 design and development or a related field; Some experience in
@@ -288,10 +288,10 @@ class Careers extends Component {
           </Row>
           <Row className="table-padding">
             <Col xs={12} md={2} mdPush={2} xsPush={0}>
-              <Image style={{ maxWidth: "80%" }} src={jobICONCoder} rounded />
+              <Image className="maxwidth-80" src={jobICONCoder} rounded />
             </Col>
             <Col xs={12} md={6} mdPush={2} xsPush={0}>
-              <p style={{ textAlign: "left" }}>
+              <p className="text-align-left">
                 <b>Role:</b> NodeJS Application Developer <br />
                 <b>Requirements:</b> A Degree, Diploma, or Certificate in web
                 design and development or a related field; Some experience in
@@ -327,21 +327,20 @@ class Careers extends Component {
 
         <Grid>
           <Row
-            style={{ display: "flex", alignItems: "center" }}
-            className="career-ihired-intro"
+            className="career-ihired-intro div-vertical-center"
           >
             <Col md={6}>
               <img
-                style={{ maxWidth: "80%" }}
+                className="maxwidth-80"
                 alt="headerIMG"
                 src={contactusimg}
               />
             </Col>
             <Col md={6}>
-              <h3 style={{ textAlign: "center" }}>
+              <h3 className="text-align-center">
                 Are you ready to take that next step?
               </h3>
-              <form style={{ width: "75%", margin: "auto" }}>
+              <form className="width-75 margin-auto">
                 <FormGroup
                   controlId="formBasicText"
                   validationState={this.getValidationState()}

@@ -37,13 +37,12 @@ class ContactUs extends Component {
   render() {
     return (
       <div className="App">
-        <Row style={{ display: "flex", alignItems: "center" }}>
+        <Row className="div-vertical-center">
           <Col md={6} className="ContactUs-half">
             <Image
               alt="contact-us-img"
               src={contactusimg}
-              style={{ borderRadius: "28px" }}
-              className="img-responsive"
+              className="img-responsive border-radius-28"
             />
           </Col>
 
@@ -67,17 +66,17 @@ class ContactUs extends Component {
                   Submit
                 </Button>
               </Form>
-              <h6 style={{ textAlign: "left" }}>
+              <h6 className="text-align-left">
                 <b>Connect with us:</b>
               </h6>
-              <p style={{ textAlign: "left" }}>
+              <p className="text-align-left">
                 For any support, please Email us at{" "}
                 <a href="#">info@Tazwiz.ca</a>.
               </p>
-              <h6 style={{ textAlign: "left" }}>
+              <h6 className="text-align-left">
                 <b>Visit us at:</b>
               </h6>
-              <p style={{ textAlign: "left" }}>
+              <p className="text-align-left">
                 Building D<br />1750 Finch Ave E<br />North York, ON M2J 2X5
               </p>
             </Col>
