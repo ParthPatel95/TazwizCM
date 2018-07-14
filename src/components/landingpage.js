@@ -154,9 +154,9 @@ class LandingPage extends Component {
                 <h4 className="body-font text-align-center">
                   That goldmine is our community. Regardless of background age
                   or gender we all have one thing in common: We face problems
-                  one after another. As we overcome these hurdles we gain vast
-                  experiences and wisdom. Hense, together, we are a community
-                  with endless talents and helpful connections.
+                  one after another. While overcoming these hurdles, we gain
+                  vast knowledge and build up experience. Together, we are a
+                  community with endless talents and helpful connections!
                 </h4>
               </Col>
               <Col md={6} mdPull={6}>
