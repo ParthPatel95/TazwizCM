@@ -29,6 +29,7 @@ import thumb from "./images/test.png";
 import navlogo from "./images/iHire2.png";
 import thumblogo from "./images/iHireLogo.png";
 import placeholdermap from "./images/placeholdermap.PNG";
+import iconpng from "./images/icon-logo.png";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
@@ -166,26 +167,35 @@ class App extends Component {
                     </p>
                   </Col>
                   <Col xs={12} md={3}>
-                    <FormGroup className="Signup">
-                      <h6>Connect with us</h6>
-                      <InputGroup>
-                        <FormControl
-                          bsSize="large"
-                          type="email"
-                          value={this.state.email}
-                          placeholder="Email"
-                        />
-                        <InputGroup.Button>
-                          <Button
-                            bsStyle="primary"
-                            bsSize="large"
-                            onClick={this.handleSignup}
-                          >
-                            Sign-up
-                          </Button>
-                        </InputGroup.Button>
-                      </InputGroup>
-                    </FormGroup>
+                    <form
+                      method="POST"
+                      action="https://nne40ykct6.execute-api.us-east-2.amazonaws.com/emailStage/email"
+                    >
+                      <FormGroup className="Signup">
+                        <h6>Connect with us</h6>
+                        <InputGroup>
+                          <InputGroup>
+                            <FormControl
+                              bsSize="large"
+                              type="text"
+                              name="email"
+                              placeholder="Email"
+                            />
+                          </InputGroup>
+                          <InputGroup.Button>
+                            <Button
+                              bsStyle="primary"
+                              bsSize="large"
+                              type="submit"
+                              value="Submit"
+                            >
+                              Sign-up
+                            </Button>
+                          </InputGroup.Button>
+                        </InputGroup>
+                      </FormGroup>
+                    </form>
+
                     <p className="body-font">
                       Copyright © 2018 Tazwiz Inc. All rights reserved.
                     </p>

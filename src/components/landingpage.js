@@ -98,21 +98,17 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="App">
-        <section
-          className="App-headsection color-white text-align-right"
-        >
+        <section className="App-headsection color-white text-align-right">
           {/* <div className="middle-align" /> */}
           <Row bsClass="absolute">
             <Col xsHidden smHidden md={5}>
-              <h1 className="h1font body-font text-align-left">
-                Coming Soon
-              </h1>
+              <h1 className="h1font body-font text-align-left">Coming Soon</h1>
             </Col>
 
             <Col xsHidden smHidden md={7}>
               <h1 className="h1font body-font">
                 Make life&nbsp;
-                <TextLoop springConfig={{ stiffness: 180, damping: 8 }} >
+                <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
                   <div className="color-black">rewarding.</div>
                   <div className="color-black">easy.</div>
                   <div className="color-black">simple.</div>
@@ -121,24 +117,19 @@ class LandingPage extends Component {
               </h1>
             </Col>
             <Col xsHidden smHidden>
-              <span
-                className="body-font With-iHired-text"
-
-              >
+              <span className="body-font With-iHired-text">
                 &lt; With Tazwiz /&gt;
               </span>
             </Col>
 
             <Col mdHidden lgHidden xs={12}>
-              <h2 className=" body-font text-align-center">
-                Coming Soon
-              </h2>
+              <h2 className=" body-font text-align-center">Coming Soon</h2>
             </Col>
 
             <Col mdHidden lgHidden xs={12}>
               <h4 className="body-font text-align-center">
                 Make life&nbsp;
-                <TextLoop springConfig={{ stiffness: 180, damping: 8 }} >
+                <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
                   <div className="color-black">rewarding.</div>
                   <div className="color-black">easy.</div>
                   <div className="color-black">simple.</div>
@@ -147,14 +138,8 @@ class LandingPage extends Component {
               </h4>
             </Col>
             <Col mdHidden lgHidden xs={12} className="text-align-center">
-              <span
-                className="body-font "
-              >
-                &lt; With Tazwiz /&gt;
-              </span>
+              <span className="body-font ">&lt; With Tazwiz /&gt;</span>
             </Col>
-
-
           </Row>
         </section>
 
@@ -163,19 +148,15 @@ class LandingPage extends Component {
             <Row className="show-grid">
               <h1 className="body-font">
                 We are in the middle of a{" "}
-                <span
-                  className="Gold-text"
-                >
-                  GOLDMINE
-                </span>
+                <span className="Gold-text">GOLDMINE</span>
               </h1>
               <Col md={6} mdPush={6}>
                 <h4 className="body-font text-align-center">
                   That goldmine is our community. Regardless of background age
                   or gender we all have one thing in common: We face problems
-                  one after another. But as we overcome these hurdles we gain
-                  vast experiences and wisdom. Hense, together, we are a
-                  community with endless talents and helpful connections.
+                  one after another. As we overcome these hurdles we gain vast
+                  experiences and wisdom. Hense, together, we are a community
+                  with endless talents and helpful connections.
                 </h4>
               </Col>
               <Col md={6} mdPull={6}>
@@ -217,7 +198,7 @@ class LandingPage extends Component {
                   <Col xs={12} xsOffset={0} md={6} mdOffset={0}>
                     <h2 className="body-font">Early Access</h2>
                     <Form
-                      action="https://formspree.io/baps.parthpatel@email.com"
+                      action="https://nne40ykct6.execute-api.us-east-2.amazonaws.com/emailStage/email"
                       method="POST"
                       className="form-style"
                     >
@@ -226,7 +207,11 @@ class LandingPage extends Component {
                           <InputGroup.Addon>
                             <Glyphicon glyph="envelope" />
                           </InputGroup.Addon>
-                          <FormControl type="text" placeholder="Email" />
+                          <FormControl
+                            name="email"
+                            type="text"
+                            placeholder="Email"
+                          />
                         </InputGroup>
                       </FormGroup>{" "}
                       <FormGroup controlId="formInlineEmail">
@@ -248,10 +233,7 @@ class LandingPage extends Component {
                     </Form>
                   </Col>
                   <Col xsHidden smHidden md={6} mdOffset={0}>
-                    <Image
-                      className="Community-pic"
-                      src={communityPIC}
-                    />
+                    <Image className="Community-pic" src={communityPIC} />
                   </Col>
                 </Row>
               </Col>
@@ -259,9 +241,7 @@ class LandingPage extends Component {
           </Grid>
         </section>
         <section className="" ref={this.aboutRef}>
-          <div
-            className="div-benefits"
-          >
+          <div className="div-benefits">
             <h1 className="body-font">Benefits</h1>
             <Row>
               <Col
@@ -340,24 +320,20 @@ class LandingPage extends Component {
 
         <section className="App-body" ref={this.aboutRef}>
           <Grid>
-          <Col smHidden mdHidden lgHidden>
-          <h1 className="text-align-center">Why Tazwiz</h1>
-          </Col>
-            <Row
-              className="show-grid div-vertical-center"
-            >
+            <Col smHidden mdHidden lgHidden>
+              <h1 className="text-align-center">Why Tazwiz</h1>
+            </Col>
+            <Row className="show-grid div-vertical-center">
               <Col md={2} xs={12} xsHidden>
-              <h1 className="body-font">Why Tazwiz</h1>
+                <h1 className="body-font">Why Tazwiz</h1>
               </Col>
               <Col md={6} xs={12}>
                 <h4 className="body-font" className="text-align-center">
                   With&nbsp;
-                  <b>
-                    Tazwiz
-                  </b>&nbsp;earn quick money by lending a helping hand within
-                  your community. You have invested long hours to mold your
-                  talents and sharpen your skills. Then why not reward yourself.
-                  Earn extra money by doing what you do best.
+                  <b>Tazwiz</b>&nbsp;earn quick money by lending a helping hand
+                  within your community. You have invested long hours to mold
+                  your talents and sharpen your skills. Then why not reward
+                  yourself. Earn extra money by doing what you do best.
                 </h4>
 
                 <h4 className="body-font" className="text-align-center">
@@ -377,7 +353,7 @@ class LandingPage extends Component {
               </Col>
             </Row>
 
-            <Row className="iconadjust" >
+            <Row className="iconadjust">
               <Col xsHidden smHidden md={3}>
                 <h2 className="body-font">
                   <b>
@@ -528,7 +504,9 @@ class LandingPage extends Component {
                   />
                 </Col>
                 <Col className="margin-top-5" md={6} xs={12}>
-                  <Form
+                  <form
+                    method="POST"
+                    action="https://nne40ykct6.execute-api.us-east-2.amazonaws.com/emailStage/email"
                     className="form-style width-100"
                   >
                     <FormGroup controlId="formInlineName">
@@ -536,7 +514,11 @@ class LandingPage extends Component {
                         <InputGroup.Addon>
                           <Glyphicon glyph="envelope" />
                         </InputGroup.Addon>
-                        <FormControl type="text" placeholder="Email" />
+                        <FormControl
+                          name="email"
+                          type="text"
+                          placeholder="Email"
+                        />
                       </InputGroup>
                     </FormGroup>{" "}
                     <FormGroup controlId="formInlineEmail">
@@ -547,12 +529,17 @@ class LandingPage extends Component {
                         <FormControl type="text" placeholder="Full Name" />
                       </InputGroup>
                     </FormGroup>
-                  </Form>
+                  </form>
                 </Col>
               </Row>
             </Modal.Body>
             <Modal.Footer>
-              <Button bsClass="App-button" onClick={this.handleClose}>
+              <Button
+                type="submit"
+                value="Submit"
+                bsClass="App-button"
+                onClick={this.handleClose}
+              >
                 Sign Up
               </Button>
             </Modal.Footer>
