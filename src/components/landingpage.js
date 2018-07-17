@@ -164,18 +164,18 @@ class LandingPage extends Component {
                   <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Days</h3>
 
-                    <Days deadline="2018-07-28" className="timer-count-size" />
+                    <Days deadline="2018-07-30" className="timer-count-size" />
                   </Col>
                   <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Hours</h3>
 
-                    <Hours deadline="2018-07-28" className="timer-count-size" />
+                    <Hours deadline="2018-07-30" className="timer-count-size" />
                   </Col>
                   <Col xs={12} md={3} className="table-padding">
                     <h3 className="timer-text-size table-padding">Minutes</h3>
 
                     <Minutes
-                      deadline="2018-07-28"
+                      deadline="2018-07-30"
                       className="timer-count-size"
                     />
                   </Col>
@@ -183,7 +183,7 @@ class LandingPage extends Component {
                     <h3 className="timer-text-size table-padding"> Seconds</h3>
 
                     <Seconds
-                      deadline="2018-07-28"
+                      deadline="2018-07-30"
                       className="timer-count-size"
                     />
                   </Col>
